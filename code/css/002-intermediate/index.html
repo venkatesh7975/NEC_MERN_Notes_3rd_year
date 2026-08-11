@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>002 Intermediate Flexbox & Grid Deck</title>
+  <style>
+    body { background: #0f172a; color: #f8fafc; font-family: system-ui, sans-serif; padding: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .card { background: #1e293b; border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease, box-shadow 0.2s ease; border: 1px solid #334155; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px -5px rgba(59, 130, 246, 0.3); border-color: #3b82f6; }
+    .badge { align-self: flex-start; background: #3b82f6; color: white; padding: 4px 8px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Course Modules</h1>
+  <div class="grid">
+    <div class="card">
+      <span class="badge">Module 1</span>
+      <h3>React 19 Hooks</h3>
+      <p>Master useState, useEffect, and custom hooks.</p>
+    </div>
+    <div class="card">
+      <span class="badge">Module 2</span>
+      <h3>Node REST APIs</h3>
+      <p>Build scalable backend endpoints with Express.</p>
+    </div>
+    <div class="card">
+      <span class="badge">Module 3</span>
+      <h3>MongoDB Atlas</h3>
+      <p>Design NoSQL schemas & aggregation pipelines.</p>
+    </div>
+  </div>
+</body>
+</html>

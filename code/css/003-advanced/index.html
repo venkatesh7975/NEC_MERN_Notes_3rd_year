@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>003 Advanced Glassmorphism & Dynamic Themes</title>
+  <style>
+    :root {
+      --bg: #0f172a; --text: #f8fafc; --panel-bg: rgba(255, 255, 255, 0.05); --border: rgba(255, 255, 255, 0.1);
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc; --text: #0f172a; --panel-bg: rgba(255, 255, 255, 0.7); --border: rgba(0, 0, 0, 0.1);
+    }
+
+    body { background-color: var(--bg); color: var(--text); font-family: system-ui, sans-serif; padding: 2rem; transition: background-color 0.4s ease; min-height: 100vh; }
+    
+    .glass-card {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-toggle {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <h2>Glassmorphic LMS Panel</h2>
+    <p>This panel uses CSS custom variables and backdrop blur filters for a modern Apple-inspired frosted glass aesthetic.</p>
+    <button class="btn-toggle" onclick="toggleTheme()">Toggle Dark / Light Theme</button>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>003 Advanced Accessible Canvas & ARIA App</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; background: #0f172a; color: white; }
+    canvas { background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+    .status-badge { display: inline-block; padding: 4px 12px; background: #22c55e; color: black; border-radius: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>LMS Interactive Canvas Progress Chart</h1>
+    <span class="status-badge" role="status" aria-label="System status online">Live LMS System</span>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="chart-title">
+      <h2 id="chart-title">Course Completion Analytics</h2>
+      <canvas id="progressCanvas" width="500" height="250" aria-label="Line chart showing weekly student engagement graph"></canvas>
+    </section>
+
+    <section aria-labelledby="media-title">
+      <h3 id="media-title">Course Audio Guide</h3>
+      <audio controls aria-label="Podcast preview for full stack roadmap">
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <script>
+    const canvas = document.getElementById('progressCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw grid background
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 1;
+    for(let i=0; i<canvas.width; i+=50) {
+      ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, canvas.height); ctx.stroke();
+    }
+
+    // Draw growth curve
+    ctx.strokeStyle = '#3b82f6';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(50, 200);
+    ctx.bezierCurveTo(150, 180, 250, 80, 450, 40);
+    ctx.stroke();
+
+    // Draw data points
+    ctx.fillStyle = '#60a5fa';
+    [ [50,200], [150,185], [250,115], [350,65], [450,40] ].forEach(([x,y]) => {
+      ctx.beginPath(); ctx.arc(x,y,6,0,Math.PI*2); ctx.fill();
+    });
+  </script>
+</body>
+</html>
