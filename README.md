@@ -57,6 +57,153 @@ An all-in-one production-grade **Learning Management System (LMS)** and comprehe
 - `[x]` **Task 4**: Solve basic problems on GeeksforGeeks using JavaScript.
 - `[x]` **Task 5**: Start freeCodeCamp certification on Full Stack Web Development.
 - `[x]` **Task 6**: Maintain an Excel track sheet of tasks that you have completed.
+- ## Task 1: Counter Application
+
+### Objective
+
+Create a **Counter Application** using HTML, CSS, and JavaScript.
+
+### Requirements
+
+1. Display a heading:
+   **Counter**
+
+2. Display the current counter value.
+
+   * Initial value should be `0`.
+
+3. Create three buttons:
+
+   * **Increment**
+   * **Decrement**
+   * **Reset**
+
+4. Button functionality:
+
+   * **Increment** → Increase the counter by `1`.
+   * **Decrement** → Decrease the counter by `1`.
+   * **Reset** → Set the counter back to `0`.
+
+5. The **counter value color** should change based on its value:
+
+   * Positive value → **Green**
+   * Negative value → **Red**
+   * Zero → **Black**
+
+### Example
+
+```text
+             Counter
+
+                3
+              GREEN
+
+       [ Increment ] [ Decrement ] [ Reset ]
+```
+
+If the user clicks **Decrement**:
+
+```text
+             Counter
+
+               -1
+               RED
+```
+
+If the user clicks **Reset**:
+
+```text
+             Counter
+
+                0
+              BLACK
+```
+
+### Important Requirement
+
+The color must change **dynamically whenever the counter value changes**.
+
+For example:
+
+```text
+0 → Black
+1 → Green
+2 → Green
+3 → Green
+2 → Green
+1 → Green
+0 → Black
+-1 → Red
+-2 → Red
+```
+
+### Concepts to Use
+
+* Variables
+* Functions
+* DOM selection
+* `textContent`
+* `addEventListener()`
+* Conditional statements (`if`, `else if`, `else`)
+* DOM styling
+* Click events
+
+---
+
+## Task 2: Background Color Toggle
+
+### Objective
+
+Create a webpage where the **background color changes every time the user clicks a button**.
+
+### Requirements
+
+1. Create a button:
+   **Change Background**
+
+2. Create an array containing **5 different colors**.
+
+```js
+const colors = ["red", "blue", "green", "yellow", "purple"];
+```
+
+3. Every time the user clicks the button:
+
+   * Change the background to the next color.
+
+4. After the fifth color, start again from the first color.
+
+### Expected Sequence
+
+```text
+Click 1 → Red
+Click 2 → Blue
+Click 3 → Green
+Click 4 → Yellow
+Click 5 → Purple
+Click 6 → Red
+Click 7 → Blue
+...
+```
+
+### Important Requirement
+
+Use an **array and index** to implement the color change instead of writing separate conditions for each color.
+
+### Concepts to Use
+
+* Arrays
+* Variables
+* Functions
+* Array indexing
+* `addEventListener()`
+* `document.body.style.backgroundColor`
+* Modulo operator `%`
+
+### ⭐ Bonus
+
+Combine both applications into **one webpage** and create a clean, attractive UI.
+
 
 ---
 
