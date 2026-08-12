@@ -25,7 +25,9 @@ NEC_MERN_Notes_3rd_year/
 │   ├── task3.md              # Task 3: Responsive Website
 │   ├── task4.md              # Task 4: GeeksforGeeks JS Problems
 │   ├── task5.md              # Task 5: freeCodeCamp Certification
-│   └── task6.md              # Task 6: Excel Task Tracker
+│   ├── task6.md              # Task 6: Excel Task Tracker
+│   ├── task7.md              # Task 7: Counter Application
+│   └── task8.md              # Task 8: Background Color Toggle
 ├── dailycodes/               # Daily Practice Code Uploads
 │   ├── README.md             # Directory Overview & Structure
 │   ├── html/                 # HTML Basic, Intermediate, Advanced
@@ -71,6 +73,8 @@ NEC_MERN_Notes_3rd_year/
 - `[x]` **[Task 4](tasks/task4.md)**: Solve basic problems on GeeksforGeeks using JavaScript.
 - `[x]` **[Task 5](tasks/task5.md)**: Start freeCodeCamp certification on Full Stack Web Development.
 - `[x]` **[Task 6](tasks/task6.md)**: Maintain an Excel track sheet of tasks that you have completed.
+- `[x]` **[Task 7](tasks/task7.md)**: Counter Application (Dynamic Green / Red / Black Color).
+- `[x]` **[Task 8](tasks/task8.md)**: Background Color Toggle (Array Indexing & Modulo Operator).
 
 ---
 

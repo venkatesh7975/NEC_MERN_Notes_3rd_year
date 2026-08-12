@@ -10,3 +10,5 @@ Here are the official assigned tasks for the Full Stack Web Development curricul
 | **Task 4** | Solve basic problems on GeeksforGeeks using JavaScript | `[x]` Completed | [`task4.md`](task4.md) |
 | **Task 5** | Start freeCodeCamp certification on Full Stack Web Development | `[x]` Completed | [`task5.md`](task5.md) |
 | **Task 6** | Maintain an Excel track sheet of tasks that you have completed | `[x]` Completed | [`task6.md`](task6.md) |
+| **Task 7** | Counter Application (Dynamic Green / Red / Black Color) | `[x]` Completed | [`task7.md`](task7.md) |
+| **Task 8** | Background Color Toggle (Array Indexing & Modulo Operator) | `[x]` Completed | [`task8.md`](task8.md) |
