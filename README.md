@@ -6,7 +6,7 @@
 [![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?logo=express)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
 
-A organized educational repository for Full Stack Web Development (MERN Stack). Designed for tracking course tasks, daily practice codes, hands-on projects, comprehensive markdown notes, and interview prep.
+An organized educational repository for Full Stack Web Development (MERN Stack). Designed for tracking course tasks, daily practice codes, hands-on projects, comprehensive markdown notes, and interview prep.
 
 ---
 
@@ -20,9 +20,12 @@ NEC_MERN_Notes_3rd_year/
 ├── LICENSE                   # MIT License
 ├── tasks/                    # Task Markdown Files & Assignments
 │   ├── README.md             # Master Task Index
-│   ├── task-01-html-tags.md  # Standard HTML Tags Task
-│   ├── task-02-resume.md     # Personal Resume Task
-│   └── ...                   # Additional Task Markdown Files
+│   ├── task1.md              # Task 1: HTML Tags Website
+│   ├── task2.md              # Task 2: Resume Webpage
+│   ├── task3.md              # Task 3: Responsive Website
+│   ├── task4.md              # Task 4: GeeksforGeeks JS Problems
+│   ├── task5.md              # Task 5: freeCodeCamp Certification
+│   └── task6.md              # Task 6: Excel Task Tracker
 ├── dailycodes/               # Daily Practice Code Uploads
 │   ├── README.md             # Directory Overview & Structure
 │   ├── html/                 # HTML Basic, Intermediate, Advanced
@@ -60,7 +63,18 @@ NEC_MERN_Notes_3rd_year/
 
 ---
 
-## 📚 Curriculum & Course Topics
+## 📌 Assigned Tasks
+
+- `[x]` **[Task 1](tasks/task1.md)**: Create a website that contains all types of HTML tags.
+- `[x]` **[Task 2](tasks/task2.md)**: Create a resume using HTML and CSS.
+- `[x]` **[Task 3](tasks/task3.md)**: Create a responsive website that adapts its content width and styles according to screen sizes.
+- `[x]` **[Task 4](tasks/task4.md)**: Solve basic problems on GeeksforGeeks using JavaScript.
+- `[x]` **[Task 5](tasks/task5.md)**: Start freeCodeCamp certification on Full Stack Web Development.
+- `[x]` **[Task 6](tasks/task6.md)**: Maintain an Excel track sheet of tasks that you have completed.
+
+---
+
+## 📚 Curriculum & Course Topics Covered
 
 - **Full Stack Fundamentals**: Client-Server Cycle, MERN Stack Roles.
 - **HTML5 & CSS3**: Semantic Structure, Box Model, Responsive Layouts & Media Queries.
