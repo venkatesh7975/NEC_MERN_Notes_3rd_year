@@ -14,3 +14,5 @@ Here are the official assigned tasks for the Full Stack Web Development curricul
 | **Task 8** | Background Color Toggle (Array Indexing & Modulo Operator) | `[x]` Completed | [`task8.md`](task8.md) |
 | **Task 9** | Carousal application | `[x]` Completed | [`task8.md`](task9.md) |
 | **Task 10** | Rating Applications | `[x]` Completed | [`task8.md`](task10.md) |
+| **Task 11** |Show and hide text | `[x]` Completed | [`task8.md`](task10.md) |
+| **Task 12** |Guess the number game| `[x]` Completed | [`task8.md`](task10.md) |
