@@ -1,0 +1,574 @@
+{
+  "react": [
+    [
+      "Course badge gallery",
+      "Render three components with title and level props; use stable IDs",
+      "Three input records produce three badges"
+    ],
+    [
+      "Reading bookmark card",
+      "Toggle saved state; expose aria-pressed",
+      "Two clicks return to unsaved"
+    ],
+    [
+      "Seat availability panel",
+      "Change available seats between 0 and 30; disable controls at bounds",
+      "Increment at 30 keeps 30"
+    ],
+    [
+      "Controlled feedback form",
+      "Validate required name and rating 1–5; reset after local submission",
+      "Blank name prevents submission"
+    ],
+    [
+      "Searchable module list",
+      "Filter by controlled text input; derive results without mutating source",
+      "Clearing search restores all modules"
+    ],
+    [
+      "Lesson completion dashboard",
+      "Store completed lesson IDs; derive progress; support undo",
+      "Two completed lessons of four produce 50 percent"
+    ],
+    [
+      "Editable assignment board",
+      "Create edit remove and filter tasks; preserve IDs and status on edits",
+      "Renaming leaves completion unchanged"
+    ],
+    [
+      "API state explorer",
+      "Implement loading error empty and retry states; prevent stale responses",
+      "Old response cannot overwrite newer search"
+    ],
+    [
+      "Enrollment wizard",
+      "Implement three steps with validation and review; preserve values on back navigation",
+      "Back from review retains contact values"
+    ],
+    [
+      "Faculty review workbench",
+      "Filter submissions; edit feedback; save with a mock asynchronous API and retry",
+      "Failed save preserves the draft"
+    ]
+  ],
+  "nodejs": [
+    [
+      "Module fee calculator",
+      "Export a pure calculation; validate arguments; import from CLI",
+      "2 hours at 50 yields 100"
+    ],
+    [
+      "Package command toolkit",
+      "Provide greet and check scripts; document npm commands",
+      "npm run greet prints one greeting"
+    ],
+    [
+      "JSON roster reader",
+      "Read a file asynchronously; validate array shape; handle errors",
+      "Two records print 2; missing file exits nonzero"
+    ],
+    [
+      "Course file organizer",
+      "Group fixture filenames by extension; preserve source files",
+      "Three Markdown files appear in one group"
+    ],
+    [
+      "Event notification simulator",
+      "Register event listeners once; count deliveries",
+      "One emitted event calls each listener once"
+    ],
+    [
+      "Parallel resource loader",
+      "Read three files with allSettled; retain successful results",
+      "One missing file does not discard two successes"
+    ],
+    [
+      "Streaming word counter",
+      "Count words across stream chunk boundaries; handle whitespace",
+      "hello world yields 2 across any chunk split"
+    ],
+    [
+      "Cancelable batch processor",
+      "Process items in order; cancel between items",
+      "Cancel after item 2 prevents item 3 starting"
+    ],
+    [
+      "Reproducible report CLI",
+      "Accept explicit paths; generate deterministic JSON; report invalid input",
+      "Same input twice produces identical report content"
+    ],
+    [
+      "Local health service",
+      "Serve health and version routes; return 404 elsewhere; shut down cleanly",
+      "Unknown path returns 404"
+    ]
+  ],
+  "express": [
+    [
+      "Course listing route",
+      "Return three fixture courses; add a health route",
+      "GET /courses returns 200 with three records"
+    ],
+    [
+      "Parameter lookup",
+      "Validate positive integer IDs; handle missing records",
+      "abc returns 400; missing numeric ID returns 404"
+    ],
+    [
+      "Static handbook server",
+      "Serve public files under /handbook; keep configuration outside the public root",
+      "Handbook loads; private config is inaccessible"
+    ],
+    [
+      "Request timing middleware",
+      "Assign request IDs; log timing once after finish; exclude sensitive bodies",
+      "Each request generates one completion record"
+    ],
+    [
+      "Validated course creation",
+      "Allow only title and hours; assign IDs on server; reject invalid data",
+      "Client-supplied ID cannot override assigned ID"
+    ],
+    [
+      "Enrollment router",
+      "Mount a router under /api/enrollments; validate IDs and body; handle unknown routes",
+      "Wrong prefix returns 404"
+    ],
+    [
+      "Central error handling",
+      "Handle malformed JSON and rejected operations; avoid stack traces in responses",
+      "Malformed JSON returns 400; unexpected failure returns 500"
+    ],
+    [
+      "Bounded upload exercise",
+      "Accept one text file; limit size; generate storage names",
+      "Oversized input returns 413 without storing a file"
+    ],
+    [
+      "Rate-limited feedback",
+      "Validate feedback; configure request limit and reset; document proxy assumptions",
+      "Requests above configured limit return 429"
+    ],
+    [
+      "Middleware contract harness",
+      "Verify parser ordering and error forwarding; prevent double responses",
+      "Invalid input never reaches the write handler"
+    ]
+  ],
+  "rest-api": [
+    [
+      "Resource contract catalog",
+      "Implement collection and item reads; document representations",
+      "Missing item returns 404"
+    ],
+    [
+      "Create response contract",
+      "Return 201 on creation; include Location; validate fields",
+      "Location identifies the created resource"
+    ],
+    [
+      "Method semantics lab",
+      "Implement GET and PUT; document intended effects",
+      "Repeated identical PUT leaves the same resource state"
+    ],
+    [
+      "Patch validation service",
+      "Allow title and hours updates only; preserve omitted fields",
+      "Updating title leaves hours unchanged"
+    ],
+    [
+      "Pagination explorer",
+      "Require positive page and limit; cap limit at 50; sort deterministically",
+      "page=0 returns 400"
+    ],
+    [
+      "Filter and sort API",
+      "Allowlist sort fields; filter before pagination",
+      "Filtered results keep stable ordering"
+    ],
+    [
+      "Conditional update lab",
+      "Require current revision; reject stale writes with conflict",
+      "Two edits at revision 1 allow only the first"
+    ],
+    [
+      "Idempotent booking request",
+      "Store key and request fingerprint; reject key reuse with different data",
+      "Same key and body returns original booking"
+    ],
+    [
+      "API compatibility exercise",
+      "Serve v1 and v2 contracts; preserve v1 fields",
+      "Existing v1 tests still pass"
+    ],
+    [
+      "Client contract suite",
+      "Test success validation missing resources and outages; show retryable errors",
+      "A 500 response becomes a visible client error"
+    ]
+  ],
+  "sql": [
+    [
+      "Student roster table",
+      "Define primary key; seed three fictional students; query by ID",
+      "Three seeded rows appear in ID order"
+    ],
+    [
+      "Course CRUD workbook",
+      "Perform create read update delete by key; preserve unrelated rows",
+      "Updating course 1 leaves course 2 unchanged"
+    ],
+    [
+      "Unique enrollment constraint",
+      "Model student-course relation; add composite uniqueness",
+      "Duplicate enrollment pair is rejected"
+    ],
+    [
+      "Instructor inner join",
+      "Join courses and instructors; seed an instructor without a course",
+      "Only matched instructors appear"
+    ],
+    [
+      "Unassigned instructor report",
+      "Use LEFT JOIN; count course IDs instead of star",
+      "An instructor without courses has count 0"
+    ],
+    [
+      "Marks aggregate report",
+      "Group marks by course; distinguish NULL and zero; compute average",
+      "0,100,NULL produce average 50"
+    ],
+    [
+      "Parameterized search adapter",
+      "Bind values with a Node SQL driver; allowlist sort identifiers",
+      "A quote in a name is treated as data"
+    ],
+    [
+      "Atomic seat transfer",
+      "Use transaction for two updates; inject failure and roll back",
+      "Failed second update preserves both original values"
+    ],
+    [
+      "Enrollment reconciliation",
+      "Detect duplicates and orphan candidates in staging data; report without modifying",
+      "Duplicate pairs appear in a report; source remains unchanged"
+    ],
+    [
+      "Reporting schema review",
+      "Design students courses enrollments; document keys; verify query plans",
+      "Reports run against reproducible seeds"
+    ]
+  ],
+  "mongodb": [
+    [
+      "Course document notebook",
+      "Insert three course documents; find by code",
+      "HTML code matches one document"
+    ],
+    [
+      "Projection catalog",
+      "Filter by minimum hours; project code and title",
+      "Result excludes other fields"
+    ],
+    [
+      "Targeted update lab",
+      "Use a precise filter and $set; verify unrelated document",
+      "CSS remains unchanged after updating HTML"
+    ],
+    [
+      "Embedded lesson planner",
+      "Store bounded lesson arrays; query nested fields",
+      "Forms lesson matches the correct course"
+    ],
+    [
+      "Reference design comparison",
+      "Model enrollment with references and embedding; compare reads",
+      "Both models answer the same enrollment question"
+    ],
+    [
+      "Grouped hours report",
+      "Aggregate hours by category; distinguish no matches",
+      "10 and 14 frontend hours aggregate to 24"
+    ],
+    [
+      "Index experiment",
+      "Compare explain output before and after index; record observed evidence",
+      "Report shows actual query plans"
+    ],
+    [
+      "Atomic stock reservation",
+      "Condition update on positive stock; decrement atomically",
+      "Stock 1 permits one successful reservation"
+    ],
+    [
+      "Data import validator",
+      "Validate fixtures before insertion; report row errors",
+      "Missing code rejected while valid rows import"
+    ],
+    [
+      "Retention archive job",
+      "Select cutoff records; export and verify counts; default to dry run",
+      "Dry run lists IDs without deletion"
+    ]
+  ],
+  "devops": [
+    [
+      "Git change journal",
+      "Create three commits in scratch repo; explain stage and worktree",
+      "Log contains three distinct changes"
+    ],
+    [
+      "Branch review exercise",
+      "Create branch; inspect diff against main; summarize review",
+      "Diff contains only intended edit"
+    ],
+    [
+      "Ignore rule laboratory",
+      "Test dependency and env ignore rules; preserve fake env example",
+      ".env ignored; .env.example tracked"
+    ],
+    [
+      "Merge conflict workshop",
+      "Create controlled conflict; resolve both intended changes",
+      "Final file retains required edits"
+    ],
+    [
+      "Frontend build handoff",
+      "Record exact install and build commands; commit lockfile",
+      "Fresh install generates build output"
+    ],
+    [
+      "Docker static preview",
+      "Containerize static build; map one documented port",
+      "Browser loads page through mapped port"
+    ],
+    [
+      "CI quality gate",
+      "Run link and build checks; demonstrate a failing fixture",
+      "Broken fixture fails the job"
+    ],
+    [
+      "Environment separation",
+      "Separate public frontend and private server variables; inspect bundle",
+      "Fake server secret absent from frontend bundle"
+    ],
+    [
+      "Release rollback rehearsal",
+      "Tag known build; stage revision; restore previous local artifact",
+      "Rollback restores earlier content"
+    ],
+    [
+      "Deployment runbook",
+      "Document URL build route refresh health checks and rollback",
+      "Peer can follow and record each result"
+    ]
+  ],
+  "security": [
+    [
+      "Safe comment renderer",
+      "Display text through textContent; test literal markup",
+      "<b>hello</b> appears literally"
+    ],
+    [
+      "SQL binding demonstration",
+      "Use parameterized local query; test a quote-containing value",
+      "Value does not change query structure"
+    ],
+    [
+      "Trust boundary inventory",
+      "Trace form API storage; annotate server validation; implement one boundary check",
+      "Invalid value is rejected at the server"
+    ],
+    [
+      "Rendering boundary lab",
+      "Use context-appropriate encoding; disallow unsupported rich HTML",
+      "Untrusted markup remains inert"
+    ],
+    [
+      "CSRF-protected form",
+      "Validate a server-issued token and origin for cookie-authenticated mutations",
+      "Missing token rejects mutation"
+    ],
+    [
+      "Object access review",
+      "Check ownership for reads and writes; use two fictional accounts",
+      "User A cannot access user B records"
+    ],
+    [
+      "Security header verification",
+      "Apply restrictive script policy locally; inspect actual headers",
+      "Unapproved inline script blocked"
+    ],
+    [
+      "Input budget controls",
+      "Bound body size array length and numeric range",
+      "Oversized input rejected explicitly"
+    ],
+    [
+      "Abuse regression pack",
+      "Implement five local threat tests; verify defenses and valid requests",
+      "Legitimate use passes and abuse fails"
+    ],
+    [
+      "Secure release review",
+      "Audit injection XSS CSRF and fake secret leakage; fix and retest",
+      "Every finding links to a regression test"
+    ]
+  ],
+  "mongoose": [
+    [
+      "Course schema validator",
+      "Require title and nonnegative hours; validate before write",
+      "Negative hours fails validation"
+    ],
+    [
+      "Defaults and timestamps",
+      "Set draft default and timestamps; allow explicit status",
+      "Missing status becomes draft"
+    ],
+    [
+      "Unique course code",
+      "Build unique index; separate duplicate key from validation errors",
+      "Second HTML code is rejected"
+    ],
+    [
+      "Query update validation",
+      "Enable update validators; test positive and negative changes",
+      "Negative update fails"
+    ],
+    [
+      "Instructor references",
+      "Populate public fields; handle a deleted reference",
+      "Missing instructor does not crash output"
+    ],
+    [
+      "Lesson subdocuments",
+      "Validate lesson titles and a maximum array length",
+      "Maximum plus one lesson fails"
+    ],
+    [
+      "Pagination model helper",
+      "Validate page and limit; sort by time and ID; count matches",
+      "page=0 fails before query"
+    ],
+    [
+      "Schema migration rehearsal",
+      "Add versioned optional field; backfill sandbox; verify counts",
+      "Old documents remain readable"
+    ],
+    [
+      "Optimistic edit service",
+      "Use version checks; reject stale update; support refetch",
+      "Stale writer cannot overwrite new title"
+    ],
+    [
+      "Model contract suite",
+      "Test create save query updates and unique errors separately",
+      "Every write path satisfies documented invariants"
+    ]
+  ],
+  "authentication": [
+    [
+      "Password verification lab",
+      "Hash fictional passwords with a password-hashing library; verify matches",
+      "Correct input matches; wrong input fails"
+    ],
+    [
+      "Session login prototype",
+      "Create server session; protect route; invalidate on logout",
+      "Old session fails after logout"
+    ],
+    [
+      "Token verification sandbox",
+      "Sign short-lived tokens; verify signature expiry and malformed cases",
+      "Expired token is rejected"
+    ],
+    [
+      "Role permission matrix",
+      "Define learner and faculty permissions; enforce server-side",
+      "Learner cannot create assessment"
+    ],
+    [
+      "Owner-only notes",
+      "Scope queries by verified user ID; test other record IDs",
+      "Changed URL cannot expose another user note"
+    ],
+    [
+      "Login attempt limiter",
+      "Throttle failed logins; document retry/reset behavior",
+      "Excess failures receive throttled response"
+    ],
+    [
+      "Password reset simulator",
+      "Store hashed expiring single-use tokens; simulate delivery locally",
+      "Used reset token cannot be replayed"
+    ],
+    [
+      "Session inventory",
+      "List sessions without raw tokens; revoke individual sessions",
+      "Revoked session loses access"
+    ],
+    [
+      "Account deactivation",
+      "Reject sessions for disabled accounts; avoid recovery enumeration",
+      "Disabled account cannot reuse old session"
+    ],
+    [
+      "Authentication regression harness",
+      "Test login logout expiry ownership and role removal",
+      "Removed role cannot perform next privileged request"
+    ]
+  ],
+  "fullstack": [
+    [
+      "Course directory slice",
+      "Load persisted courses through Express into React; show loading/error",
+      "Reload retains database course titles"
+    ],
+    [
+      "Feedback slice",
+      "Validate rating on server; save feedback; show confirmed receipt",
+      "Invalid rating creates no record"
+    ],
+    [
+      "Reading list slice",
+      "Add remove and persist reading items through API",
+      "Deleting one item preserves others"
+    ],
+    [
+      "Submission portal",
+      "Submit URL for assignment; enforce unique user-assignment pair",
+      "Duplicate submission returns conflict"
+    ],
+    [
+      "Faculty course editor",
+      "Protect editing route; validate title/hours server-side",
+      "Learner cannot edit course"
+    ],
+    [
+      "Equipment reservations",
+      "Book available equipment; prevent overbooking atomically",
+      "Two requests for last item allow one success"
+    ],
+    [
+      "Assessment review workflow",
+      "Enforce submitted reviewed returned transitions; keep feedback history",
+      "Invalid transition rejected"
+    ],
+    [
+      "Learning progress dashboard",
+      "Persist lesson completion; derive progress from server records",
+      "Repeated completion does not double count"
+    ],
+    [
+      "Department helpdesk",
+      "Assign tickets to staff; restrict visibility; paginate and filter",
+      "Students see only their own tickets"
+    ],
+    [
+      "Mini learning management platform",
+      "Combine catalog enrollment progress roles tests and runbook",
+      "Student enrollment and completion survive reload"
+    ]
+  ]
+}

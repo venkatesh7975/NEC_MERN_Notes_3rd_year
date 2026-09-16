@@ -1,0 +1,307 @@
+{
+  "source": "syllabus-transcription.md",
+  "officialHours": 120,
+  "modules": [
+    {
+      "id": 1,
+      "path": "01-foundations",
+      "title": "Foundations of Web Development",
+      "hours": 6,
+      "topic": "Web Basics",
+      "visibleSubtopics": [
+        "Web evolution",
+        "Static vs Dynamic",
+        "Roles in Web"
+      ]
+    },
+    {
+      "id": 2,
+      "path": "02-html",
+      "title": "HTML",
+      "hours": 10,
+      "topic": "HTML Essentials",
+      "visibleSubtopics": [
+        "Semantic tags",
+        "Text",
+        "Links",
+        "Lists",
+        "Tables",
+        "Forms"
+      ]
+    },
+    {
+      "id": 3,
+      "path": "03-css",
+      "title": "CSS",
+      "hours": 14,
+      "topic": "Styling Essentials",
+      "visibleSubtopics": [
+        "Selectors",
+        "Box-Model",
+        "Flexbox",
+        "Grid",
+        "Responsive"
+      ]
+    },
+    {
+      "id": 4,
+      "path": "04-javascript",
+      "title": "JavaScript",
+      "hours": 26,
+      "topic": "JavaScript Fundamentals",
+      "visibleSubtopics": [
+        "Data types",
+        "Operators",
+        "Conditions",
+        "Loops"
+      ]
+    },
+    {
+      "id": 5,
+      "path": "05-react",
+      "title": "React",
+      "hours": 21,
+      "topic": "React Development",
+      "visibleSubtopics": [
+        "JSX",
+        "Components",
+        "Props",
+        "State",
+        "Events"
+      ]
+    },
+    {
+      "id": 6,
+      "path": "06-nodejs",
+      "title": "Node.js",
+      "hours": 12,
+      "topic": "Backend with Node.js",
+      "visibleSubtopics": [
+        "Module system",
+        "NPM",
+        "Async programming",
+        "Event"
+      ]
+    },
+    {
+      "id": 7,
+      "path": "07-express-rest",
+      "title": "Express.js & REST API",
+      "hours": 10,
+      "topic": "Server-side App",
+      "visibleSubtopics": [
+        "Routing",
+        "Middleware",
+        "Static files",
+        "REST principles"
+      ]
+    },
+    {
+      "id": 8,
+      "path": "08-databases",
+      "title": "Databases (SQL + MongoDB)",
+      "hours": 8,
+      "topic": "Data Handling",
+      "visibleSubtopics": [
+        "SQL vs NoSQL",
+        "SQL CRUD + Joins",
+        "MongoDB"
+      ]
+    },
+    {
+      "id": 9,
+      "path": "09-devops",
+      "title": "DevOps & Deployment",
+      "hours": 8,
+      "topic": "Application Deployment",
+      "visibleSubtopics": [
+        "Git",
+        "GitHub",
+        "CI/CD basics",
+        "Docker",
+        "Deploying React"
+      ]
+    },
+    {
+      "id": 10,
+      "path": "10-security",
+      "title": "Web Security & Best Practices",
+      "hours": 5,
+      "topic": "Secure Development",
+      "visibleSubtopics": [
+        "OWASP basics",
+        "SQL Injection",
+        "XSS",
+        "CSRF"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "foundations",
+      "module": 1,
+      "path": "01-foundations",
+      "notes": "notes/git.md",
+      "dailyPractice": "daily-practice/foundations",
+      "assignment": "tasks/course-foundations",
+      "projects": "mini-projects/foundations",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/foundations.md"
+    },
+    {
+      "id": "html",
+      "module": 2,
+      "path": "02-html",
+      "notes": "notes/html.md",
+      "dailyPractice": "daily-practice/html",
+      "assignment": "tasks/course-html",
+      "projects": "mini-projects/html",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/html.md"
+    },
+    {
+      "id": "css",
+      "module": 3,
+      "path": "03-css",
+      "notes": "notes/css.md",
+      "dailyPractice": "daily-practice/css",
+      "assignment": "tasks/course-css",
+      "projects": "mini-projects/css",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/css.md"
+    },
+    {
+      "id": "javascript",
+      "module": 4,
+      "path": "04-javascript",
+      "notes": "notes/javascript.md",
+      "dailyPractice": "daily-practice/javascript",
+      "assignment": "tasks/course-javascript",
+      "projects": "mini-projects/javascript",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/javascript.md"
+    },
+    {
+      "id": "react",
+      "module": 5,
+      "path": "05-react",
+      "notes": "notes/react.md",
+      "dailyPractice": "daily-practice/react",
+      "assignment": "tasks/course-react",
+      "projects": "mini-projects/react",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/react.md"
+    },
+    {
+      "id": "nodejs",
+      "module": 6,
+      "path": "06-nodejs",
+      "notes": "notes/node.md",
+      "dailyPractice": "daily-practice/nodejs",
+      "assignment": "tasks/course-nodejs",
+      "projects": "mini-projects/nodejs",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/nodejs.md"
+    },
+    {
+      "id": "express",
+      "module": 7,
+      "path": "07-express-rest/express",
+      "notes": "notes/express.md",
+      "dailyPractice": "daily-practice/express",
+      "assignment": "tasks/course-express",
+      "projects": "mini-projects/express",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/express.md"
+    },
+    {
+      "id": "rest-api",
+      "module": 7,
+      "path": "07-express-rest/rest-api",
+      "notes": "notes/rest-api.md",
+      "dailyPractice": "daily-practice/rest-api",
+      "assignment": "tasks/course-rest-api",
+      "projects": "mini-projects/rest-api",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/rest-api.md"
+    },
+    {
+      "id": "sql",
+      "module": 8,
+      "path": "08-databases/sql",
+      "notes": "notes/mysql.md",
+      "dailyPractice": "daily-practice/sql",
+      "assignment": "tasks/course-sql",
+      "projects": "mini-projects/sql",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/sql.md"
+    },
+    {
+      "id": "mongodb",
+      "module": 8,
+      "path": "08-databases/mongodb",
+      "notes": "notes/mongodb.md",
+      "dailyPractice": "daily-practice/mongodb",
+      "assignment": "tasks/course-mongodb",
+      "projects": "mini-projects/mongodb",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/mongodb.md"
+    },
+    {
+      "id": "devops",
+      "module": 9,
+      "path": "09-devops",
+      "notes": "notes/deployment.md",
+      "dailyPractice": "daily-practice/devops",
+      "assignment": "tasks/course-devops",
+      "projects": "mini-projects/devops",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/devops.md"
+    },
+    {
+      "id": "security",
+      "module": 10,
+      "path": "10-security",
+      "notes": "notes/authentication.md",
+      "dailyPractice": "daily-practice/security",
+      "assignment": "tasks/course-security",
+      "projects": "mini-projects/security",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/security.md"
+    },
+    {
+      "id": "mongoose",
+      "module": "supplementary",
+      "path": "11-supplementary/mongoose",
+      "notes": "notes/mongodb.md",
+      "dailyPractice": "daily-practice/mongoose",
+      "assignment": "tasks/course-mongoose",
+      "projects": "mini-projects/mongoose",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/mongoose.md"
+    },
+    {
+      "id": "authentication",
+      "module": "supplementary",
+      "path": "11-supplementary/authentication",
+      "notes": "notes/authentication.md",
+      "dailyPractice": "daily-practice/authentication",
+      "assignment": "tasks/course-authentication",
+      "projects": "mini-projects/authentication",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/authentication.md"
+    },
+    {
+      "id": "fullstack",
+      "module": "supplementary",
+      "path": "11-supplementary/fullstack",
+      "notes": "projects/fullstack-projects/README.md",
+      "dailyPractice": "daily-practice/fullstack",
+      "assignment": "tasks/course-fullstack",
+      "projects": "mini-projects/fullstack",
+      "capstone": "capstone-project/README.md",
+      "interview": "interview-preparation/fullstack.md"
+    }
+  ]
+}
+

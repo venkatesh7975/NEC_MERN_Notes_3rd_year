@@ -1,0 +1,152 @@
+{
+  "foundations": [
+    "Web foundations",
+    "Browser developer tools",
+    "No programming prerequisites",
+    "A static resource is served as stored; a dynamic response depends on application state or input. A static frontend may call a dynamic API. The browser renders and collects interaction, the server applies rules, and the database persists records.",
+    "URL, request, response, frontend, backend",
+    "javascript",
+    "const u = new URL('https://example.test/courses?page=2');\nconsole.log(u.pathname, u.searchParams.get('page'));",
+    "Run in Node or the browser console; expect /courses 2."
+  ],
+  "html": [
+    "HTML",
+    "HTML",
+    "Web foundations",
+    "HTML expresses meaning and structure. Use headings for hierarchy, lists for groups, tables for related rows and columns, and forms for inputs. A label's for attribute refers to a control's id; name identifies submitted data. Native form validation helps users but server validation remains necessary.",
+    "Semantics, text, links, lists, tables, forms",
+    "html",
+    "<form><label for=\"email\">Email</label>\n<input id=\"email\" name=\"email\" type=\"email\" required>\n<button>Submit</button></form>",
+    "Place in an HTML document; an empty or invalid email prevents normal form submission."
+  ],
+  "css": [
+    "CSS",
+    "HTML, CSS",
+    "HTML",
+    "CSS controls presentation through the cascade and layout. Specificity compares tuples rather than decimal scores; origin, importance and layers also participate. Border-box includes padding and borders in width, but not margin. Flexbox lays out one dimension; Grid coordinates rows and columns. Use content needs to choose breakpoints.",
+    "Selectors, box model, Flexbox, Grid, responsive layout",
+    "css",
+    ".cards { display: grid; gap: 1rem; grid-template-columns: 1fr; }\n@media (min-width: 48rem) { .cards { grid-template-columns: repeat(3, minmax(0,1fr)); } }",
+    "Apply to three child cards: one column below 48rem, three above."
+  ],
+  "javascript": [
+    "JavaScript",
+    "HTML, CSS, JavaScript",
+    "HTML and CSS",
+    "Values have types; strict equality avoids implicit conversion during comparisons. Conditions select a path; loops repeat with explicit stopping rules. Convert input deliberately and reject invalid numbers. Functions, arrays and DOM events are teaching bridges needed before React, beyond the visible syllabus cell.",
+    "Data types, operators, conditions, loops",
+    "javascript",
+    "function parity(n) {\n  if (!Number.isInteger(n)) throw new TypeError('Integer required');\n  return n % 2 === 0 ? 'even' : 'odd';\n}\nconsole.log([0,1,2,3].map(parity));",
+    "Run in Node: even, odd, even, odd. Passing NaN throws."
+  ],
+  "react": [
+    "React",
+    "React, JavaScript",
+    "JavaScript functions, arrays and events",
+    "A component describes an interface using JSX. Props arrive from its parent; state holds local memory. Event handlers request state changes. Render computes the interface and commit updates the DOM. Derive values such as filtered lists from source state rather than maintaining duplicate state. Effects synchronize external systems when needed; they are not required for every calculation.",
+    "JSX, components, props, state, events",
+    "jsx",
+    "import { useState } from 'react';\nexport default function App() {\n  const [saved, setSaved] = useState(false);\n  return <button aria-pressed={saved} onClick={() => setSaved(s => !s)}>{saved ? 'Saved' : 'Save'}</button>;\n}",
+    "Use as src/App.jsx in a React host; two clicks restore Save."
+  ],
+  "nodejs": [
+    "Node.js",
+    "Node.js, JavaScript",
+    "JavaScript functions and promises",
+    "Node executes JavaScript outside the browser. CommonJS and ES modules have different loading conventions. NPM manages packages and scripts. Await suspends its async function while other work can continue. Synchronous CPU-heavy work can still block the event loop. The printed syllabus ends at Event; event emitters are an explicit teaching interpretation.",
+    "Module system, NPM, asynchronous programming, events",
+    "javascript",
+    "const { readFile } = require('node:fs/promises');\nreadFile(process.argv[2], 'utf8').then(JSON.parse).then(data => {\n  if (!Array.isArray(data)) throw new TypeError('Array required');\n  console.log(data.length);\n}).catch(err => { console.error(err.message); process.exitCode = 1; });",
+    "Save as reader.cjs; node reader.cjs roster.json prints 2 for [{\"id\":1},{\"id\":2}]."
+  ],
+  "express": [
+    "Express.js",
+    "Node.js, Express",
+    "Node and HTTP",
+    "Routes match method and path. Ordered middleware can modify context, respond or call next. Parse the body before handlers that need it. Four-argument error middleware follows routes. Validation and authorization are separate checks; trusting an arbitrary role header demonstrates routing, not authentication.",
+    "Routing, middleware, static files, errors",
+    "javascript",
+    "const express = require('express');\nconst app = express();\napp.use(express.json());\napp.get('/health', (req,res) => res.json({ok:true}));\napp.use((req,res) => res.status(404).json({error:'Not found'}));\napp.listen(5051, '127.0.0.1');",
+    "Install Express in a scratch package; save as app.cjs and run node app.cjs. GET /health returns {\"ok\":true}."
+  ],
+  "rest-api": [
+    "REST APIs",
+    "HTTP, Node.js, Express",
+    "Express routes",
+    "Resources have representations and identifiers. GET reads, POST commonly creates, PUT replaces and PATCH applies a documented modification. Idempotence concerns intended state effects, not identical response bytes. Stateless requests carry sufficient context; resources can still persist. Specify failure responses and pagination bounds.",
+    "Resources, methods, status codes, statelessness",
+    "http",
+    "GET /courses/999 HTTP/1.1\nHost: localhost:5051\n\nHTTP/1.1 404 Not Found\nContent-Type: application/json\n\n{\"error\":\"Course not found\"}",
+    "Illustrative request/response contract, not a standalone program. Implement it in a project."
+  ],
+  "sql": [
+    "SQL",
+    "MySQL, SQL",
+    "Records and basic data types",
+    "A primary key identifies a row; a foreign key constrains a relationship. An inner join retains matches; a left join also keeps unmatched left records. COUNT(column) ignores NULL values, unlike COUNT(*). Parameter binding separates data values from SQL syntax. MySQL is the repository implementation; the syllabus says SQL generally.",
+    "SQL versus NoSQL, CRUD, keys, joins",
+    "sql",
+    "CREATE TEMPORARY TABLE instructor(id INT PRIMARY KEY, name VARCHAR(40));\nCREATE TEMPORARY TABLE course(id INT PRIMARY KEY, instructor_id INT);\nINSERT INTO instructor VALUES(1,'A'),(2,'B');\nINSERT INTO course VALUES(10,1);\nSELECT i.name, COUNT(c.id) FROM instructor i LEFT JOIN course c ON c.instructor_id=i.id GROUP BY i.id,i.name ORDER BY i.id;",
+    "Run in a fresh MySQL session: A has 1 course, B has 0."
+  ],
+  "mongodb": [
+    "MongoDB",
+    "MongoDB, mongosh",
+    "Data records and SQL comparison",
+    "MongoDB stores BSON documents in collections. Flexible shape still requires a data contract. Use precise filters, projections and targeted updates. Embed bounded data with a shared lifecycle; reference independent or growing data. Mongoose is an optional separate modeling layer, not MongoDB itself.",
+    "Documents, collections, CRUD, modeling",
+    "javascript",
+    "use('nec_practice');\ndb.courses.insertMany([{code:'HTML',hours:10},{code:'CSS',hours:14}]);\ndb.courses.updateOne({code:'HTML'},{$set:{hours:11}});\ndb.courses.find({},{_id:0,code:1,hours:1}).sort({code:1});",
+    "Use mongosh in a fresh sandbox: CSS remains 14, HTML becomes 11. Repeated seeding needs a documented cleanup/upsert policy."
+  ],
+  "devops": [
+    "DevOps and deployment",
+    "Git, GitHub, Docker, React",
+    "A working local application",
+    "Git tracks snapshots; GitHub hosts collaboration. CI checks a change; deployment releases a selected artifact. Docker packages a process and dependencies, while persistent data needs explicit storage. Browser configuration is public. Reproduce the build and verify nested route refreshes before release.",
+    "Git, GitHub, CI/CD, Docker, React deployment",
+    "bash",
+    "git status --short\ngit diff --stat\ngit diff --check",
+    "Run in a working repository; inspect file and whitespace changes before staging."
+  ],
+  "security": [
+    "Web security",
+    "JavaScript, HTTP, SQL",
+    "Forms, HTTP and databases",
+    "Trust boundaries separate controlled code from untrusted inputs. Bind SQL parameters, use safe text sinks for plain content, and encode for the output context. CSRF exploits automatically attached credentials; choose suitable token and origin checks. HttpOnly restricts script access to cookies but does not prevent XSS. CORS is not authorization.",
+    "OWASP basics, SQL injection, XSS, CSRF",
+    "javascript",
+    "const p = document.createElement('p');\np.textContent = '<b>hello</b>';\ndocument.body.appendChild(p);",
+    "Run in browser console: literal markup appears, not bold HTML."
+  ],
+  "mongoose": [
+    "Mongoose",
+    "Node.js, MongoDB, Mongoose",
+    "MongoDB CRUD and Node",
+    "Mongoose schemas provide application casting and validation. unique declares an index, not a validator. Save hooks and query updates are different paths; enable update validation deliberately. References do not automatically impose relational foreign key constraints. Distinguish validation failure from duplicate-key errors.",
+    "Schemas, validation, indexes, references",
+    "javascript",
+    "const mongoose = require('mongoose');\nconst C = mongoose.model('ValidationDemo',new mongoose.Schema({hours:{type:Number,min:0}}));\nconsole.log(new C({hours:-1}).validateSync().errors.hours.kind);",
+    "Install Mongoose; run as .cjs. Prints min without a database connection."
+  ],
+  "authentication": [
+    "Authentication and authorization",
+    "Node.js, Express, MongoDB",
+    "Security and REST APIs",
+    "Authentication verifies identity; authorization checks actions and object access. Signed tokens are not encrypted. Use password hashing and deliberate session lifetimes. Reject inactive or missing accounts even with a valid token. Verify ownership on the server, never from a client-supplied role or owner field.",
+    "Passwords, sessions, identity, ownership, roles",
+    "javascript",
+    "function mayRead(actor, record) {\n  return Boolean(actor && actor.active && actor.id === record.ownerId);\n}\nconsole.log(mayRead({id:'A',active:true},{ownerId:'B'}));",
+    "Node prints false. actor must come from verified server identity; this is a policy example, not a login implementation."
+  ],
+  "fullstack": [
+    "Full Stack MERN",
+    "React, Node.js, Express, MongoDB",
+    "React, API, database and security tracks",
+    "A feature spans UI, API and persistence. The UI communicates state; the server validates and authorizes; the database preserves invariants. Show loading, empty and failure states distinctly. Confirm a durable write before reporting success unless optimistic rollback is explicitly implemented.",
+    "Integration, persistence, API contracts, verification",
+    "javascript",
+    "async function loadCourses() {\n  const r = await fetch('/api/courses');\n  if (!r.ok) throw new Error(`HTTP ${r.status}`);\n  const data = await r.json();\n  if (!Array.isArray(data)) throw new TypeError('Expected array');\n  return data;\n}",
+    "Client integration snippet; requires a working server. Caller must present loading, error and empty states."
+  ]
+}
