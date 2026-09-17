@@ -87,13 +87,13 @@ app.listen(PORT, () => console.log(`Production server active on port ${PORT}`));
 ```
 
 ## Real World Example
-Modern tech companies configure automated GitHub Actions pipelines. When a pull request is merged into `main`, GitHub Actions automatically installs packages, runs unit tests, builds the React bundle, and pushes the updated backend container to Render or AWS, deploying updates to production in under 2 minutes with zero downtime.
+Modern tech companies configure automated GitHub Actions pipelines. When a pull request is merged into `main`, GitHub Actions automatically installs packages, runs unit tests, builds the React bundle, and pushes the updated backend container to Render or AWS, with release duration and downtime depending on application and infrastructure design.
 
 ## Best Practices
 1. **Never Hardcode Secrets**: Store database credentials and API keys in cloud provider Environment Variable panels.
-2. **Configure CORS Properly**: Set `cors({ origin: process.env.CLIENT_URL, credentials: true })` to block unauthorized domains.
+2. **Configure CORS Properly**: Set `cors({ origin: process.env.CLIENT_URL, credentials: true })` to control browser cross-origin response access. This does not authenticate callers or block non-browser clients.
 3. **Enable Gzip Compression & Security Headers**: Use `compression()` and `helmet()` middleware in Node production builds.
-4. **Setup Database Whitelisting**: Whitelist cloud server IP addresses or allow `0.0.0.0/0` in MongoDB Atlas Network Access rules.
+4. **Setup Database Whitelisting**: Allow only the intended application network addresses; do not present unrestricted access as the default.
 
 ## Common Mistakes
 - Leaving `NODE_ENV=development` in production, causing unhandled error stack traces to leak to client responses.

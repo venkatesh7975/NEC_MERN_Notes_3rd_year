@@ -1,0 +1,12 @@
+{
+  "name": "nec-express-examples",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Preserved Express 4 classroom examples",
+  "scripts": {
+    "start": "node 001-basic/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

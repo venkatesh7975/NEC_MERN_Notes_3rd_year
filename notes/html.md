@@ -11,7 +11,7 @@ HTML elements consist of tags wrapped in angle brackets `< >`, attributes, and c
 ```html
 <tagname attribute="value">Content goes here</tagname>
 ```
-Self-closing elements do not require a closing tag:
+Void elements such as img do not have end tags in HTML; a trailing slash does not make an arbitrary element self-closing:
 ```html
 <img src="logo.png" alt="Company Logo" />
 ```
@@ -97,7 +97,7 @@ Modern e-commerce product pages use HTML semantic tags (`<article>`, `<section>`
 ## Common Mistakes
 - Using multiple `<h1>` tags on a single page (there should ideally be only one main `<h1>` per document).
 - Omitting `alt` text on images, breaking accessibility for screen readers.
-- Nesting block-level elements (like `<div>` or `<p>`) inside inline elements (like `<a>` or `<span>`).
+- Violating an element's content model: span accepts phrasing content, while an anchor's transparent content model can allow block content in the right context. Do not nest interactive controls inside links.
 - Forgetting `label` elements for form inputs, creating poor mobile touch targets and accessibility errors.
 
 ## Interview Questions

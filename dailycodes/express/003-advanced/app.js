@@ -4,6 +4,9 @@ const app = express();
 
 app.use(express.json());
 
+// INSECURE TEACHING SIMULATION: a caller can forge x-user-role.
+// This demonstrates middleware ordering only. Never use it as real authentication.
+// Real applications derive roles from a verified server-side identity.
 // Simulated RBAC Authorization Middleware
 const authorize = (role) => (req, res, next) => {
   const userRole = req.headers['x-user-role'];

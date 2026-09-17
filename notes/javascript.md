@@ -21,6 +21,7 @@ const calculateProgress = (completed, total) => {
 async function fetchUserData(userId) {
   try {
     const response = await fetch(`/api/users/${userId}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     return data;
   } catch (error) {

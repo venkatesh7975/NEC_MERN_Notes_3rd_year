@@ -38,10 +38,10 @@ async function processCourseData() {
   try {
     const rawData = await fs.readFile(filePath, 'utf-8');
     const courses = JSON.parse(rawData);
-    
+
     // Filter active courses
     const activeCourses = courses.filter(c => c.isPublished);
-    
+
     console.log(`Successfully processed ${activeCourses.length} active courses.`);
     return activeCourses;
   } catch (err) {
@@ -80,7 +80,7 @@ Streaming services like Netflix and real-time collaboration tools use Node.js st
 
 ## Best Practices
 1. **Always Use Asynchronous Non-Blocking APIs**: Prefer `fs.promises` over synchronous blocking `fs.readFileSync`.
-2. **Handle Uncaught Exceptions**: Handle global errors with `process.on('uncaughtException')` and `process.on('unhandledRejection')`.
+2. **Handle Uncaught Exceptions**: Handle expected errors locally. Treat uncaught exceptions as fatal: log safely, stop accepting work and exit for a supervisor to restart; do not continue in an unknown state.
 3. **Use Environment Variables**: Keep sensitive secrets (DB strings, API keys) inside `.env` files loaded via `dotenv`.
 4. **Implement Logging**: Use robust logging tools like `winston` or `pino` instead of raw `console.log` in production.
 

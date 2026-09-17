@@ -1,10 +1,7 @@
-# HTML Runnable Code Examples
+# HTML browser examples
 
-This directory contains runnable HTML code examples structured by difficulty level:
+- [Basic](001-basic/index.html): headings, emphasis, list and external link.
+- [Intermediate](002-intermediate/index.html): labeled form and table; form action is a demonstration and has no receiving backend.
+- [Advanced](003-advanced/index.html): canvas drawing and media markup; no audio asset supplied. Canvas and scripting are supplementary to the visible HTML syllabus topics.
 
-- `001-basic/index.html` — Basic semantic tags, headings, paragraphs, links, images, and lists.
-- `002-intermediate/index.html` — Interactive forms, table layouts, media tags (`<video>`, `<audio>`), and semantic sections.
-- `003-advanced/index.html` — Accessible web applications with ARIA attributes, embedded canvas graphic elements, SVG icons, and HTML5 Web Storage scripts.
-
-## How to Run
-Simply open any of the `index.html` files directly in your web browser (Chrome, Firefox, Edge, Safari) or use VS Code Live Server extension!
+Open the corresponding index.html in a browser. [HTML learning path](../../02-html/README.md).

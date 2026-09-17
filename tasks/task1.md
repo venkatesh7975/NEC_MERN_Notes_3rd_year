@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 1 packet](task-01/README.md). The original classroom brief is preserved below.
+
 # Task 1: Create a website that contains all types of HTML tags
 
 ## 📌 Task Description

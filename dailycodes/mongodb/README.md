@@ -1,6 +1,11 @@
-# MongoDB & Mongoose Code Examples
+# MongoDB and supplementary Mongoose examples
 
-This directory contains Mongoose ORM code examples:
-- `001-basic/schema.js` — Mongoose schema definition with data types, defaults, and validation hooks.
-- `002-intermediate/query.js` — Mongoose populate references, lean queries, and pagination logic.
-- `003-advanced/aggregation.js` — MongoDB Aggregation pipeline for computing course revenue analytics and average ratings.
+[core-crud.js](core-crud.js) is a direct mongosh exercise using a disposable nec_practice database. It creates a unique code index, seeds/upserts two teaching records and updates HTML hours; expected CSS=14 and HTML=11. Run mongosh core-crud.js with your local sandbox connection.
+
+The remaining files are Mongoose fragments:
+
+- [schema](001-basic/schema.js): exports a lesson schema.
+- [query](002-intermediate/query.js): helper needing a Course model and database connection.
+- [aggregation](003-advanced/aggregation.js): helper needing seeded models; no standalone CLI.
+
+Mongoose is an ODM, not MongoDB itself. [Core MongoDB](../../08-databases/mongodb/README.md); [supplementary Mongoose](../../11-supplementary/mongoose/README.md).

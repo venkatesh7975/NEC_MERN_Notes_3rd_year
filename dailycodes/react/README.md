@@ -1,6 +1,9 @@
-# React 19 Runnable Code Examples
+# React component and hook examples
 
-This directory contains React component code examples:
-- `001-basic/` — Component syntax, JSX structure, and `useState` counter example.
-- `002-intermediate/` — Custom hooks, `useEffect` fetching, and Context API global state.
-- `003-advanced/` — React 19 optimistic updates, memoized performance hooks, and custom form validation.
+These are fragments requiring a React host, not independently runnable applications.
+
+- [CourseCard](001-basic/CourseCard.jsx): props and a like counter with useState.
+- [useCourseSearch](002-intermediate/useCourseSearch.js): delayed simulated search; no network backend or Context provider.
+- [OptimisticQuiz](003-advanced/OptimisticQuiz.jsx): React 19 transition and simulated delay; no persistent submission or failure rollback.
+
+Use the [React host instructions](../../00-course-overview/development-setup.md). Render a component from App.jsx; call the hook from a wrapper component with controlled input and visible loading/results. [Curriculum track](../../05-react/README.md).

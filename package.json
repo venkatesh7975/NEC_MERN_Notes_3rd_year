@@ -1,0 +1,11 @@
+{
+  "name": "nec-mern-curriculum",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Syllabus and documentation verification; examples have their own runtimes.",
+  "scripts": {
+    "test": "node scripts/validate-curriculum.cjs && node --test tests/reference-examples.test.cjs",
+    "check:docs": "node scripts/validate-curriculum.cjs",
+    "test:api": "node --test tests/express-examples.test.cjs"
+  }
+}

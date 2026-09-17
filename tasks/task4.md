@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 4 packet](task-04/README.md). The original classroom brief is preserved below.
+
 # Task 4: Solve basic problems on GeeksforGeeks using JavaScript
 
 ## 📌 Task Description

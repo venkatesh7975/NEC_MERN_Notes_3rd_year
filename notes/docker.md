@@ -6,18 +6,22 @@ Docker is an open-source containerization platform that allows developers to pac
 ## Why We Need It
 "It works on my machine" is a famous software engineering dilemma caused by differences in Operating Systems, Node.js versions, database configurations, and environment dependencies across developer laptops and production servers. Docker solves this by running applications inside identical, isolated container environments everywhere.
 
+## Scope and prerequisites
+
+The following Docker/Compose files are illustrative templates for a student application; this repository does not supply frontend/ and backend/ implementations for them. Pin versions appropriate to your own tested app. Keep real secrets in untracked local configuration. depends_on controls startup order but does not by itself prove database readiness; add health checks or connection retries.
+
 ## Syntax
 Example `Dockerfile`:
 ```dockerfile
 # Base image
-FROM node:20-alpine
+FROM node:24-alpine
 
 # Set working directory
 WORKDIR /app
 
 # Copy package manifests and install
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 # Copy application code
 COPY . .
@@ -37,7 +41,7 @@ CMD ["npm", "start"]
 ## Example 1: Multi-Stage Dockerfile for React Frontend
 ```dockerfile
 # Stage 1: Build React Production Bundle
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
@@ -59,14 +63,14 @@ version: '3.8'
 services:
   # MongoDB Database Service
   mongodb:
-    image: mongo:6.0
+    image: mongo:8.0
     container_name: mern_lms_db
     restart: always
     ports:
-      - "27017:27017"
+      - "127.0.0.1:27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: secretpassword
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:?Set a local sandbox password}
     volumes:
       - mongo_data:/data/db
 
@@ -79,8 +83,8 @@ services:
       - "5000:5000"
     environment:
       PORT: 5000
-      MONGO_URI: mongodb://admin:secretpassword@mongodb:27017/mern_lms?authSource=admin
-      JWT_SECRET: docker_super_secret_key_2026
+      MONGO_URI: ${MONGO_URI:?Set a sandbox connection URI}
+      JWT_SECRET: ${JWT_SECRET:?Set a random local secret}
     depends_on:
       - mongodb
 
@@ -102,7 +106,7 @@ volumes:
 Enterprise cloud infrastructures run container orchestrators like **Kubernetes** or **AWS ECS**. During high traffic spikes (e.g. course launch sales), Kubernetes automatically spins up 50 additional Docker instances of the Node.js backend API container, distributing traffic smoothly via load balancers.
 
 ## Best Practices
-1. **Use Alpine Base Images**: Use `node:20-alpine` instead of full OS images to shrink container size from 1GB+ down to ~100MB.
+1. **Use Alpine Base Images**: Use `node:24-alpine` instead of full OS images to shrink container size from 1GB+ down to ~100MB.
 2. **Leverage Docker Layer Caching**: Copy `package.json` and run `npm install` *before* copying source code so rebuilds skip dependency installation when packages haven't changed.
 3. **Never Run as Root User**: Add `USER node` inside Dockerfile for production security.
 4. **Use Persistent Volumes for Databases**: Mount host directories or named volumes so MongoDB data survives container restarts.
@@ -121,7 +125,7 @@ Enterprise cloud infrastructures run container orchestrators like **Kubernetes**
    *Answer*: Docker Compose automatically creates a shared default network. Containers can reach each other using their defined service names (e.g. `backend` can connect to database at `mongodb:27017`).
 
 ## Practice Problems
-1. Write a `Dockerfile` for a Node.js API using `node:20-alpine`, setting non-root user permissions.
+1. Write a `Dockerfile` for a Node.js API using `node:24-alpine`, setting non-root user permissions.
 2. Construct a `.dockerignore` file suitable for a MERN stack workspace.
 
 ## Assignment

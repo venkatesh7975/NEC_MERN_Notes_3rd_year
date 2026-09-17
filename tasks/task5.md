@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 5 packet](task-05/README.md). The original classroom brief is preserved below.
+
 # Task 5: Start freeCodeCamp certification on Full Stack Web Development
 
 ## 📌 Task Description

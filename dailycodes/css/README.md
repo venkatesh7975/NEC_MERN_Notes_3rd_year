@@ -1,9 +1,7 @@
-# CSS Runnable Code Examples
+# CSS browser examples
 
-This directory contains CSS styling examples:
-- `001-basic/` — Selectors, Box Model, Typography, and Color systems.
-- `002-intermediate/` — Flexbox layouts, CSS Grid responsive card decks, and hover micro-interactions.
-- `003-advanced/` — Glassmorphism, CSS Custom Properties dark/light themes, and Keyframe animations.
+- [Basic](001-basic/index.html): selectors, padding, border and typography.
+- [Intermediate](002-intermediate/index.html): Grid cards with Flexbox inside.
+- [Advanced](003-advanced/index.html): CSS variables and a JavaScript theme toggle; visual effects are supplementary.
 
-## How to Run
-Open the `index.html` file inside any of the example folders in your browser!
+Open each index.html in a browser. Test narrow screens as well as desktop. [CSS learning path](../../03-css/README.md).

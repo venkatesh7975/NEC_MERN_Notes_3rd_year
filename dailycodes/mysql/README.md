@@ -1,6 +1,7 @@
-# MySQL Relational Database Code Examples
+# MySQL examples
 
-This directory contains runnable SQL scripts for MySQL:
-- `001-basic/schema.sql` — Table definitions, data types, primary keys, and foreign keys.
-- `002-intermediate/queries.sql` — Multi-table INNER JOIN, LEFT JOIN, GROUP BY, and aggregate queries.
-- `003-advanced/transactions.sql` — ACID SQL transactions (`START TRANSACTION`, `COMMIT`, `ROLLBACK`) and stored procedure syntax.
+- [Basic setup](001-basic/README.md): schema and fictional seeds.
+- [Join queries](002-intermediate/queries.sql): run after the basic schema and seeds.
+- [Transaction fixture](003-advanced/README.md): separate fresh database and setup; does not provide a stored procedure.
+
+Use the MySQL client against disposable data. Do not run the advanced setup over the basic example's differently shaped tables. [SQL learning path](../../08-databases/sql/README.md).

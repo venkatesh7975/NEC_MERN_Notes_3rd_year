@@ -8,6 +8,7 @@ export function useCourseSearch(initialQuery = '') {
   useEffect(() => {
     if (!query.trim()) {
       setResults([]);
+      setIsSearching(false);
       return;
     }
 

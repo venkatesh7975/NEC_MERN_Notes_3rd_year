@@ -73,19 +73,19 @@ const sendResponse = (res, statusCode, success, message, data = null, meta = nul
 app.get('/api/v1/courses', async (req, res) => {
   const page = parseInt(req.query.page, 10) || 1;
   const limit = parseInt(req.query.limit, 10) || 10;
-  
+
   const courses = await Course.find()
     .skip((page - 1) * limit)
     .limit(limit);
-    
+
   const total = await Course.countDocuments();
 
   sendResponse(
-    res, 
-    200, 
-    true, 
-    'Courses retrieved successfully', 
-    courses, 
+    res,
+    200,
+    true,
+    'Courses retrieved successfully',
+    courses,
     { page, limit, totalPages: Math.ceil(total / limit), totalRecords: total }
   );
 });
@@ -115,7 +115,7 @@ Platforms like GitHub, Stripe, and Twilio provide public REST APIs used by milli
 
 ## Practice Problems
 1. Design a REST API resource schema and URI routing endpoints for an online bookstore.
-2. Implement CORS headers in Express to restrict API access to trusted frontend origin domains.
+2. Configure browser cross-origin response access with CORS, then enforce authentication and authorization separately; CORS does not restrict non-browser callers.
 
 ## Assignment
 Build a fully compliant REST API in Node.js/Express for an LMS Quiz module featuring endpoints for listing quizzes, fetching single quiz questions, submitting user responses, and calculating scores.

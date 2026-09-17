@@ -1,6 +1,9 @@
-# Express.js Runnable Code Examples
+# Express classroom examples
 
-This directory contains Express.js backend examples:
-- `001-basic/` — Express server setup, JSON body parsing, and route GET/POST handling.
-- `002-intermediate/` — Express Router modular endpoints, middleware chains, and input validation.
-- `003-advanced/` — JWT authentication middleware, custom error handlers, and role-based route access controls.
+- [Basic](001-basic/app.js): GET course listing and validated POST creation.
+- [Intermediate](002-intermediate/app.js): router mounting, request logging and fixture search response; it does not query a live database.
+- [Advanced](003-advanced/app.js): centralized error handling and an explicitly insecure role-header simulation. This is not JWT authentication.
+
+Run npm install in this directory, then node 001-basic/app.js (port 5051), node 002-intermediate/app.js (5052), or node 003-advanced/app.js (5053). Stop with Ctrl+C. Commit the lockfile for reproducibility; later checkouts use npm ci.
+
+[Curriculum track](../../07-express-rest/express/README.md). Never use a caller-supplied role header for production authorization.

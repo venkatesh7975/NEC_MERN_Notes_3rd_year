@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 6 packet](task-06/README.md). The original classroom brief is preserved below.
+
 # Task 6: Maintain an Excel track sheet of tasks that you have completed
 
 ## 📌 Task Description

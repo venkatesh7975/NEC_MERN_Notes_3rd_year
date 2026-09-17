@@ -16,10 +16,10 @@
 ```css
 .container {
   display: flex;
-  flex-direction: row | column;
-  justify-content: flex-start | center | space-between | space-around;
-  align-items: stretch | center | flex-end;
-  flex-wrap: nowrap | wrap;
+  flex-direction: row; /* Alternative: column */
+  justify-content: space-between; /* Alternatives: flex-start, center, space-around */
+  align-items: center; /* Alternatives: stretch, flex-end */
+  flex-wrap: wrap; /* Alternative: nowrap */
 }
 ```
 

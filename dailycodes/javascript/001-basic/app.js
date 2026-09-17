@@ -17,4 +17,4 @@ console.log('Course Titles:', courseTitles);
 
 // 3. Calculate total learning hours
 const totalHours = courses.reduce((sum, c) => sum + c.duration, 0);
-console.log(`Total Curriculum Duration: ${totalHours} hours`);
+console.log(`Total Fixture Course Duration: ${totalHours} hours`);

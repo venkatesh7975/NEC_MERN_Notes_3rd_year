@@ -229,7 +229,7 @@ const DATA = {
       id: 'task1',
       number: 1,
       title: 'Task 1: HTML Tags Master Website',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Create a comprehensive website demonstrating all core HTML elements (headings, forms, tables, media, semantic tags).',
       tags: ['HTML5', 'Semantics', 'Forms', 'Media'],
       path: 'tasks/task1.md',
@@ -243,7 +243,7 @@ const DATA = {
       id: 'task2',
       number: 2,
       title: 'Task 2: Resume Webpage',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Design a clean, professional online developer resume using HTML structure and custom CSS styling.',
       tags: ['HTML', 'CSS', 'Resume', 'Flexbox'],
       path: 'tasks/task2.md',
@@ -257,7 +257,7 @@ const DATA = {
       id: 'task3',
       number: 3,
       title: 'Task 3: Responsive Web Application',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Build a fully responsive web application that adapts layout seamlessly across mobile, tablet, and desktop viewports.',
       tags: ['CSS3', 'Responsive', 'Media Queries', 'Flexbox'],
       path: 'tasks/task3.md',
@@ -271,7 +271,7 @@ const DATA = {
       id: 'task4',
       number: 4,
       title: 'Task 4: GeeksforGeeks JavaScript Problems',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Solve fundamental JavaScript algorithm and problem-solving exercises on GeeksforGeeks platform.',
       tags: ['JavaScript', 'Algorithms', 'GFG', 'Problem Solving'],
       path: 'tasks/task4.md',
@@ -285,7 +285,7 @@ const DATA = {
       id: 'task5',
       number: 5,
       title: 'Task 5: freeCodeCamp Certification Progress',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Enroll and complete structured learning modules on freeCodeCamp Full Stack Web Development curriculum.',
       tags: ['freeCodeCamp', 'Full Stack', 'Certification'],
       path: 'tasks/task5.md',
@@ -299,7 +299,7 @@ const DATA = {
       id: 'task6',
       number: 6,
       title: 'Task 6: Excel Task Tracker',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Maintain a detailed task tracking spreadsheet logging daily completion, topics covered, and submission dates.',
       tags: ['Excel', 'Tracker', 'Project Management'],
       path: 'tasks/task6.md',
@@ -313,7 +313,7 @@ const DATA = {
       id: 'task7',
       number: 7,
       title: 'Task 7: Counter Application',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Interactive Counter web app with increment, decrement, reset functionality and dynamic color changes (Green > 0, Red < 0, Black = 0).',
       tags: ['JavaScript', 'DOM', 'State', 'Interactive App'],
       path: 'tasks/task7.md',
@@ -327,7 +327,7 @@ const DATA = {
       id: 'task8',
       number: 8,
       title: 'Task 8: Background Color Toggle',
-      status: 'completed',
+      status: 'assigned',
       desc: 'Interactive background color toggle application cycling through color arrays using modulo operator math.',
       tags: ['JavaScript', 'DOM', 'Modulo Operator', 'UI Toggle'],
       path: 'tasks/task8.md',
@@ -417,10 +417,10 @@ function applyTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('portal_theme', theme);
-  
+
   const themeLabel = document.getElementById('theme-label');
   const themeIcon = document.getElementById('theme-icon');
-  
+
   if (themeLabel && themeIcon) {
     if (theme === 'dark') {
       themeLabel.textContent = 'Dark Mode';
@@ -541,7 +541,7 @@ function createTaskCard(task) {
       <div class="card-top">
         <div class="card-header-row">
           <div class="card-icon">📌</div>
-          <span class="badge badge-completed">Completed</span>
+          <span class="badge badge-topic">Assignment</span>
         </div>
         <h3 class="card-title">${task.title}</h3>
         <p class="card-desc">${task.desc}</p>

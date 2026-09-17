@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 2 packet](task-02/README.md). The original classroom brief is preserved below.
+
 # Task 2: Create a resume using HTML and CSS
 
 ## 📌 Task Description

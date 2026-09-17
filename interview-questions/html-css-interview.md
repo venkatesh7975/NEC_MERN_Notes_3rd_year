@@ -10,4 +10,4 @@
 **Answer**: Flexbox is a 1-dimensional layout system optimized for aligning elements in either a single row or column. CSS Grid is a 2-dimensional layout system designed for managing rows and columns simultaneously.
 
 ### Q4: What is CSS Specificity and how is it calculated?
-**Answer**: Specificity determines which CSS rule applies when multiple rules target the same element. It is calculated by weight: Inline Styles (1000) > IDs (100) > Classes/Attributes/Pseudo-classes (10) > Elements/Pseudo-elements (1).
+**Answer**: Specificity determines which CSS rule applies when multiple rules target the same element. Within the relevant cascade origin/layer and importance, compare selector specificity as tuples of IDs, classes/attributes/pseudo-classes, and element/pseudo-element counts. It is not a base-10 score: many classes do not automatically outrank one ID. Inline styles have their own cascade behavior.

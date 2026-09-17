@@ -1,19 +1,15 @@
-let root=document.getElementById("root");
-
-let button=document.createElement("button");
-button.textContent="submit";
-
-root.appendChild(button)
-
-let isClicked=false;
-button.addEventListener("click",function(){
-    button.textContent="submitted";
-    isClicked=!isClicked;
-    if (isClicked){
-    root.style.backgroundColor="black";
-    }
-    else{
-            root.style.backgroundColor="green";
-    }
-
-    root.style.height="100v
+const root = document.getElementById("root");
+const button = document.createElement("button");
+button.type = "button";
+button.textContent = "Use dark theme";
+button.setAttribute("aria-pressed", "false");
+root.appendChild(button);
+root.style.minHeight = "100vh";
+let isDark = false;
+button.addEventListener("click", () => {
+  isDark = !isDark;
+  root.style.backgroundColor = isDark ? "black" : "green";
+  root.style.color = "white";
+  button.textContent = isDark ? "Use green theme" : "Use dark theme";
+  button.setAttribute("aria-pressed", String(isDark));
+});

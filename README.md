@@ -1,104 +1,45 @@
-Project submission form: https://forms.gle/rLbFcq6srWqrWnWh9
+# NEC third-year Full Stack Web Development
 
-# 🎓 Full Stack Web Development Repository — Notes, Tasks, Daily Codes & Projects
+A syllabus-aligned learning repository for classroom teaching, independent study, faculty reference and practical assessment. **10 official modules · 120 contact hours · 150 mini-project specifications · 15 practice tracks.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-v24-339933?logo=node.js)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?logo=express)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
+Start with [CURRICULUM.md](CURRICULUM.md) for official scope and [ROADMAP.md](ROADMAP.md) for a realistic learning sequence. Project specifications are student build briefs; they do not claim completed solutions or student grades.
 
-An organized educational repository for Full Stack Web Development (MERN Stack). Designed for tracking course tasks, daily practice codes, hands-on projects, comprehensive markdown notes, and interview prep.
+## Choose your starting point
 
----
+- Students: [setup](00-course-overview/development-setup.md), [daily practice](daily-practice/README.md), [tasks](TASK_INDEX.md).
+- Faculty: [assessment guide](00-course-overview/assessment.md), [practical examinations](assessments/README.md), [audit and migration decisions](AUDIT.md).
+- Project work: [project index](PROJECT_INDEX.md), [capstone](capstone-project/README.md).
+- Revision: [interview preparation](interview-preparation/README.md), [cheatsheets](cheatsheets/), [references](resources/teaching-references.md).
 
-## 📌 Repository Core Structure
+## Official course modules
 
-```
-NEC_MERN_Notes_3rd_year/
-├── README.md                 # Main Repository Documentation
-├── ROADMAP.md                # Full Stack Learning Pathway
-├── CONTRIBUTING.md           # Contribution Guidelines
-├── LICENSE                   # MIT License
-├── tasks/                    # Task Markdown Files & Assignments
-│   ├── README.md             # Master Task Index
-│   ├── task1.md              # Task 1: HTML Tags Website
-│   ├── task2.md              # Task 2: Resume Webpage
-│   ├── task3.md              # Task 3: Responsive Website
-│   ├── task4.md              # Task 4: GeeksforGeeks JS Problems
-│   ├── task5.md              # Task 5: freeCodeCamp Certification
-│   ├── task6.md              # Task 6: Excel Task Tracker
-│   ├── task7.md              # Task 7: Counter Application
-│   └── task8.md              # Task 8: Background Color Toggle
-├── dailycodes/               # Daily Practice Code Uploads
-│   ├── README.md             # Directory Overview & Structure
-│   ├── html/                 # HTML Basic, Intermediate, Advanced
-│   ├── css/                  # CSS Basic, Intermediate, Advanced
-│   ├── javascript/           # JS Basic, Intermediate, Advanced
-│   ├── react/                # React Basic, Intermediate, Advanced
-│   ├── node/                 # Node Basic, Intermediate, Advanced
-│   ├── express/              # Express Basic, Intermediate, Advanced
-│   ├── mongodb/              # MongoDB Basic, Intermediate, Advanced
-│   └── mysql/                # MySQL Basic, Intermediate, Advanced
-├── projects/                 # Web Development Projects
-│   ├── README.md             # Projects Index
-│   ├── html-css-projects/    # HTML & CSS Mini-Projects
-│   ├── javascript-projects/  # Vanilla JS Applications
-│   ├── react-projects/       # React Web Apps
-│   └── fullstack-projects/   # Fullstack MERN Projects
-├── notes/                    # Topic-Wise Comprehensive Markdown Notes
-│   ├── html.md               # HTML5 Fundamentals & Forms
-│   ├── css.md                # CSS Flexbox, Grid & Responsive Design
-│   ├── javascript.md         # ES6+, Async/Await, DOM
-│   ├── react.md              # React 19 Hooks, State, Router
-│   ├── node.md               # Node.js Event Loop & FS Module
-│   ├── express.md            # Express Routing & REST APIs
-│   ├── mongodb.md            # MongoDB & Mongoose Schemas
-│   ├── mysql.md              # SQL Basics, CRUD & Joins
-│   ├── git.md                # Git Commands & Branching
-│   ├── rest-api.md           # REST HTTP Verbs & Status Codes
-│   ├── authentication.md     # JWT & Password Security
-│   ├── deployment.md         # Cloud Deployment Guidelines
-│   └── docker.md             # Docker Containers & Compose
-├── cheatsheets/              # One-Page Quick Reference Guides
-├── interview-questions/      # Technical Q&A & System Design
-└── resources/                # Recommended Books, Documentation & Links
-```
+| Module | Hours |
+| --- | --- |
+| [1. Foundations of Web Development](01-foundations/README.md) | 6 |
+| [2. HTML](02-html/README.md) | 10 |
+| [3. CSS](03-css/README.md) | 14 |
+| [4. JavaScript](04-javascript/README.md) | 26 |
+| [5. React](05-react/README.md) | 21 |
+| [6. Node.js](06-nodejs/README.md) | 12 |
+| [7. Express.js & REST API](07-express-rest/README.md) | 10 |
+| [8. Databases (SQL + MongoDB)](08-databases/README.md) | 8 |
+| [9. DevOps & Deployment](09-devops/README.md) | 8 |
+| [10. Web Security & Best Practices](10-security/README.md) | 5 |
 
----
+[Mongoose, authentication and full stack integration](11-supplementary/README.md) are supplementary. SQL, Docker, CI/CD and web security are explicitly part of the official course.
 
-## 📌 Assigned Tasks
+## Repository organization
 
-- `[x]` **[Task 1](tasks/task1.md)**: Create a website that contains all types of HTML tags.
-- `[x]` **[Task 2](tasks/task2.md)**: Create a resume using HTML and CSS.
-- `[x]` **[Task 3](tasks/task3.md)**: Create a responsive website that adapts its content width and styles according to screen sizes.
-- `[x]` **[Task 4](tasks/task4.md)**: Solve basic problems on GeeksforGeeks using JavaScript.
-- `[x]` **[Task 5](tasks/task5.md)**: Start freeCodeCamp certification on Full Stack Web Development.
-- `[x]` **[Task 6](tasks/task6.md)**: Maintain an Excel track sheet of tasks that you have completed.
-- `[x]` **[Task 7](tasks/task7.md)**: Counter Application (Dynamic Green / Red / Black Color).
-- `[x]` **[Task 8](tasks/task8.md)**: Background Color Toggle (Array Indexing & Modulo Operator).
+Numbered module pages connect teaching notes → daily practice → assignment → mini-projects → interview questions → capstone. Existing [notes](notes/), [daily code](dailycodes/), [projects](projects/) and [historical tasks](tasks/README.md) remain available. [Example status](resources/example-status.md) distinguishes standalone examples from integration snippets.
 
----
+## Submission and progress
 
-## 📚 Curriculum & Course Topics Covered
+Use the existing [project submission form](https://forms.gle/rLbFcq6srWqrWnWh9) when instructed by faculty. Submit work from your own fork with a commit SHA and actual evidence. Shared task listings are assignment catalogs, not completion records.
 
-- **Full Stack Fundamentals**: Client-Server Cycle, MERN Stack Roles.
-- **HTML5 & CSS3**: Semantic Structure, Box Model, Responsive Layouts & Media Queries.
-- **JavaScript (ES6+)**: Variables, Control Flow, Functions, Async/Await, DOM Manipulation.
-- **React 19**: Components, Props, Hooks (`useState`, `useEffect`), Context API.
-- **Backend (Node.js & Express)**: RESTful APIs, Middleware, JWT Authentication.
-- **Databases**: MongoDB (Mongoose Schemas & Aggregations) and MySQL (SQL Queries & Joins).
+## Verify repository documentation
 
----
+Run `node scripts/validate-curriculum.cjs` and `git diff --check`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 🛠️ Usage Guidelines
+## Source and license
 
-- **Tasks**: Check [`tasks/`](tasks/) for assigned tasks and requirements.
-- **Daily Code**: Upload daily code snippets under [`dailycodes/`](dailycodes/).
-- **Projects**: Store project implementations in [`projects/`](projects/).
-- **Notes**: Study topic guides in [`notes/`](notes/).
-
----
-
-## 📄 License
-This repository is licensed under the [MIT License](LICENSE).
+[Syllabus transcription and limitations](resources/syllabus-transcription.md). [MIT License](LICENSE). The source PDF supplies modules and hours; teaching activities and rubrics are proposed course design.

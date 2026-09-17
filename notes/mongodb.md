@@ -40,18 +40,17 @@ const UserSchema = new mongoose.Schema({
     type: String, 
     required: [true, 'Email is required'],
     unique: true,
-    match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Invalid email']
+    match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Invalid email']
   },
   password: { type: String, required: true, minlength: 6, select: false },
   role: { type: String, enum: ['student', 'instructor', 'admin'], default: 'student' }
 }, { timestamps: true });
 
 // Pre-save hook to hash password before saving
-UserSchema.pre('save', async function(next) {
-  if (!this.isModified('password')) return next();
+UserSchema.pre('save', async function() {
+  if (!this.isModified('password')) return;
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
-  next();
 });
 
 // Method to compare entered password with hashed password

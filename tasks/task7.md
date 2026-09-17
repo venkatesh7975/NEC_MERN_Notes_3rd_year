@@ -1,3 +1,5 @@
+> For current requirements, evaluation and submission instructions, use [Task 7 packet](task-07/README.md). The original classroom brief is preserved below.
+
 # Task 7: Counter Application
 
 ## 📌 Objective

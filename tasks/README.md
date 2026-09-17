@@ -1,18 +1,20 @@
-# 📋 Assigned Course Tasks
+# Classroom task catalog
 
-Here are the official assigned tasks for the Full Stack Web Development curriculum:
+These are available assignments, not a record of student completion. Original task1.md through task8.md are preserved for existing links. Tasks 9–12 had titles but no files in the old index; their new briefs make the intended work explicit.
 
-| Task | Description | Status | File Link |
-| :--- | :--- | :--- | :--- |
-| **Task 1** | Create a website that contains all types of HTML tags | `[x]` Completed | [`task1.md`](task1.md) |
-| **Task 2** | Create a resume using HTML and CSS | `[x]` Completed | [`task2.md`](task2.md) |
-| **Task 3** | Create a responsive website that adapts its content width and styles according to screen sizes | `[x]` Completed | [`task3.md`](task3.md) |
-| **Task 4** | Solve basic problems on GeeksforGeeks using JavaScript | `[x]` Completed | [`task4.md`](task4.md) |
-| **Task 5** | Start freeCodeCamp certification on Full Stack Web Development | `[x]` Completed | [`task5.md`](task5.md) |
-| **Task 6** | Maintain an Excel track sheet of tasks that you have completed | `[x]` Completed | [`task6.md`](task6.md) |
-| **Task 7** | Counter Application (Dynamic Green / Red / Black Color) | `[x]` Completed | [`task7.md`](task7.md) |
-| **Task 8** | Background Color Toggle (Array Indexing & Modulo Operator) | `[x]` Completed | [`task8.md`](task8.md) |
-| **Task 9** | Carousal application | `[x]` Completed | [`task8.md`](task9.md) |
-| **Task 10** | Rating Applications | `[x]` Completed | [`task8.md`](task10.md) |
-| **Task 11** |Show and hide text | `[x]` Completed | [`task8.md`](task10.md) |
-| **Task 12** |Guess the number game| `[x]` Completed | [`task8.md`](task10.md) |
+| Task | Topic | Brief | Status |
+| --- | --- | --- | --- |
+| 1. HTML element handbook | HTML | [Packet](task-01/README.md) | Specification ready |
+| 2. Resume webpage | HTML and CSS | [Packet](task-02/README.md) | Specification ready |
+| 3. Responsive course page | CSS | [Packet](task-03/README.md) | Specification ready |
+| 4. JavaScript problem set | JavaScript | [Packet](task-04/README.md) | Specification ready |
+| 5. Independent learning log | Supplementary study | [Packet](task-05/README.md) | Specification ready |
+| 6. Personal task tracker | Study workflow | [Packet](task-06/README.md) | Specification ready |
+| 7. Dynamic counter | JavaScript | [Packet](task-07/README.md) | Specification ready |
+| 8. Background color cycle | JavaScript | [Packet](task-08/README.md) | Specification ready |
+| 9. Course carousel | JavaScript | [Packet](task-09/README.md) | Specification ready |
+| 10. Rating control | JavaScript | [Packet](task-10/README.md) | Specification ready |
+| 11. Show and hide explanation | JavaScript | [Packet](task-11/README.md) | Specification ready |
+| 12. Number guessing game | JavaScript | [Packet](task-12/README.md) | Specification ready |
+
+[Complete curriculum assignments](../TASK_INDEX.md) extend coverage to React, backend, databases, release and security. [Assessment guide](../00-course-overview/assessment.md).

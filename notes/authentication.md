@@ -25,7 +25,7 @@ const decoded = jwt.verify(token, process.env.JWT_SECRET);
 - **Password Hashing (`bcryptjs`)**: One-way salted cryptographic algorithm to safely store user passwords in databases.
 - **JWT (JSON Web Token)**: Compact, URL-safe token format consisting of 3 parts separated by dots (`Header.Payload.Signature`).
 - **Role-Based Access Control (RBAC)**: Middleware restricting specific routes based on user roles (`admin`, `instructor`, `student`).
-- **HTTP-Only Cookies vs. Authorization Bearer Token**: Storing tokens in HTTP-Only cookies protects against Cross-Site Scripting (XSS) attacks.
+- **HTTP-Only Cookies vs. Authorization Bearer Token**: HttpOnly cookies prevent direct JavaScript access to the cookie value; they do not prevent XSS or stop injected scripts from making authenticated requests.
 
 ## Example 1: JWT Protection & Role Authorization Middleware
 ```javascript
@@ -48,6 +48,7 @@ exports.protect = async (req, res, next) => {
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = await User.findById(decoded.id).select('-password');
+    if (!req.user) return res.status(401).json({ success: false, message: 'Account unavailable' });
     next();
   } catch (err) {
     return res.status(401).json({ success: false, message: 'Not authorized, invalid token' });
@@ -58,9 +59,9 @@ exports.protect = async (req, res, next) => {
 exports.authorize = (...roles) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
-      return res.status(403).json({ 
-        success: false, 
-        message: `User role '${req.user.role}' is not authorized to access this resource` 
+      return res.status(403).json({
+        success: false,
+        message: `User role '${req.user.role}' is not authorized to access this resource`
       });
     }
     next();
@@ -110,7 +111,7 @@ Modern LMS platforms allow Students to view video lessons, Instructors to create
 2. **What is the difference between Authentication and Authorization?**
    *Answer*: Authentication verifies *who* the user is (logging in with credentials). Authorization determines *what* resources or actions the authenticated user has permission to perform (roles/permissions).
 3. **How do you defend against Cross-Site Request Forgery (CSRF) and Cross-Site Scripting (XSS)?**
-   *Answer*: Prevent XSS by sanitizing user input and using HTTP-Only cookies. Prevent CSRF by using SameSite cookie flags, CORS configuration, and CSRF anti-forgery tokens.
+   *Answer*: Prevent XSS with safe output sinks and context-appropriate encoding; sanitize HTML only when HTML input is actually required. HttpOnly reduces cookie theft but does not prevent XSS. For cookie-authenticated state changes, apply suitable anti-CSRF tokens and origin validation, with SameSite as defense in depth. CORS is not authorization or a general CSRF defense.
 
 ## Practice Problems
 1. Implement a password strength checker function in JS validating length, uppercase, lowercase, numbers, and special characters.
@@ -120,4 +121,4 @@ Modern LMS platforms allow Students to view video lessons, Instructors to create
 Construct a complete JWT Authentication API in Express featuring `/register`, `/login`, `/forgotpassword`, `/resetpassword/:token`, and `/me` routes with bcrypt hashing and input validation.
 
 ## Summary
-Authentication and security form the protective foundation of full stack web engineering. Implementing JWT tokens, bcrypt password hashing, role-based authorization, and input sanitization guarantees safe user access.
+Authentication and security form the protective foundation of full stack web engineering. Implementing JWT tokens, bcrypt password hashing, role-based authorization, and input sanitization reduces risk when combined with verified authorization, secure configuration and testing.
