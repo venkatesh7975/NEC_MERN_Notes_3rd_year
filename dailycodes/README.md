@@ -27,7 +27,7 @@ dailycodes/
 ├── node/                 # Node.js Core
 │   ├── 001-basic/        # Global Objects, Module Exports, Path, FS Module
 │   ├── 002-intermediate/ # Event Emitter, Streams, Buffer
-│   └── 003-advanced/     # HTTP Server, Cluster Module
+│   └── 003-advanced/     # EventEmitter, Readable Streams
 ├── express/              # Express.js Server Practice
 │   ├── 001-basic/        # Basic Server, Routing, Middleware
 │   ├── 002-intermediate/ # REST API CRUD Routes, Input Validation
