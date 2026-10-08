@@ -16,4 +16,6 @@ Use dailycodes/ for reference examples and your own fork for submissions. Includ
 
 ## Review
 
+For the interview track, read [the maintenance guide](interview-handbook/MAINTENANCE.md). Keep answers original, identify publisher sources and partial checks, and distinguish a runnable implementation from an exercise specification. Regenerate downloads when their source data changes. Run `npm test`, the MERN API tests, and the client build for changes to the respective areas.
+
 Use a scoped branch and commit message. Describe why the change helps teaching, how it was verified and what remains untested. Do not force-push shared history or certify classmates' completion. When editing both legacy copies of an example, keep them consistent or document a canonical path.

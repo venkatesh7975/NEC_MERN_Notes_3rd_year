@@ -1,0 +1,282 @@
+[
+  {
+    "topic": "Web fundamentals",
+    "name": "MDN learning curriculum",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "level": "Beginner",
+    "access": "Free",
+    "use": "Start with core modules; recreate each exercise without looking.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "HTML CSS JS",
+    "name": "web.dev courses",
+    "url": "https://web.dev/learn",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Use HTML, CSS, forms, accessibility, and performance tracks.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "JavaScript",
+    "name": "JavaScript.info",
+    "url": "https://javascript.info/",
+    "level": "Beginner to advanced",
+    "access": "Free web; optional paid ebooks",
+    "use": "Work through language, DOM, and asynchronous exercises.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Full stack",
+    "name": "Full Stack Open",
+    "url": "https://fullstackopen.com/en/",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Complete React and Node exercises after JavaScript fundamentals.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Full stack",
+    "name": "The Odin Project JavaScript path",
+    "url": "https://www.theodinproject.com/paths/full-stack-javascript",
+    "level": "Beginner to intermediate",
+    "access": "Free",
+    "use": "Use project assignments for independent builds.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "React",
+    "name": "React Learn",
+    "url": "https://react.dev/learn",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Build the examples and explain state transitions aloud.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "React",
+    "name": "You Might Not Need an Effect",
+    "url": "https://react.dev/learn/you-might-not-need-an-effect",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Review each effect in your project and justify its external synchronization.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Node",
+    "name": "Node Learn",
+    "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Study runtime behavior alongside a small API.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Express",
+    "name": "Express installation and guides",
+    "url": "https://expressjs.com/en/starter/installing.html",
+    "level": "Beginner to intermediate",
+    "access": "Free",
+    "use": "Check the installed major version before following older tutorials.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "MongoDB",
+    "name": "MongoDB manual getting started",
+    "url": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
+    "level": "Beginner",
+    "access": "Free docs; hosted usage may cost",
+    "use": "Practice CRUD on a local or test database.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "MongoDB",
+    "name": "Atomicity and transactions",
+    "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+    "level": "Advanced",
+    "access": "Free",
+    "use": "Test concurrent writes rather than relying on a diagram.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Mongoose",
+    "name": "Mongoose schemas guide",
+    "url": "https://mongoosejs.com/docs/guide.html",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Compare validation, indexes, and update behavior.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "TypeScript",
+    "name": "TypeScript handbook",
+    "url": "https://www.typescriptlang.org/docs/",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Port one reducer and validate external data at runtime.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Testing",
+    "name": "React Testing Library",
+    "url": "https://testing-library.com/docs/react-testing-library/intro/",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Test visible outcomes through accessible roles.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Testing",
+    "name": "Playwright documentation",
+    "url": "https://playwright.dev/docs/intro",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Test the built app and keyboard workflows.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Build tools",
+    "name": "Vite guide",
+    "url": "https://vite.dev/guide/",
+    "level": "Beginner to intermediate",
+    "access": "Free",
+    "use": "Understand development proxy versus production hosting.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Security",
+    "name": "OWASP Cheat Sheet Series",
+    "url": "https://cheatsheetseries.owasp.org/",
+    "level": "Intermediate to advanced",
+    "access": "Free",
+    "use": "Use targeted authentication, session, CSRF, and input-validation references.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Accessibility",
+    "name": "WAI tutorials",
+    "url": "https://www.w3.org/WAI/tutorials/",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Review forms, images, tables, and page structure.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Git",
+    "name": "Pro Git book",
+    "url": "https://git-scm.com/book/en/v2",
+    "level": "Beginner to advanced",
+    "access": "Free",
+    "use": "Practice branches, conflict resolution, and recovery in a sandbox repository.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "API contracts",
+    "name": "OpenAPI specification",
+    "url": "https://spec.openapis.org/oas/latest.html",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Write and validate a small API contract.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Practice",
+    "name": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/",
+    "level": "Beginner",
+    "access": "Free",
+    "use": "Supplement notes with independent exercises; verify current course tracks.",
+    "lastReviewed": "2026-10-08",
+    "verification": "partial: page reached but content extraction unavailable"
+  },
+  {
+    "topic": "DSA practice",
+    "name": "LeetCode study plans",
+    "url": "https://leetcode.com/studyplan/",
+    "level": "Intermediate",
+    "access": "Mixed free and paid",
+    "use": "Practice patterns and explain complexity; avoid memorizing company tags as predictions.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Interview practice",
+    "name": "GreatFrontEnd",
+    "url": "https://www.greatfrontend.com/",
+    "level": "Intermediate to advanced",
+    "access": "Mixed free and paid",
+    "use": "Optional UI and frontend interview practice; repository exercises remain free.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Browser debugging",
+    "name": "Chrome DevTools",
+    "url": "https://developer.chrome.com/docs/devtools/",
+    "level": "Intermediate",
+    "access": "Free",
+    "use": "Capture traces and network evidence while debugging.",
+    "lastReviewed": "2026-10-08",
+    "verification": "retrieval failed; check directly in browser"
+  },
+  {
+    "topic": "Deployment",
+    "name": "Docker getting started",
+    "url": "https://docs.docker.com/get-started/",
+    "level": "Intermediate",
+    "access": "Free docs; service plans vary",
+    "use": "Run the sample MongoDB stack and learn volume persistence.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Company",
+    "name": "Amazon how we hire",
+    "url": "https://www.amazon.jobs/content/en/how-we-hire",
+    "level": "All",
+    "access": "Free",
+    "use": "Confirm the role format and prepare evidence-based behavioral stories.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Company",
+    "name": "Google hiring process",
+    "url": "https://www.google.com/about/careers/applications/how-we-hire/",
+    "level": "All",
+    "access": "Free",
+    "use": "Review official process and ask the recruiter for your role format.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  },
+  {
+    "topic": "Company",
+    "name": "Microsoft technical interviewing",
+    "url": "https://careers.microsoft.com/v2/global/en/hiring-tips/technical-interviewing",
+    "level": "All",
+    "access": "Free",
+    "use": "Use official preparation guidance; practice clarification and reasoning.",
+    "lastReviewed": "2026-10-08",
+    "verification": "verified"
+  }
+]

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">Authenticated API flow</title><desc id="desc">Six branches with three study concepts per branch. A text outline is available in the companion Markdown file.</desc>
+<rect width="1200" height="820" fill="#f3f6fb"/>
+<text x="48" y="53" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#172945">Authenticated API flow</text>
+<text x="48" y="83" font-family="Arial,sans-serif" font-size="16" fill="#52627a">Explain each relationship and demonstrate one boundary case.</text>
+<path d="M 378 215 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<path d="M 378 435 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<path d="M 378 655 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<path d="M 798 215 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<path d="M 798 435 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<path d="M 798 655 L 600 400" stroke="#94acd0" stroke-width="2" fill="none"/>
+<rect x="425" y="357" width="350" height="86" rx="18" fill="#214ea2"/>
+<text x="600" y="408" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white">Authenticated API flow</text>
+<rect x="48" y="125" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="68" y="161" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Boundary</text>
+<text x="68" y="198" font-family="Arial,sans-serif" font-size="18" fill="#344968">JSON and payload limits</text>
+<text x="68" y="230" font-family="Arial,sans-serif" font-size="18" fill="#344968">Allowed scalar fields</text>
+<text x="68" y="262" font-family="Arial,sans-serif" font-size="18" fill="#344968">Safe error responses</text>
+<rect x="48" y="345" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="68" y="381" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Identity</text>
+<text x="68" y="418" font-family="Arial,sans-serif" font-size="18" fill="#344968">Password verifier</text>
+<text x="68" y="450" font-family="Arial,sans-serif" font-size="18" fill="#344968">Session token digest</text>
+<text x="68" y="482" font-family="Arial,sans-serif" font-size="18" fill="#344968">Expiration and revocation</text>
+<rect x="48" y="565" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="68" y="601" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Authorization</text>
+<text x="68" y="638" font-family="Arial,sans-serif" font-size="18" fill="#344968">Trusted user id</text>
+<text x="68" y="670" font-family="Arial,sans-serif" font-size="18" fill="#344968">Owner in every query</text>
+<text x="68" y="702" font-family="Arial,sans-serif" font-size="18" fill="#344968">Cross-user tests</text>
+<rect x="798" y="125" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="818" y="161" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Browser writes</text>
+<text x="818" y="198" font-family="Arial,sans-serif" font-size="18" fill="#344968">Same-origin deployment</text>
+<text x="818" y="230" font-family="Arial,sans-serif" font-size="18" fill="#344968">Origin validation</text>
+<text x="818" y="262" font-family="Arial,sans-serif" font-size="18" fill="#344968">Cookie and CSRF policy</text>
+<rect x="798" y="345" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="818" y="381" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Operations</text>
+<text x="818" y="418" font-family="Arial,sans-serif" font-size="18" fill="#344968">Bounded requests</text>
+<text x="818" y="450" font-family="Arial,sans-serif" font-size="18" fill="#344968">Rate limit scope</text>
+<text x="818" y="482" font-family="Arial,sans-serif" font-size="18" fill="#344968">Safe logs and shutdown</text>
+<rect x="798" y="565" width="354" height="178" rx="14" fill="white" stroke="#b9c9e0"/>
+<text x="818" y="601" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172945">Threats</text>
+<text x="818" y="638" font-family="Arial,sans-serif" font-size="18" fill="#344968">Injection and assignment</text>
+<text x="818" y="670" font-family="Arial,sans-serif" font-size="18" fill="#344968">XSS and token exposure</text>
+<text x="818" y="702" font-family="Arial,sans-serif" font-size="18" fill="#344968">SSRF and unsafe uploads</text>
+</svg>

@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "description": "Syllabus and documentation verification; examples have their own runtimes.",
   "scripts": {
-    "test": "node scripts/validate-curriculum.cjs && node --test tests/reference-examples.test.cjs",
+    "test": "node scripts/validate-curriculum.cjs && node scripts/validate-handbook.cjs && node --test tests/reference-examples.test.cjs && npm run test:interview",
     "check:docs": "node scripts/validate-curriculum.cjs",
-    "test:api": "node --test tests/express-examples.test.cjs"
+    "test:api": "node --test tests/express-examples.test.cjs",
+    "test:interview": "node --test projects/interview-ready/js-toolkit/test/toolkit.test.js projects/interview-ready/ui-lab/state.test.js",
+    "check:handbook": "node scripts/validate-handbook.cjs"
   }
 }
