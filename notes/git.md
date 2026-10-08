@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "git", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Git history, collaboration, and code review](../knowledge-base/topics/git.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Comprehensive Git & Version Control Guide
 
 ## Introduction

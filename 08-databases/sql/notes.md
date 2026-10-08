@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "sql", "priority": "P1", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Relational modeling, SQL queries, and transactions](../../knowledge-base/topics/sql.md) — P1. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # SQL teaching notes
 
 ## What and why

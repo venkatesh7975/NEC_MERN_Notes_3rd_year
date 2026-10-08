@@ -1,0 +1,201 @@
+[
+  {
+    "id": "80-20-mern-developer",
+    "title": "80/20 MERN Developer",
+    "guideIds": [
+      "foundations",
+      "html",
+      "css",
+      "javascript",
+      "async",
+      "browser",
+      "react",
+      "nodejs",
+      "api",
+      "express",
+      "mongodb",
+      "security",
+      "testing",
+      "git"
+    ],
+    "path": "knowledge-base/paths/80-20-mern-developer.md",
+    "exitEvidence": "Explain and test a complete authenticated write, one failure recovery, and one persisted invariant."
+  },
+  {
+    "id": "complete-mern-developer",
+    "title": "Complete MERN Developer",
+    "guideIds": [
+      "foundations",
+      "html",
+      "css",
+      "javascript",
+      "async",
+      "browser",
+      "typescript",
+      "git",
+      "react",
+      "state-management",
+      "nextjs",
+      "nodejs",
+      "api",
+      "express",
+      "mongodb",
+      "mongoose",
+      "sql",
+      "redis",
+      "security",
+      "realtime",
+      "testing",
+      "devops",
+      "cloud",
+      "engineering",
+      "system-design"
+    ],
+    "path": "knowledge-base/paths/complete-mern-developer.md",
+    "exitEvidence": "Finish core projects and produce a gap list with evidence for specialized concepts instead of checking every heading complete."
+  },
+  {
+    "id": "frontend-developer",
+    "title": "Frontend Developer",
+    "guideIds": [
+      "foundations",
+      "html",
+      "css",
+      "javascript",
+      "browser",
+      "async",
+      "typescript",
+      "react",
+      "state-management",
+      "testing",
+      "git"
+    ],
+    "path": "knowledge-base/paths/frontend-developer.md",
+    "exitEvidence": "Demonstrate keyboard use, mobile layout, async race recovery, stable identity, and visible error handling."
+  },
+  {
+    "id": "react-developer",
+    "title": "React Developer",
+    "guideIds": [
+      "javascript",
+      "async",
+      "browser",
+      "react",
+      "state-management",
+      "typescript",
+      "nextjs",
+      "testing"
+    ],
+    "path": "knowledge-base/paths/react-developer.md",
+    "exitEvidence": "Explain effects, cleanup, key identity, request boundaries, and a measured performance choice."
+  },
+  {
+    "id": "backend-developer",
+    "title": "Backend Developer",
+    "guideIds": [
+      "javascript",
+      "async",
+      "nodejs",
+      "api",
+      "express",
+      "mongodb",
+      "sql",
+      "security",
+      "testing",
+      "devops"
+    ],
+    "path": "knowledge-base/paths/backend-developer.md",
+    "exitEvidence": "Pass two-user isolation, malformed-input, duplicate, persisted-conflict, and restart/recovery cases."
+  },
+  {
+    "id": "nodejs-developer",
+    "title": "Node.js Developer",
+    "guideIds": [
+      "javascript",
+      "async",
+      "nodejs",
+      "api",
+      "express",
+      "testing",
+      "engineering",
+      "devops"
+    ],
+    "path": "knowledge-base/paths/nodejs-developer.md",
+    "exitEvidence": "Measure blocking, prove a concurrency cap, handle errors, and drain active work to a deadline."
+  },
+  {
+    "id": "full-stack-engineer",
+    "title": "Full-Stack Engineer",
+    "guideIds": [
+      "html",
+      "css",
+      "javascript",
+      "async",
+      "react",
+      "typescript",
+      "api",
+      "nodejs",
+      "express",
+      "mongodb",
+      "security",
+      "testing",
+      "engineering",
+      "git"
+    ],
+    "path": "knowledge-base/paths/full-stack-engineer.md",
+    "exitEvidence": "Provide a contract, data model, browser demo, persisted tests, and a defended alternative."
+  },
+  {
+    "id": "interview-preparation",
+    "title": "Interview Preparation",
+    "guideIds": [
+      "javascript",
+      "async",
+      "react",
+      "nodejs",
+      "express",
+      "mongodb",
+      "security",
+      "testing",
+      "system-design",
+      "engineering"
+    ],
+    "path": "knowledge-base/paths/interview-preparation.md",
+    "exitEvidence": "Complete two timed builds and a project deep dive; repeat weak answers and use recruiter-confirmed process guidance."
+  },
+  {
+    "id": "production-engineer",
+    "title": "Production Engineer",
+    "guideIds": [
+      "security",
+      "testing",
+      "git",
+      "nodejs",
+      "devops",
+      "cloud",
+      "engineering",
+      "system-design",
+      "redis"
+    ],
+    "path": "knowledge-base/paths/production-engineer.md",
+    "exitEvidence": "Verify configuration, health, rollback, restore, safe logs, concurrency, and dependency-unavailable behavior."
+  },
+  {
+    "id": "advanced-mern-engineer",
+    "title": "Advanced MERN Engineer",
+    "guideIds": [
+      "typescript",
+      "state-management",
+      "nextjs",
+      "mongoose",
+      "sql",
+      "redis",
+      "realtime",
+      "system-design",
+      "cloud",
+      "engineering"
+    ],
+    "path": "knowledge-base/paths/advanced-mern-engineer.md",
+    "exitEvidence": "Defend consistency and freshness requirements; demonstrate a failure matrix and measured scaling decision."
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "calculator",
+    "title": "Calculator",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/calculator.md",
+    "invariant": "Reject invalid inputs and division by zero without evaluating arbitrary expressions."
+  },
+  {
+    "id": "todo",
+    "title": "Todo with undo",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/todo.md",
+    "invariant": "Undo restores the original id and position."
+  },
+  {
+    "id": "quiz",
+    "title": "Quiz",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/quiz.md",
+    "invariant": "One answer per question contributes at most one score."
+  },
+  {
+    "id": "weather",
+    "title": "Weather app",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/weather.md",
+    "invariant": "Old responses cannot replace the latest requested location."
+  },
+  {
+    "id": "notes",
+    "title": "Local notes",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/notes.md",
+    "invariant": "Titles render as data rather than executable markup."
+  },
+  {
+    "id": "expense-tracker",
+    "title": "Expense tracker",
+    "tier": "Beginner",
+    "status": "implemented-learning",
+    "sourcePath": "projects/knowledge-base/learning-lab",
+    "path": "knowledge-base/projects/expense-tracker.md",
+    "invariant": "Store positive safe integer cents and compute totals from all relevant records."
+  },
+  {
+    "id": "blog",
+    "title": "Blog",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/blog.md",
+    "invariant": "Only authorized authors can modify their drafts or publications."
+  },
+  {
+    "id": "movie-app",
+    "title": "Movie catalog",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/movie-app.md",
+    "invariant": "Detail and favorite state refer to stable movie ids, not array positions."
+  },
+  {
+    "id": "youtube-clone",
+    "title": "Video catalog interface",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/youtube-clone.md",
+    "invariant": "Playback failures and missing captions remain visible; do not redistribute unlicensed media."
+  },
+  {
+    "id": "ecommerce-frontend",
+    "title": "E-commerce frontend",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/ecommerce-frontend.md",
+    "invariant": "Client totals are presentation; final stock and price must be revalidated by a server."
+  },
+  {
+    "id": "admin-dashboard",
+    "title": "Admin dashboard",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/admin-dashboard.md",
+    "invariant": "A visible admin screen never substitutes for server permissions."
+  },
+  {
+    "id": "kanban",
+    "title": "Kanban board",
+    "tier": "Intermediate",
+    "status": "implemented-learning",
+    "sourcePath": "projects/interview-ready/mern-workspace",
+    "path": "knowledge-base/projects/kanban.md",
+    "invariant": "Two writes using the same stored version cannot both succeed."
+  },
+  {
+    "id": "chat",
+    "title": "Chat application",
+    "tier": "Intermediate",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/chat.md",
+    "invariant": "Room membership is checked server-side and durable messages have stable ids."
+  },
+  {
+    "id": "mern-ecommerce",
+    "title": "Full MERN e-commerce",
+    "tier": "Advanced",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/mern-ecommerce.md",
+    "invariant": "No negative stock or duplicate paid business effect after replay."
+  },
+  {
+    "id": "lms",
+    "title": "Learning management system",
+    "tier": "Advanced",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/lms.md",
+    "invariant": "Enrollment and progress writes are scoped to the permitted account and course."
+  },
+  {
+    "id": "job-portal",
+    "title": "Job portal",
+    "tier": "Advanced",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/job-portal.md",
+    "invariant": "One applicant/job pair has one active application; employers see only permitted submissions."
+  },
+  {
+    "id": "social-network",
+    "title": "Social network",
+    "tier": "Advanced",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/social-network.md",
+    "invariant": "Feed and media access respect visibility and ownership, including after cache invalidation."
+  },
+  {
+    "id": "project-platform",
+    "title": "Project management platform",
+    "tier": "Advanced",
+    "status": "foundation-implemented",
+    "sourcePath": "projects/interview-ready/mern-workspace",
+    "path": "knowledge-base/projects/project-platform.md",
+    "invariant": "Every operation validates tenant membership and persisted task version."
+  },
+  {
+    "id": "realtime-chat",
+    "title": "Recoverable real-time chat",
+    "tier": "Advanced",
+    "status": "specification",
+    "sourcePath": null,
+    "path": "knowledge-base/projects/realtime-chat.md",
+    "invariant": "Reconnect and duplicate delivery do not lose or repeat a durable message in the view."
+  },
+  {
+    "id": "expense-platform",
+    "title": "Expense management platform",
+    "tier": "Advanced",
+    "status": "foundation-implemented",
+    "sourcePath": "projects/interview-ready/mern-workspace",
+    "path": "knowledge-base/projects/expense-platform.md",
+    "invariant": "Money and owner scope remain correct across list truncation, concurrent approval, and replay."
+  }
+]

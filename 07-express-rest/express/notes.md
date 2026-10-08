@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "express", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Express services, validation, and protected REST routes](../../knowledge-base/topics/express.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Express.js teaching notes
 
 ## What and why

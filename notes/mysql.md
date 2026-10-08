@@ -1,10 +1,14 @@
+<!-- kb-legacy: {"canonicalGuideId": "sql", "priority": "P1", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Relational modeling, SQL queries, and transactions](../knowledge-base/topics/sql.md) — P1. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Comprehensive MySQL Relational Database Guide
 
 ## Introduction
 MySQL is one of the world's most popular open-source Relational Database Management Systems (RDBMS). It uses Structured Query Language (SQL) to manage tables, relations, indexes, transactions, and relational data structures.
 
 ## Why We Need It
-While NoSQL databases like MongoDB excel at flexible document storage, relational databases like MySQL excel at **strict schema enforcement, ACID compliance, complex multi-table joins, and transactional integrity**. Financial data, inventory management, and structured relational domains often require relational SQL databases.
+MySQL supports relational modeling, declarative constraints, joins, and transactions when using a transactional engine such as InnoDB. MongoDB also supports validation and transactions, with different data-model and deployment tradeoffs. Choose based on relationships, invariants, queries, and operational needs; ACID support alone does not make application logic correct.
 
 ## Syntax
 ```sql

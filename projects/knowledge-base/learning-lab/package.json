@@ -1,0 +1,7 @@
+{
+  "name": "mern-knowledge-learning-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {"test":"node --test model.test.js"},
+  "engines": {"node": ">=22"}
+}

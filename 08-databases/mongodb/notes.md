@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "mongodb", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [MongoDB modeling, querying, and persisted invariants](../../knowledge-base/topics/mongodb.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # MongoDB teaching notes
 
 ## What and why
