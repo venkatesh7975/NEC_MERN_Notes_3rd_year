@@ -1,4 +1,4 @@
-name: Curriculum checks
+name: Knowledge base and project checks
 on:
   push:
   pull_request:
@@ -13,6 +13,26 @@ jobs:
         with:
           node-version: '24'
       - run: npm test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm run build:knowledge
+      - run: git diff --exit-code -- knowledge-base
       - run: git diff --check
       - run: npm ci --prefix dailycodes/express
       - run: npm run test:api
+  interview-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: projects/interview-ready/mern-workspace/package-lock.json
+      - run: npm ci
+        working-directory: projects/interview-ready/mern-workspace
+      - run: npm test
+        working-directory: projects/interview-ready/mern-workspace
+      - run: npm run build
+        working-directory: projects/interview-ready/mern-workspace

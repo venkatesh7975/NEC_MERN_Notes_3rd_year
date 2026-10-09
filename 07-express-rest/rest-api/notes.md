@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "api", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [REST contracts, GraphQL, and API evolution](../../knowledge-base/topics/api.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # REST APIs teaching notes
 
 ## What and why

@@ -1,0 +1,802 @@
+[
+  {
+    "id": "Q001",
+    "topic": "html-css",
+    "difficulty": "Easy",
+    "question": "Why use a button instead of a clickable div?",
+    "answer": "A button has keyboard activation, focus behavior, a role, and a disabled state built in. A div needs those behaviors implemented separately. Use type=\"button\" inside a form when the action should not submit. Test with Tab, Enter, and Space.",
+    "followup": "How would you make a toggle announce its state?"
+  },
+  {
+    "id": "Q002",
+    "topic": "html-css",
+    "difficulty": "Easy",
+    "question": "What is the difference between an id and a class?",
+    "answer": "An id identifies one element in a document and can connect a label to a form control or a fragment link to a section. Classes group elements for styling and scripting. Duplicate ids make these relationships ambiguous. Prefer classes for reusable styles.",
+    "followup": "How does specificity differ?"
+  },
+  {
+    "id": "Q003",
+    "topic": "html-css",
+    "difficulty": "Easy",
+    "question": "Explain the CSS box model.",
+    "answer": "An element has content, padding, border, and margin. With content-box, the declared width covers content; padding and borders add to the rendered width. With border-box they are included. Margins remain outside in either case.",
+    "followup": "Why can two vertical margins collapse?"
+  },
+  {
+    "id": "Q004",
+    "topic": "html-css",
+    "difficulty": "Medium",
+    "question": "When would you choose Grid over Flexbox?",
+    "answer": "Grid manages tracks in two dimensions and is useful for page layouts or aligned card rows and columns. Flexbox distributes items along one main axis and works well for toolbars. A grid item can itself be a flex container; choose based on the alignment constraint.",
+    "followup": "How does minmax(0,1fr) prevent overflow?"
+  },
+  {
+    "id": "Q005",
+    "topic": "html-css",
+    "difficulty": "Medium",
+    "question": "Why is z-index 999999 still behind a modal?",
+    "answer": "z-index compares elements inside their stacking context. A descendant cannot escape an ancestor context merely by increasing its own value. Inspect positioned ancestors, transforms, opacity, and isolation. Native dialog top-layer behavior is a separate mechanism.",
+    "followup": "Which properties create a stacking context?"
+  },
+  {
+    "id": "Q006",
+    "topic": "html-css",
+    "difficulty": "Medium",
+    "question": "How do you build an accessible form?",
+    "answer": "Associate visible labels with controls, choose input types and autocomplete values, group related controls with fieldset and legend, and connect error text with aria-describedby. Preserve entered values after failure. Client validation improves feedback; the server validates independently.",
+    "followup": "Where should focus move after a failed submission?"
+  },
+  {
+    "id": "Q007",
+    "topic": "html-css",
+    "difficulty": "Medium",
+    "question": "What does the cascade actually decide?",
+    "answer": "For declarations that apply to an element, the cascade considers origin and importance, cascade layers, specificity, and ordering, with additional rules for scoped styles. Specificity alone cannot explain every result. Inspect computed styles before adding !important.",
+    "followup": "What changes for important declarations in layers?"
+  },
+  {
+    "id": "Q008",
+    "topic": "html-css",
+    "difficulty": "Hard",
+    "question": "How do you debug layout shift?",
+    "answer": "Record a browser performance trace and inspect layout-shift entries. Reserve space for media, avoid inserting late content above what users are reading, and review font loading. A shift caused by recent user interaction may be treated differently in the metric; measure the actual experience.",
+    "followup": "How do you reserve image space responsively?"
+  },
+  {
+    "id": "Q009",
+    "topic": "html-css",
+    "difficulty": "Hard",
+    "question": "How should a modal manage focus?",
+    "answer": "On opening, move focus into the dialog to a useful target; keep keyboard navigation within the active modal and provide an accessible name. On close, return focus to the trigger if it remains usable. Prefer the native dialog API and test Escape and background interaction.",
+    "followup": "What happens if the trigger is removed?"
+  },
+  {
+    "id": "Q010",
+    "topic": "html-css",
+    "difficulty": "Hard",
+    "question": "How do you make a table usable on a phone?",
+    "answer": "Keep header relationships and readable text. A horizontal scroll container can preserve a true data table; give users a clear scroll affordance. For a card view, repeat the labels and preserve reading order. Choose based on whether cross-row comparison is essential.",
+    "followup": "How would you test at 200 percent zoom?"
+  },
+  {
+    "id": "Q011",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "question": "What does const guarantee?",
+    "answer": "const prevents reassignment of the binding. It does not freeze the object it references. const user = {name:\"A\"}; user.name = \"B\" is valid. Object.freeze is shallow, so nested objects still need an explicit immutability strategy.",
+    "followup": "What is the temporal dead zone?"
+  },
+  {
+    "id": "Q012",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "question": "Compare strict equality and Object.is.",
+    "answer": "Strict equality avoids type coercion, considers +0 and -0 equal, and considers NaN unequal to itself. Object.is considers NaN equal to itself and distinguishes signed zeros. Choose a comparison that matches the domain rather than assuming one is universally better.",
+    "followup": "What does a Set do with NaN?"
+  },
+  {
+    "id": "Q013",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "question": "Explain a closure with a useful example.",
+    "answer": "A function retains access to the lexical environment where it was created. A counter factory can keep a private count and return an increment function. Two factory calls create separate environments. Closures are also why an old callback may see an earlier render value.",
+    "followup": "Can a closure retain a large object?"
+  },
+  {
+    "id": "Q014",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "question": "Predict synchronous logs, a promise, and a timer.",
+    "answer": "In a normal browser script, synchronous code finishes first. Promise reaction jobs run at the microtask checkpoint before the next timer task. setTimeout(fn,0) makes a callback eligible later; it does not interrupt the current stack. Do not generalize this ordering to every Node phase.",
+    "followup": "Can recursive microtasks starve rendering?"
+  },
+  {
+    "id": "Q015",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "question": "Why does spreading an object not deep clone it?",
+    "answer": "Object spread copies own enumerable properties into a new object. Nested object references still point to the same objects. structuredClone supports many structured values but cannot clone functions. For React state, copy only the path being changed or use an appropriate immutable update tool.",
+    "followup": "What happens to a Date in JSON serialization?"
+  },
+  {
+    "id": "Q016",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "question": "Compare debounce and throttle.",
+    "answer": "Debounce waits for a quiet period and is useful for search inputs. Throttle limits execution frequency and is useful for continuous scroll work. Specify leading and trailing behavior, cancellation, and what happens to this and arguments; those are part of the function contract.",
+    "followup": "How would you flush the pending call?"
+  },
+  {
+    "id": "Q017",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "question": "Compare Promise.all and Promise.allSettled.",
+    "answer": "Promise.all resolves with ordered results only when every input fulfills and rejects when an input rejects. It does not cancel other operations. allSettled waits for all inputs and reports each outcome. Bound concurrency for large input lists instead of starting thousands at once.",
+    "followup": "How can AbortController help cancellation?"
+  },
+  {
+    "id": "Q018",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "question": "How does this behave in arrow functions?",
+    "answer": "An arrow function captures this lexically. A normal function gets this from the invocation form, such as obj.method(), and a detached method loses that receiver. bind creates a function with a fixed receiver. Arrow functions cannot be constructors.",
+    "followup": "Why can an arrow method be wrong on a prototype?"
+  },
+  {
+    "id": "Q019",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "question": "How would you implement an LRU cache?",
+    "answer": "Use a Map for insertion order. On get, remove and reinsert the entry to mark it recent. On set, replace any existing entry and evict the first key when over capacity. Average operations are constant time under the usual hash-map model. Validate capacity and distinguish missing keys from stored undefined.",
+    "followup": "How would you add TTL without unbounded timers?"
+  },
+  {
+    "id": "Q020",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "question": "What causes memory leaks in browser code?",
+    "answer": "A leak is memory retained longer than needed: global caches with no eviction, listeners on long-lived objects, timers holding closures, or subscriptions not removed. Compare heap snapshots after repeating a flow. Removing a DOM node alone does not release references held elsewhere.",
+    "followup": "How would you prove that a fix works?"
+  },
+  {
+    "id": "Q021",
+    "topic": "react",
+    "difficulty": "Easy",
+    "question": "What is the difference between props and state?",
+    "answer": "Props are inputs supplied by a parent. State is component-owned memory that participates in rendering. Treat both as immutable snapshots. Derive values from existing inputs during render when possible instead of keeping duplicate state that can drift.",
+    "followup": "When should state be lifted?"
+  },
+  {
+    "id": "Q022",
+    "topic": "react",
+    "difficulty": "Easy",
+    "question": "Why do list items need stable keys?",
+    "answer": "Keys tell React which sibling identity persists across renders. A stable domain id preserves the correct item state when ordering changes. Array indexes can assign state to the wrong row after insertion or sorting. Keys only need to be unique among siblings.",
+    "followup": "Can changing a key reset a form?"
+  },
+  {
+    "id": "Q023",
+    "topic": "react",
+    "difficulty": "Easy",
+    "question": "Why does setCount(count + 1) twice often add only one?",
+    "answer": "Both calls can read the same state snapshot in the event handler. Functional updates setCount(c => c + 1) describe transitions and can be applied in sequence. The state variable in the current handler does not mutate immediately after a setter.",
+    "followup": "What does batching change?"
+  },
+  {
+    "id": "Q024",
+    "topic": "react",
+    "difficulty": "Medium",
+    "question": "What belongs in useEffect?",
+    "answer": "Use an effect to synchronize with an external system such as a subscription, network request, or browser API. User actions usually belong in event handlers. Filtering an existing array can happen during render. Return cleanup for resources acquired by the effect.",
+    "followup": "Why might development run setup and cleanup again?"
+  },
+  {
+    "id": "Q025",
+    "topic": "react",
+    "difficulty": "Medium",
+    "question": "How do you avoid stale search responses?",
+    "answer": "Associate the request with the current query, abort obsolete fetches during cleanup, and ignore responses from older requests. Cancellation can reduce work; an identity or generation check protects correctness even if an operation cannot be canceled. Keep loading and error state tied to the same request.",
+    "followup": "What happens when the user clears the query?"
+  },
+  {
+    "id": "Q026",
+    "topic": "react",
+    "difficulty": "Medium",
+    "question": "When would you use a reducer?",
+    "answer": "A reducer makes related state transitions explicit, especially when several fields change together. Keep the reducer pure and represent actions using domain intent. It can make undo or optimistic transitions easier to inspect. A single simple boolean does not need a reducer.",
+    "followup": "Where do asynchronous operations belong?"
+  },
+  {
+    "id": "Q027",
+    "topic": "react",
+    "difficulty": "Medium",
+    "question": "Does context prevent renders?",
+    "answer": "Context distributes a value. Consumers can render when the provided value changes, and normal parent rendering also matters. Split unrelated contexts and keep provider values stable where useful. Measure before adding memoization; context is not a complete server-data cache.",
+    "followup": "When would an external store help?"
+  },
+  {
+    "id": "Q028",
+    "topic": "react",
+    "difficulty": "Hard",
+    "question": "How do you handle optimistic updates safely?",
+    "answer": "Apply a temporary local result while a request is pending. Use a mutation id or version so an earlier response cannot overwrite a later edit. On failure, restore the affected item or refetch authoritative state and show a retry path. Disabling duplicate submission simplifies some flows.",
+    "followup": "How do you handle a 409 version conflict?"
+  },
+  {
+    "id": "Q029",
+    "topic": "react",
+    "difficulty": "Hard",
+    "question": "How do you improve a slow React list?",
+    "answer": "Measure whether the cost is fetching, rendering, layout, or large data processing. Use server pagination or windowing for large collections, stable keys, and appropriate state placement. Memoization helps only when avoided work exceeds comparison cost and props remain suitably stable.",
+    "followup": "How do you preserve accessibility in virtualization?"
+  },
+  {
+    "id": "Q030",
+    "topic": "react",
+    "difficulty": "Hard",
+    "question": "Compare client components and server components.",
+    "answer": "Client components support state and browser interactions. Server components execute in a compatible server-rendering framework and can access server resources without shipping that implementation to the browser. A Vite client SPA does not gain server components by installing React.",
+    "followup": "How do you keep secrets out of client bundles?"
+  },
+  {
+    "id": "Q031",
+    "topic": "node-express",
+    "difficulty": "Easy",
+    "question": "What does Node add to JavaScript?",
+    "answer": "Node is a runtime with APIs for processes, files, networking, and other server tasks. Browser DOM APIs are not generally available. Nonblocking I/O lets a process handle many waiting operations, but synchronous JavaScript work still occupies the main execution thread.",
+    "followup": "Which APIs use the worker pool?"
+  },
+  {
+    "id": "Q032",
+    "topic": "node-express",
+    "difficulty": "Easy",
+    "question": "What is Express middleware?",
+    "answer": "Middleware receives the request, response, and next function. It may finish the response or pass control onward. Ordering matters: JSON parsing before routes, authentication before protected handlers, and error handlers after routes. Calling next after sending a response can create double-response bugs.",
+    "followup": "How is error middleware identified?"
+  },
+  {
+    "id": "Q033",
+    "topic": "node-express",
+    "difficulty": "Easy",
+    "question": "Why must input validation run on the server?",
+    "answer": "Clients can be modified or bypassed. Validate types, lengths, allowed values, and relationships at the API boundary. Use an allowlist when constructing database writes and return an actionable validation error. Database constraints remain necessary for races and persistent invariants.",
+    "followup": "Should you pass req.body directly into an update?"
+  },
+  {
+    "id": "Q034",
+    "topic": "node-express",
+    "difficulty": "Medium",
+    "question": "How do Express 4 and Express 5 differ for async errors?",
+    "answer": "Express 5 forwards rejected promises returned from route handlers to error middleware. Express 4 handlers usually need an explicit wrapper or try/catch with next(error). Use the behavior of the installed major version and test a thrown asynchronous error.",
+    "followup": "Why should unexpected errors not expose stacks?"
+  },
+  {
+    "id": "Q035",
+    "topic": "node-express",
+    "difficulty": "Medium",
+    "question": "When should you use a stream?",
+    "answer": "Streams process a sequence without loading the complete payload into memory. Respect backpressure when the receiver cannot keep up. pipeline coordinates completion and error handling. A stream helps large files; it does not make CPU-heavy parsing automatically inexpensive.",
+    "followup": "How does a client disconnect affect a response stream?"
+  },
+  {
+    "id": "Q036",
+    "topic": "node-express",
+    "difficulty": "Medium",
+    "question": "How do you shut down an API gracefully?",
+    "answer": "Stop accepting new requests, let in-flight work finish within a deadline, close database and queue connections, and exit. Handle termination signals and readiness separately from liveness. Long-lived sockets require an explicit policy so shutdown cannot hang forever.",
+    "followup": "What happens during a rolling deployment?"
+  },
+  {
+    "id": "Q037",
+    "topic": "node-express",
+    "difficulty": "Medium",
+    "question": "How do you diagnose a blocked event loop?",
+    "answer": "Correlate latency spikes with CPU profiles and event-loop delay metrics. Look for synchronous filesystem calls, large JSON work, catastrophic regexes, or expensive computations. Split or offload CPU work to worker threads and set payload limits. More async keywords cannot fix synchronous CPU work.",
+    "followup": "How would you benchmark a proposed fix?"
+  },
+  {
+    "id": "Q038",
+    "topic": "node-express",
+    "difficulty": "Hard",
+    "question": "How should rate limits work across multiple instances?",
+    "answer": "Per-process limits are useful locally but do not give one consistent global budget. Use a shared store or gateway and choose a key, window algorithm, and outage policy. Be careful with forwarded IP headers: trust only known proxy configuration.",
+    "followup": "How would you limit by both account and IP?"
+  },
+  {
+    "id": "Q039",
+    "topic": "node-express",
+    "difficulty": "Hard",
+    "question": "How do you safely retry an API request?",
+    "answer": "Retry transient failures with a bounded attempt count, timeout, exponential backoff, and jitter. Retrying a write can duplicate side effects, so use idempotency keys or a domain uniqueness constraint. A validation failure should not be retried automatically.",
+    "followup": "How do you distinguish timeout from definitive failure?"
+  },
+  {
+    "id": "Q040",
+    "topic": "node-express",
+    "difficulty": "Hard",
+    "question": "What should structured API logs contain?",
+    "answer": "Include a request or trace id, route template, status, duration, and a safe error category. Redact passwords, authorization headers, session tokens, and sensitive personal data. Structured fields enable aggregation; logging every request body risks exposing data and increases cost.",
+    "followup": "How do you correlate logs across services?"
+  },
+  {
+    "id": "Q041",
+    "topic": "mongodb",
+    "difficulty": "Easy",
+    "question": "When should you embed rather than reference?",
+    "answer": "Embed bounded data that is read and updated with its parent. Reference independently owned entities or collections that grow without a useful bound. Model around access patterns and update invariants. MongoDB is flexible, but an application still needs schema and migration discipline.",
+    "followup": "How would you model comments on a popular post?"
+  },
+  {
+    "id": "Q042",
+    "topic": "mongodb",
+    "difficulty": "Easy",
+    "question": "What does an index do?",
+    "answer": "An index maintains an ordered access structure so queries can locate matches without scanning every document. It consumes storage and adds write work. Inspect explain output on realistic data to see whether the index supports the actual filter and sort.",
+    "followup": "Why does indexing every field hurt?"
+  },
+  {
+    "id": "Q043",
+    "topic": "mongodb",
+    "difficulty": "Easy",
+    "question": "Is Mongoose unique a validator?",
+    "answer": "unique declares an index intention. The database unique index enforces uniqueness and concurrent duplicate writes may produce E11000. Ensure the index exists and translate the conflict into an appropriate API response. An earlier findOne check alone is race-prone.",
+    "followup": "What about existing duplicates before adding the index?"
+  },
+  {
+    "id": "Q044",
+    "topic": "mongodb",
+    "difficulty": "Medium",
+    "question": "Explain a compound index.",
+    "answer": "A compound index orders multiple fields. Its prefixes and key order affect which queries can use it efficiently. For a user-owned feed, {owner:1, createdAt:-1, _id:-1} can support a constrained ordered listing. Check filters, sort, and scanned keys rather than choosing an index from intuition alone.",
+    "followup": "How does a range predicate change your index choice?"
+  },
+  {
+    "id": "Q045",
+    "topic": "mongodb",
+    "difficulty": "Medium",
+    "question": "Compare offset and cursor pagination.",
+    "answer": "Offset pagination is simple and allows page numbers, but large offsets do extra work and concurrent inserts can shift boundaries. Cursor pagination seeks after a stable sort tuple and is useful for feeds. Include a tie-breaker such as id and validate cursor format and scope.",
+    "followup": "Can users jump to page 50 with a cursor?"
+  },
+  {
+    "id": "Q046",
+    "topic": "mongodb",
+    "difficulty": "Medium",
+    "question": "When do you need a transaction?",
+    "answer": "Single-document writes are atomic. A transaction is useful when a business invariant spans multiple documents and all changes must commit together. Transactions require a supported deployment, typically a replica set or sharded cluster. They add coordination cost and still need appropriate retry handling.",
+    "followup": "Can embedding remove the transaction requirement?"
+  },
+  {
+    "id": "Q047",
+    "topic": "mongodb",
+    "difficulty": "Medium",
+    "question": "What does lean do in Mongoose?",
+    "answer": "lean returns plain objects instead of hydrated documents for a query. This can reduce memory and processing for read-only paths. Document methods and standard hydration behavior are absent, so check getters, virtuals, and serialization expectations before enabling it.",
+    "followup": "Would you use lean for a document you intend to save?"
+  },
+  {
+    "id": "Q048",
+    "topic": "mongodb",
+    "difficulty": "Hard",
+    "question": "How do you prevent selling the same last item twice?",
+    "answer": "Use an atomic conditional update whose filter includes available stock, with an increment or decrement in the same operation. A read-then-write sequence races. If payment and reservation span services, design expiration, idempotency, and compensation rather than assuming one database transaction covers them.",
+    "followup": "How would you release an expired reservation?"
+  },
+  {
+    "id": "Q049",
+    "topic": "mongodb",
+    "difficulty": "Hard",
+    "question": "How do you detect and prevent lost updates?",
+    "answer": "Include an expected version in the update predicate and increment it atomically. If no document matches, distinguish missing or unauthorized data from an owned version conflict without revealing another user's data. Tell the client to reload or resolve the conflict.",
+    "followup": "Can a timestamp be a reliable version token?"
+  },
+  {
+    "id": "Q050",
+    "topic": "mongodb",
+    "difficulty": "Hard",
+    "question": "What can make an aggregation slow?",
+    "answer": "Large input cardinality, early fan-out, expensive sorts, broad lookups, and insufficiently selective predicates can cause work and memory pressure. Use explain, realistic sample data, suitable indexes, and early filters where semantically valid. Avoid returning unbounded results to the client.",
+    "followup": "When would you precompute a summary?"
+  },
+  {
+    "id": "Q051",
+    "topic": "security-api",
+    "difficulty": "Easy",
+    "question": "Compare authentication and authorization.",
+    "answer": "Authentication establishes who the caller is. Authorization decides whether that caller may perform an action on a resource. Every protected database operation should enforce ownership or role scope. A hidden UI button is not an authorization check.",
+    "followup": "Why is checking only the route id insufficient?"
+  },
+  {
+    "id": "Q052",
+    "topic": "security-api",
+    "difficulty": "Easy",
+    "question": "Why hash passwords rather than encrypt them?",
+    "answer": "A password verifier should not require recovering the original password. Use a password hashing function with a unique salt and appropriate work parameters. Store the encoded parameters for upgrades. Never use a plain fast digest alone or log the password during debugging.",
+    "followup": "How do you migrate work factors?"
+  },
+  {
+    "id": "Q053",
+    "topic": "security-api",
+    "difficulty": "Easy",
+    "question": "What does CORS protect?",
+    "answer": "CORS controls browser access to cross-origin responses. It is not API authentication and does not stop server clients from making requests. Some cross-origin requests can still be sent even when reading the response is blocked. Cookie-based writes need a deliberate CSRF strategy.",
+    "followup": "Why can CORS alone fail to prevent CSRF?"
+  },
+  {
+    "id": "Q054",
+    "topic": "security-api",
+    "difficulty": "Medium",
+    "question": "Where should a browser session token live?",
+    "answer": "An HttpOnly cookie prevents JavaScript from reading the token and can reduce token theft through XSS. Use Secure over HTTPS and an appropriate SameSite setting. Cookie authentication also needs CSRF defenses and revocation. Browser storage tradeoffs should be discussed with the threat model.",
+    "followup": "Does HttpOnly stop malicious scripts making requests?"
+  },
+  {
+    "id": "Q055",
+    "topic": "security-api",
+    "difficulty": "Medium",
+    "question": "Why are JWTs not encrypted by default?",
+    "answer": "A usual signed JWT protects integrity, not confidentiality. Its payload is encoded and readable. Verify signature, allowed algorithms, expiration, issuer, and audience as appropriate. Revocation and rotation require a design; long-lived bearer tokens increase exposure.",
+    "followup": "How would you revoke one compromised session?"
+  },
+  {
+    "id": "Q056",
+    "topic": "security-api",
+    "difficulty": "Medium",
+    "question": "How do you prevent NoSQL injection?",
+    "answer": "Construct filters from validated scalar fields rather than accepting arbitrary objects from the client. Reject unexpected operators and properties, limit lengths, and use explicit update fields. A schema library helps at the boundary but cannot repair a deliberately unsafe filter construction.",
+    "followup": "What is mass assignment?"
+  },
+  {
+    "id": "Q057",
+    "topic": "security-api",
+    "difficulty": "Medium",
+    "question": "What makes a REST error useful?",
+    "answer": "Use a consistent status and a machine-readable error code with a safe human message. Include a correlation id for unexpected errors and field-level detail for validation failures. Avoid leaking stack traces, password hashes, or resource existence across authorization boundaries.",
+    "followup": "When would you return 409 rather than 400?"
+  },
+  {
+    "id": "Q058",
+    "topic": "security-api",
+    "difficulty": "Hard",
+    "question": "How do you stop an SSRF attack?",
+    "answer": "Treat server-side fetching of user URLs as a privileged operation. Restrict destinations, schemes, redirects, and resolved IPs, block internal networks, and use egress controls and timeouts. Validation before a redirect or DNS change is not enough. A bookmark app can simply store URLs without fetching them.",
+    "followup": "How would you handle DNS rebinding?"
+  },
+  {
+    "id": "Q059",
+    "topic": "security-api",
+    "difficulty": "Hard",
+    "question": "How do you make a payment webhook idempotent?",
+    "answer": "Verify the provider signature against the expected raw body, persist a unique event or operation id, and apply state changes atomically with that record. Handle out-of-order events and delayed retries. Return success only under a defined durable handling contract.",
+    "followup": "Why is an in-memory Set insufficient?"
+  },
+  {
+    "id": "Q060",
+    "topic": "security-api",
+    "difficulty": "Hard",
+    "question": "How do you make file uploads safer?",
+    "answer": "Limit size and count, validate expected types using content as well as names, generate server filenames, store outside executable paths, and isolate processing. Apply malware scanning where relevant and authorize access to private files. Streaming and timeouts protect resources.",
+    "followup": "Can MIME type from the client be trusted?"
+  },
+  {
+    "id": "Q061",
+    "topic": "testing-tooling",
+    "difficulty": "Easy",
+    "question": "What should a unit test verify?",
+    "answer": "A unit test checks an observable behavior of a small unit with controlled inputs. Cover boundaries and errors, not just the happy path. Tests that repeat the implementation algorithm can pass despite the same bug. Use explicit expected outcomes or an independent model.",
+    "followup": "What makes a test brittle?"
+  },
+  {
+    "id": "Q062",
+    "topic": "testing-tooling",
+    "difficulty": "Easy",
+    "question": "What belongs in an integration test?",
+    "answer": "Check the contract between real cooperating pieces, such as HTTP parsing, authorization, service logic, and persistence. An in-memory repository is useful for route behavior but cannot establish MongoDB index or atomicity behavior. Label that distinction in the test report.",
+    "followup": "Which dependencies should remain real?"
+  },
+  {
+    "id": "Q063",
+    "topic": "testing-tooling",
+    "difficulty": "Easy",
+    "question": "Why commit package-lock.json?",
+    "answer": "The lockfile records the resolved dependency graph and integrity information. npm ci installs from it without rewriting resolutions and fails if the manifest disagrees. A lockfile improves reproducibility but does not eliminate vulnerabilities or runtime incompatibility.",
+    "followup": "How do you update dependencies deliberately?"
+  },
+  {
+    "id": "Q064",
+    "topic": "testing-tooling",
+    "difficulty": "Medium",
+    "question": "How should React tests select elements?",
+    "answer": "Prefer accessible roles and names because they reflect how users interact. Test an action and its visible result. Avoid selectors coupled to internal component structure unless necessary. Add browser tests for focus, layout, navigation, and behaviors that a simulated DOM does not model well.",
+    "followup": "When is a test id justified?"
+  },
+  {
+    "id": "Q065",
+    "topic": "testing-tooling",
+    "difficulty": "Medium",
+    "question": "How do fake timers help debounce tests?",
+    "answer": "Advance a controlled clock to assert no call before the quiet period, a call after it, and cancellation behavior. Verify arguments and this preservation. Avoid arbitrary real sleeps that make the suite slow and flaky. Restore the clock after the test.",
+    "followup": "How do microtasks interact with your test clock?"
+  },
+  {
+    "id": "Q066",
+    "topic": "testing-tooling",
+    "difficulty": "Medium",
+    "question": "How do you test authorization?",
+    "answer": "Create two users and resources for each. Attempt every read, update, and delete as the other user and as an unauthenticated caller. Verify both status codes and unchanged data. Include list endpoints because they can leak records even if item routes are protected.",
+    "followup": "How do you test role escalation?"
+  },
+  {
+    "id": "Q067",
+    "topic": "testing-tooling",
+    "difficulty": "Medium",
+    "question": "What makes a useful CI pipeline?",
+    "answer": "Run deterministic checks for documentation, unit and API tests, and production builds. Add database integration tests when persistence invariants matter. Keep installation reproducible with lockfiles and grant minimal permissions. A green build only proves the checks that actually ran.",
+    "followup": "Which checks need secrets?"
+  },
+  {
+    "id": "Q068",
+    "topic": "testing-tooling",
+    "difficulty": "Hard",
+    "question": "How do you test concurrency bugs?",
+    "answer": "Run competing operations against the actual persistence layer, start them together, and assert the invariant after both complete. For stock, total successful reservations must not exceed initial quantity. For version edits, only one write at the same expected version should succeed.",
+    "followup": "Why may a fake repository hide the race?"
+  },
+  {
+    "id": "Q069",
+    "topic": "testing-tooling",
+    "difficulty": "Hard",
+    "question": "What does test coverage not tell you?",
+    "answer": "Coverage reports which code was executed, not whether assertions establish correctness. A high percentage can coexist with missing authorization or boundary tests. Review risk-based cases, mutation behavior, and failures before using coverage as a quality proxy.",
+    "followup": "How can mutation testing expose weak assertions?"
+  },
+  {
+    "id": "Q070",
+    "topic": "testing-tooling",
+    "difficulty": "Hard",
+    "question": "How do you test a production build?",
+    "answer": "Build with the actual toolchain, serve the generated assets, and exercise critical flows against the intended API mode. Check base paths, missing assets, client routing fallback, and environment variables. Development success does not prove deploy-time settings work.",
+    "followup": "Which variables become public in a client bundle?"
+  },
+  {
+    "id": "Q071",
+    "topic": "system-design",
+    "difficulty": "Easy",
+    "question": "How should a design interview start?",
+    "answer": "Clarify users, core operations, scale assumptions, correctness needs, and constraints. State which numbers are hypothetical. Sketch the simplest design that meets those requirements, then discuss where it fails. Listing technologies before the problem is clear makes tradeoffs difficult to defend.",
+    "followup": "Which requirement would change your design most?"
+  },
+  {
+    "id": "Q072",
+    "topic": "system-design",
+    "difficulty": "Easy",
+    "question": "Compare latency and throughput.",
+    "answer": "Latency is time per operation; throughput is operations completed per unit time. Increasing concurrency can improve throughput until a bottleneck is saturated, while making latency worse. Report distributions such as p95 and p99, not just averages, and include failures.",
+    "followup": "What does queueing do near saturation?"
+  },
+  {
+    "id": "Q073",
+    "topic": "system-design",
+    "difficulty": "Easy",
+    "question": "What can a cache get wrong?",
+    "answer": "A cache can serve stale data, expose data across users if keyed incorrectly, or overload the origin when many entries expire. Define freshness, key scope, capacity, and invalidation. For private responses, authorization and tenant identity remain part of the contract.",
+    "followup": "What is a cache stampede?"
+  },
+  {
+    "id": "Q074",
+    "topic": "system-design",
+    "difficulty": "Medium",
+    "question": "How would you design notifications?",
+    "answer": "Persist notification intent or use an outbox with the business write, then let workers deliver asynchronously. Track attempts and unique operation ids, use bounded retries, and separate delivery from user read status. At-least-once delivery requires idempotent consumers.",
+    "followup": "How do you prevent duplicate emails?"
+  },
+  {
+    "id": "Q075",
+    "topic": "system-design",
+    "difficulty": "Medium",
+    "question": "When would you use a queue?",
+    "answer": "Use a queue for work that can happen after the request, such as report generation. Define acknowledgment, retry, ordering, capacity, and dead-letter handling. A queue moves and buffers work; it does not remove the need to handle overload or failures.",
+    "followup": "How would the user see job progress?"
+  },
+  {
+    "id": "Q076",
+    "topic": "system-design",
+    "difficulty": "Medium",
+    "question": "How do you scope a multitenant API?",
+    "answer": "Establish the tenant from trusted authentication or verified membership. Include tenant scope in every relevant query, index, cache key, and background job. Reject client attempts to assign ownership. Test with multiple tenants and cover administrative paths.",
+    "followup": "How would you model shared resources?"
+  },
+  {
+    "id": "Q077",
+    "topic": "system-design",
+    "difficulty": "Medium",
+    "question": "How do you design a search endpoint?",
+    "answer": "Start with exact requirements: prefix, substring, ranking, and dataset size. Bound query length and result count, choose an index-supported strategy, and measure. Escaped regex may protect correctness but still scan many records. A dedicated search engine adds operations and consistency tradeoffs.",
+    "followup": "When is a Mongo text index enough?"
+  },
+  {
+    "id": "Q078",
+    "topic": "system-design",
+    "difficulty": "Hard",
+    "question": "Explain an outbox pattern.",
+    "answer": "In one database transaction, persist both the business change and an event record. A publisher delivers unpublished records and marks progress. Delivery can repeat if a crash occurs between publishing and marking, so downstream consumers still deduplicate. Monitor backlog and failed records.",
+    "followup": "How do you preserve per-entity ordering?"
+  },
+  {
+    "id": "Q079",
+    "topic": "system-design",
+    "difficulty": "Hard",
+    "question": "How do you design a rate limiter?",
+    "answer": "Choose a policy such as token bucket based on burst and sustained-rate requirements. Update shared state atomically, define keys and quotas, and make an explicit store-outage policy. Measure fairness and provide retry guidance. A fixed window can permit bursts around its boundary.",
+    "followup": "How would you support per-plan limits?"
+  },
+  {
+    "id": "Q080",
+    "topic": "system-design",
+    "difficulty": "Hard",
+    "question": "How do you approach a region outage?",
+    "answer": "Clarify recovery time and acceptable data loss. Discuss replication lag, routing, backups, failover authority, and writes during partition. Exercise recovery procedures rather than assuming backups are restorable. Consistency and availability choices depend on the operation and business invariant.",
+    "followup": "How would you avoid two active writers?"
+  },
+  {
+    "id": "Q081",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Easy",
+    "question": "How do you solve Two Sum in JavaScript?",
+    "answer": "Scan once with a Map from value to earlier index. For each value, check whether its complement is already present before inserting it. This avoids using one item twice. Expected time is O(n), space O(n). Test duplicate values and no-solution behavior.",
+    "followup": "What if the input is sorted?"
+  },
+  {
+    "id": "Q082",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Easy",
+    "question": "When is a sliding window appropriate?",
+    "answer": "A window works when adjacent ranges can be updated incrementally and a valid shrinking or expansion rule exists. For longest substring without repetition, track counts or latest indexes. For arbitrary sums with negative values, a simple increasing-sum window may be invalid.",
+    "followup": "Why do negative numbers break some window rules?"
+  },
+  {
+    "id": "Q083",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Easy",
+    "question": "How do you begin a machine coding round?",
+    "answer": "Clarify the required behavior and data contract, write a short acceptance checklist, and deliver one complete interaction early. Use semantic controls and separate core state logic from rendering. Reserve time for failure states and a demo instead of polishing before the main flow works.",
+    "followup": "What would you cut with ten minutes left?"
+  },
+  {
+    "id": "Q084",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Medium",
+    "question": "How do you implement a keyboard autocomplete?",
+    "answer": "Track query, matching results, active option, and expanded state. Support arrows, Enter, Escape, and appropriate combobox relationships. Avoid stale async responses and preserve focus on the input. Test an empty list and selection after the list changes.",
+    "followup": "How do you announce the result count?"
+  },
+  {
+    "id": "Q085",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Medium",
+    "question": "How do you flatten a nested tree?",
+    "answer": "Traverse recursively or with an explicit stack and carry the parent path or depth. State whether input order must be preserved and whether cycles are possible. Recursion uses stack space proportional to depth; an explicit stack avoids call-stack overflow for deeply nested inputs.",
+    "followup": "How do you handle duplicate ids?"
+  },
+  {
+    "id": "Q086",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Medium",
+    "question": "How do you implement undo in a task list?",
+    "answer": "Represent edits as commands or retain bounded prior states. Decide whether undo applies to local unsaved changes or to server-persisted operations. Give deleted items a stable id and protect against later conflicting changes. Announce the undo action and expiration clearly.",
+    "followup": "What happens after a page reload?"
+  },
+  {
+    "id": "Q087",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Medium",
+    "question": "How would you test a sortable data table?",
+    "answer": "Test text, numeric, and date comparisons, ties, direction changes, and mutation safety. Use a stable tie-breaker where order matters. Keep sort state explicit and announce the active sort with aria-sort. Test pagination interactions because sorting only the visible page can mislead users.",
+    "followup": "What is the locale policy?"
+  },
+  {
+    "id": "Q088",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Hard",
+    "question": "How do you build a concurrency-limited promise pool?",
+    "answer": "Keep at most k workers. Each worker claims a next index and awaits one task before claiming another. Store results at the original index and define error behavior. A fail-fast pool must still account for already-running tasks; a limit is not automatic cancellation.",
+    "followup": "What if one task never resolves?"
+  },
+  {
+    "id": "Q089",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Hard",
+    "question": "How do you implement an event emitter?",
+    "answer": "Map each event name to listeners, return an unsubscribe function, and decide how duplicate listeners behave. Iterate a snapshot so a listener removing another does not unexpectedly alter the current dispatch. Define exception and once semantics explicitly.",
+    "followup": "Should newly added listeners fire during current emission?"
+  },
+  {
+    "id": "Q090",
+    "topic": "dsa-machine-coding",
+    "difficulty": "Hard",
+    "question": "How do you defend your coding solution?",
+    "answer": "Explain the state model, a core invariant, the expected complexity, and one rejected alternative. Demonstrate a boundary input and failure recovery. Identify what remains incomplete and how you would test it. Unsupported claims of production readiness weaken an otherwise good implementation.",
+    "followup": "What did you intentionally omit?"
+  },
+  {
+    "id": "Q091",
+    "topic": "typescript-career",
+    "difficulty": "Easy",
+    "question": "What does TypeScript guarantee at runtime?",
+    "answer": "Type annotations are erased and do not validate network responses at runtime. TypeScript catches many static mistakes when types are accurate. Parse unknown external values with runtime checks before trusting them. Avoid asserting a type merely to silence a compiler error.",
+    "followup": "Why is unknown safer than any?"
+  },
+  {
+    "id": "Q092",
+    "topic": "typescript-career",
+    "difficulty": "Easy",
+    "question": "Compare an interface and a type alias.",
+    "answer": "Both can describe object shapes. Interfaces support declaration merging and extension; aliases also represent unions, primitives, and other type expressions. Use a consistent convention and choose the feature required by the design. Neither creates runtime data or validation.",
+    "followup": "How would you represent loading, success, and error?"
+  },
+  {
+    "id": "Q093",
+    "topic": "typescript-career",
+    "difficulty": "Easy",
+    "question": "How should you explain a portfolio project?",
+    "answer": "State the user problem, your contribution, the key design choice, and a demonstrable result. Distinguish measurements from assumptions. Point to working source, tests, and setup instructions. Do not claim users, revenue, or latency numbers that you did not measure.",
+    "followup": "Which part would you redesign?"
+  },
+  {
+    "id": "Q094",
+    "topic": "typescript-career",
+    "difficulty": "Medium",
+    "question": "What is a discriminated union useful for?",
+    "answer": "A shared literal field lets the compiler narrow a value to a particular variant. A request state can have idle, loading, success with data, or error with a message. This prevents combinations such as success without data that arise from independent booleans.",
+    "followup": "How do you check exhaustiveness with never?"
+  },
+  {
+    "id": "Q095",
+    "topic": "typescript-career",
+    "difficulty": "Medium",
+    "question": "How do generics improve reusable functions?",
+    "answer": "A generic expresses a relationship between input and output types, such as identity<T>(value:T):T. Constraints limit allowed inputs without discarding their specific types. A generic parameter used only once may not add a useful relationship.",
+    "followup": "How would you type a key-based lookup?"
+  },
+  {
+    "id": "Q096",
+    "topic": "typescript-career",
+    "difficulty": "Medium",
+    "question": "How should you answer a behavioral failure question?",
+    "answer": "Use a specific situation, your responsibility, the action you actually took, and the outcome or lesson. Own your contribution without blaming others or inventing a perfect ending. Describe what changed afterward and what evidence supports the result.",
+    "followup": "What would you do differently now?"
+  },
+  {
+    "id": "Q097",
+    "topic": "typescript-career",
+    "difficulty": "Medium",
+    "question": "How should you prepare for an unfamiliar startup?",
+    "answer": "Read its product and role description, identify the workflows users rely on, and practice a relevant small build. Confirm interview format with the recruiter. Prepare questions about ownership, quality, operations, and constraints rather than memorizing rumored company question lists.",
+    "followup": "What would you ask about on-call work?"
+  },
+  {
+    "id": "Q098",
+    "topic": "typescript-career",
+    "difficulty": "Hard",
+    "question": "How do you evaluate a technical tradeoff?",
+    "answer": "State the requirement, compare alternatives using correctness, complexity, delivery time, and operations, then explain what evidence would change your choice. Name the downside of your selected option and a migration path. An absolute rule usually hides an unstated assumption.",
+    "followup": "When does your chosen design stop working?"
+  },
+  {
+    "id": "Q099",
+    "topic": "typescript-career",
+    "difficulty": "Hard",
+    "question": "How do you prepare for a project deep dive?",
+    "answer": "Trace one request from UI to persistence, explain validation and authorization, and rehearse a failure path. Know the indexes, concurrency behavior, tests, and deployment requirements of your own code. Be able to change one feature during the discussion.",
+    "followup": "Can you show a failing test and its fix?"
+  },
+  {
+    "id": "Q100",
+    "topic": "typescript-career",
+    "difficulty": "Hard",
+    "question": "How do you close knowledge gaps without delaying applications forever?",
+    "answer": "Use a concrete diagnostic: solve a JS exercise, complete a timed UI, build a protected API, and defend a project. Track observed weaknesses and revisit them with retrieval practice. Apply when you can demonstrate the role's core skills while continuing targeted practice.",
+    "followup": "Which evidence shows improvement over the last two weeks?"
+  }
+]

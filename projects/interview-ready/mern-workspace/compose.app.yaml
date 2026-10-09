@@ -1,0 +1,12 @@
+# Local container exercise only. No authenticated database or public TLS.
+services:
+  app:
+    build: .
+    ports: ["127.0.0.1:3000:3000"]
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/?replicaSet=rs0
+      MONGODB_DATABASE: mern_interview_workspace
+      APP_ORIGIN: http://localhost:3000
+    depends_on:
+      mongo-init:
+        condition: service_completed_successfully

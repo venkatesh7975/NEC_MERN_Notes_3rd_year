@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "source": "User master prompt technology coverage, 2026-10-08",
+  "groups": [
+    {
+      "name": "FOUNDATIONS",
+      "areas": [
+        "foundations"
+      ],
+      "concepts": [
+        "Internet fundamentals",
+        "How the Web works",
+        "Browser architecture",
+        "HTTP/HTTPS",
+        "DNS",
+        "TCP/IP basics",
+        "APIs",
+        "JSON",
+        "Client-server architecture",
+        "Developer tools"
+      ]
+    },
+    {
+      "name": "HTML",
+      "areas": [
+        "html"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Semantic HTML",
+        "Forms",
+        "Tables",
+        "Multimedia",
+        "Accessibility",
+        "SEO",
+        "HTML APIs",
+        "Modern HTML"
+      ]
+    },
+    {
+      "name": "CSS",
+      "areas": [
+        "css"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Box model",
+        "Selectors",
+        "Cascade",
+        "Specificity",
+        "Flexbox",
+        "Grid",
+        "Responsive design",
+        "Media queries",
+        "Animations",
+        "Transitions",
+        "Positioning",
+        "Variables",
+        "Accessibility",
+        "Modern CSS",
+        "CSS architecture"
+      ]
+    },
+    {
+      "name": "JAVASCRIPT",
+      "areas": [
+        "javascript",
+        "async",
+        "browser"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Variables",
+        "Data types",
+        "Operators",
+        "Control flow",
+        "Functions",
+        "Scope",
+        "Closures",
+        "Hoisting",
+        "this",
+        "Objects",
+        "Arrays",
+        "Destructuring",
+        "Spread/rest",
+        "Prototypes",
+        "Classes",
+        "Inheritance",
+        "Modules",
+        "Error handling",
+        "DOM",
+        "Events",
+        "Browser APIs",
+        "Fetch",
+        "Promises",
+        "async/await",
+        "Event loop",
+        "Microtasks",
+        "Macrotasks",
+        "Memory",
+        "Garbage collection",
+        "Iterators",
+        "Generators",
+        "Symbols",
+        "Proxy",
+        "Reflect",
+        "Typed arrays",
+        "Internationalization",
+        "Modern ECMAScript",
+        "Performance",
+        "Security"
+      ]
+    },
+    {
+      "name": "TYPESCRIPT",
+      "areas": [
+        "typescript"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Types",
+        "Interfaces",
+        "Type aliases",
+        "Unions",
+        "Intersections",
+        "Generics",
+        "Utility types",
+        "Narrowing",
+        "Type guards",
+        "Enums",
+        "Modules",
+        "Classes",
+        "Advanced types",
+        "TypeScript with React",
+        "TypeScript with Node",
+        "TypeScript with Express",
+        "Full-stack TypeScript"
+      ]
+    },
+    {
+      "name": "GIT / GITHUB",
+      "areas": [
+        "git"
+      ],
+      "concepts": [
+        "Git fundamentals",
+        "Branching",
+        "Merging",
+        "Rebasing",
+        "Stashing",
+        "Cherry-pick",
+        "Reset",
+        "Revert",
+        "Git workflows",
+        "Pull requests",
+        "Code review",
+        "GitHub Actions",
+        "Open-source contribution"
+      ]
+    },
+    {
+      "name": "REACT",
+      "areas": [
+        "react"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "JSX",
+        "Components",
+        "Props",
+        "State",
+        "Events",
+        "Forms",
+        "Conditional rendering",
+        "Lists",
+        "Keys",
+        "Hooks",
+        "useState",
+        "useEffect",
+        "useRef",
+        "useMemo",
+        "useCallback",
+        "useContext",
+        "Custom hooks",
+        "Component architecture",
+        "Routing",
+        "React Router",
+        "Data fetching",
+        "Error handling",
+        "Performance",
+        "Lazy loading",
+        "Suspense",
+        "Server/client concepts",
+        "Testing",
+        "Accessibility",
+        "Production architecture"
+      ]
+    },
+    {
+      "name": "STATE MANAGEMENT",
+      "areas": [
+        "state-management"
+      ],
+      "concepts": [
+        "Local state",
+        "Context",
+        "Redux",
+        "Redux Toolkit",
+        "Zustand",
+        "Server state",
+        "TanStack Query",
+        "When to use which approach"
+      ]
+    },
+    {
+      "name": "NEXT.JS",
+      "areas": [
+        "nextjs"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Routing",
+        "Layouts",
+        "Server Components",
+        "Client Components",
+        "Data fetching",
+        "Server Actions",
+        "API routes",
+        "Middleware",
+        "Authentication",
+        "Caching",
+        "Rendering strategies",
+        "Static rendering",
+        "Dynamic rendering",
+        "Streaming",
+        "Deployment",
+        "Performance"
+      ]
+    },
+    {
+      "name": "NODE.JS",
+      "areas": [
+        "nodejs"
+      ],
+      "concepts": [
+        "Runtime fundamentals",
+        "V8",
+        "Modules",
+        "CommonJS",
+        "ESM",
+        "npm",
+        "package.json",
+        "File system",
+        "Events",
+        "EventEmitter",
+        "Buffers",
+        "Streams",
+        "HTTP",
+        "Networking",
+        "Process",
+        "Environment variables",
+        "Child processes",
+        "Worker threads",
+        "Cluster",
+        "Event loop",
+        "Async programming",
+        "Error handling",
+        "Performance",
+        "Security",
+        "Testing"
+      ]
+    },
+    {
+      "name": "EXPRESS",
+      "areas": [
+        "express"
+      ],
+      "concepts": [
+        "Server creation",
+        "Routing",
+        "Middleware",
+        "Request/response",
+        "Controllers",
+        "Services",
+        "REST APIs",
+        "Validation",
+        "Error handling",
+        "Authentication",
+        "Authorization",
+        "Cookies",
+        "Sessions",
+        "File uploads",
+        "Pagination",
+        "Filtering",
+        "Sorting",
+        "Searching",
+        "Rate limiting",
+        "Logging",
+        "Security",
+        "API architecture",
+        "Production structure"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "areas": [
+        "mongodb"
+      ],
+      "concepts": [
+        "Documents",
+        "Collections",
+        "BSON",
+        "CRUD",
+        "Operators",
+        "Querying",
+        "Projection",
+        "Sorting",
+        "Pagination",
+        "Indexes",
+        "Aggregation",
+        "Transactions",
+        "Schema design",
+        "Data modeling",
+        "Replication",
+        "Performance"
+      ]
+    },
+    {
+      "name": "Mongoose",
+      "areas": [
+        "mongoose"
+      ],
+      "concepts": [
+        "Connection",
+        "Schema",
+        "Models",
+        "Validation",
+        "Middleware",
+        "Methods",
+        "Statics",
+        "Virtuals",
+        "Populate",
+        "References",
+        "Transactions",
+        "Indexes",
+        "Aggregation"
+      ]
+    },
+    {
+      "name": "SQL",
+      "areas": [
+        "sql"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "MySQL",
+        "PostgreSQL",
+        "CRUD",
+        "Joins",
+        "Subqueries",
+        "CTE",
+        "Window functions",
+        "Indexes",
+        "Transactions",
+        "Constraints",
+        "Normalization",
+        "Query optimization"
+      ]
+    },
+    {
+      "name": "Redis",
+      "areas": [
+        "redis"
+      ],
+      "concepts": [
+        "Fundamentals",
+        "Caching",
+        "Sessions",
+        "Pub/Sub",
+        "Rate limiting",
+        "Queues",
+        "Distributed locks"
+      ]
+    },
+    {
+      "name": "API DEVELOPMENT",
+      "areas": [
+        "api"
+      ],
+      "concepts": [
+        "REST",
+        "GraphQL",
+        "HTTP methods",
+        "Status codes",
+        "Headers",
+        "Authentication",
+        "Authorization",
+        "Pagination",
+        "Filtering",
+        "Sorting",
+        "Versioning",
+        "Validation",
+        "Error handling",
+        "Rate limiting",
+        "API documentation",
+        "OpenAPI / Swagger"
+      ]
+    },
+    {
+      "name": "AUTHENTICATION & SECURITY",
+      "areas": [
+        "security"
+      ],
+      "concepts": [
+        "Password hashing",
+        "bcrypt",
+        "JWT",
+        "Access tokens",
+        "Refresh tokens",
+        "Cookies",
+        "Sessions",
+        "OAuth",
+        "RBAC",
+        "CORS",
+        "CSRF",
+        "XSS",
+        "SQL injection",
+        "NoSQL injection",
+        "Rate limiting",
+        "Helmet",
+        "Secure headers",
+        "Secrets",
+        "OWASP",
+        "Security best practices"
+      ]
+    },
+    {
+      "name": "REAL-TIME",
+      "areas": [
+        "realtime"
+      ],
+      "concepts": [
+        "WebSockets",
+        "Socket.IO",
+        "Server-Sent Events",
+        "Notifications",
+        "Chat architecture",
+        "Presence",
+        "Real-time dashboards"
+      ]
+    },
+    {
+      "name": "TESTING",
+      "areas": [
+        "testing"
+      ],
+      "concepts": [
+        "Unit testing",
+        "Integration testing",
+        "API testing",
+        "Component testing",
+        "End-to-end testing",
+        "Jest",
+        "Vitest",
+        "React Testing Library",
+        "Supertest",
+        "Playwright",
+        "Cypress"
+      ]
+    },
+    {
+      "name": "DEVOPS",
+      "areas": [
+        "devops"
+      ],
+      "concepts": [
+        "Linux",
+        "Shell",
+        "Environment variables",
+        "Docker",
+        "Docker Compose",
+        "Images",
+        "Containers",
+        "Volumes",
+        "Networks",
+        "CI/CD",
+        "GitHub Actions",
+        "Nginx",
+        "Reverse proxy",
+        "SSL/TLS",
+        "Deployment",
+        "Monitoring",
+        "Logging"
+      ]
+    },
+    {
+      "name": "CLOUD",
+      "areas": [
+        "cloud"
+      ],
+      "concepts": [
+        "Cloud fundamentals",
+        "Deployment architecture",
+        "Compute",
+        "Storage",
+        "Databases",
+        "CDN",
+        "DNS",
+        "Environment management",
+        "Secrets",
+        "Scaling"
+      ]
+    },
+    {
+      "name": "SOFTWARE ENGINEERING",
+      "areas": [
+        "engineering"
+      ],
+      "concepts": [
+        "Clean code",
+        "SOLID",
+        "DRY",
+        "KISS",
+        "YAGNI",
+        "Design patterns",
+        "Architecture patterns",
+        "Layered architecture",
+        "MVC",
+        "Clean architecture",
+        "Dependency injection",
+        "Error handling",
+        "Logging",
+        "Observability",
+        "Documentation"
+      ]
+    },
+    {
+      "name": "SYSTEM DESIGN",
+      "areas": [
+        "system-design"
+      ],
+      "concepts": [
+        "Scalability",
+        "Availability",
+        "Reliability",
+        "Load balancing",
+        "Caching",
+        "Database scaling",
+        "Replication",
+        "Sharding",
+        "Queues",
+        "Pub/Sub",
+        "CDN",
+        "Rate limiting",
+        "CAP theorem",
+        "Consistency",
+        "Distributed systems",
+        "High-level design",
+        "Low-level design"
+      ]
+    }
+  ],
+  "aliases": {}
+}

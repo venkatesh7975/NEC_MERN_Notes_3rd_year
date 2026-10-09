@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "css", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [CSS layout, cascade, and responsive design](../knowledge-base/topics/css.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # CSS teaching notes
 
 ## What and why

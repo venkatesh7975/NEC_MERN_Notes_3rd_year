@@ -1,149 +1,111 @@
-# 🎓 NEC 3rd Year Full Stack Web Development (MERN Stack)
+# MERN Stack Knowledge Base
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-v24-339933?logo=node.js)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?logo=express)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
-[![Curriculum Pass](https://img.shields.io/badge/Curriculum-100%25%20Validated-brightgreen.svg)](scripts/validate-curriculum.cjs)
+Learn the web, build full-stack JavaScript applications, prepare for product-company and startup interviews, and understand the engineering decisions behind reliable systems. This living open-source knowledge base is for beginners, developers, interview candidates, and trainers. The institutional curriculum is one optional view, and useful original URLs remain available.
 
-A syllabus-aligned, production-ready educational repository for Full Stack Web Development (MERN Stack). Designed for classroom teaching, independent study, practical assignments, subtopic project briefs, and technical interview preparation.
+[Start the 80/20 route](knowledge-base/paths/80-20-mern-developer.md) · [Search concepts](knowledge-base/explorer.html) · [All topics](knowledge-base/INDEX.md) · [Interview handbook](interview-handbook/README.md) · [Project ladder](knowledge-base/projects/README.md) · [Downloads](interview-handbook/downloads/README.md)
 
-> **📊 Curriculum Overview**: 10 Official Modules · 120 Contact Hours · 15 Technology Tracks · 755 Markdown Notes Files · 150 Subtopic Mini-Projects · 45 Daily Practice Days · Interactive Web Portal.
+## Learn broadly; practice the essentials deeply
 
----
+Every mapped concept has a priority. Focus first on P0 and P1, implement and debug real behavior, then return to specialized topics when a requirement needs them.
 
-## 🌐 Interactive Web Application Portal
+| Priority | Meaning | Study approach |
+| --- | --- | --- |
+| 🔥 P0 | Essential / Master | Repeated implementation, debugging, and explanation |
+| ⭐ P1 | Highly Important | Understand well and apply in a project |
+| 📚 P2 | Useful | Learn when the application calls for it |
+| 🧩 P3 | Advanced / Specialized | Investigate constraints and alternatives |
+| 🔬 P4 | Reference / Experimental | Evaluate status and compatibility before use |
 
-Launch the built-in **MERN Stack Learning Portal** static website directly in your browser or run it locally:
+The current catalog has **25 authored guides and 375 mapped concepts**. **88 concepts have direct worked examples; 287 have reference definitions and connected resources.** Fourteen standalone concept fixtures add executable outputs, failures and changed-input exercises. These counts describe evidence, not complete technology knowledge or mastery. See the [coverage map and priority distribution](knowledge-base/COVERAGE.md) and [maintenance roadmap](knowledge-base/REMAINING_WORK.md).
+
+| Area | Connected guides |
+| --- | --- |
+| Web foundations | [Foundations](knowledge-base/topics/foundations.md), [HTML](knowledge-base/topics/html.md), [CSS](knowledge-base/topics/css.md) |
+| JavaScript ecosystem | [JavaScript](knowledge-base/topics/javascript.md), [async](knowledge-base/topics/async.md), [browser APIs](knowledge-base/topics/browser.md), [TypeScript](knowledge-base/topics/typescript.md), [Git](knowledge-base/topics/git.md) |
+| Frontend | [React](knowledge-base/topics/react.md), [state management](knowledge-base/topics/state-management.md), [Next.js](knowledge-base/topics/nextjs.md) |
+| Backend and data | [Node](knowledge-base/topics/nodejs.md), [Express](knowledge-base/topics/express.md), [MongoDB](knowledge-base/topics/mongodb.md), [Mongoose](knowledge-base/topics/mongoose.md), [SQL](knowledge-base/topics/sql.md), [Redis](knowledge-base/topics/redis.md) |
+| Application engineering | [APIs](knowledge-base/topics/api.md), [security](knowledge-base/topics/security.md), [real-time systems](knowledge-base/topics/realtime.md), [testing](knowledge-base/topics/testing.md) |
+| Operating and scaling | [DevOps](knowledge-base/topics/devops.md), [cloud](knowledge-base/topics/cloud.md), [software engineering](knowledge-base/topics/engineering.md), [system design](knowledge-base/topics/system-design.md) |
+
+[Ten debugging cases](knowledge-base/debugging/README.md) · [17 cheatsheets](knowledge-base/cheatsheets/README.md) · [Ten Mermaid diagrams](knowledge-base/diagrams/README.md) · [Reviewed primary resources](knowledge-base/resources/README.md)
+
+![MERN learning mind map](interview-handbook/mindmaps/mern-overview.svg)
+
+## Find what you need
+
+| Goal | Resource |
+| --- | --- |
+| Learn fundamentals | [Web and HTML](interview-handbook/notes/01-web-html.md), [CSS](interview-handbook/notes/02-css.md), [JavaScript](interview-handbook/notes/03-javascript.md) |
+| Understand MERN | [React](interview-handbook/notes/04-react.md), [Node and Express](interview-handbook/notes/05-node-express.md), [MongoDB](interview-handbook/notes/06-mongodb.md) |
+| Build reliable apps | [Security](interview-handbook/notes/07-security.md), [testing](interview-handbook/notes/08-testing.md), [design](interview-handbook/notes/09-design.md), [TypeScript](interview-handbook/notes/10-typescript.md) |
+| Technical interviews | [100 answered questions](interview-handbook/questions/index.md): 30 Easy, 40 Medium, 30 Hard |
+| Debugging interviews | [24 scenario questions with diagnosis and verification](interview-handbook/scenarios/README.md) |
+| Machine coding | [16 timed exercises](interview-handbook/machine-coding/README.md), [rubric](interview-handbook/machine-coding/rubric.md), [source implementations](projects/interview-ready/README.md) |
+| Company preparation | [Company and startup playbooks](interview-handbook/companies/README.md), [project defense](interview-handbook/companies/project-defense.md) |
+| Coding patterns | [DSA patterns](interview-handbook/dsa/README.md), [tested JavaScript utilities](projects/interview-ready/js-toolkit/README.md) |
+| Visual revision | [Six SVG and editable Mermaid mind maps](interview-handbook/mindmaps/README.md) |
+| Offline study | [PDF handbook, Word plan, Excel and CSV trackers](interview-handbook/downloads/README.md) |
+| Online progress | [Native Google Sheets tracker](https://docs.google.com/spreadsheets/d/1qv2QV0GggbD07a_JYlhir__9PxiIjKEQEbz103HR0H0/edit) |
+| External courses | [28 curated resources](interview-handbook/resources/README.md) with level, access, and suggested use |
+
+Company playbooks link official guidance and label original practice recommendations. They do not predict questions or guarantee selection. External resources retain their own licenses and include free documentation plus clearly labeled optional paid practice.
+
+## Runnable source projects
+
+| Application | Setup and source | Learning focus |
+| --- | --- | --- |
+| Six beginner apps | [Web learning lab](projects/knowledge-base/learning-lab/README.md) | Calculator, undoable todo, quiz, weather, local notes, exact-cent expenses |
+| MERN task board | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | Sessions, ownership, status workflow, atomic version conflicts |
+| Eleven product workflows | [Product lab source and setup](projects/interview-ready/mern-workspace/PRODUCT_LAB.md) | Roles, transactions, replay, privacy, enrollment and approvals |
+| Executable concept examples | [Fourteen Node fixtures](projects/knowledge-base/concept-lab/README.md) | Scope, receivers, prototypes, promises, scheduling, errors and cleanup |
+| MERN reading list | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | URL validation, per-user uniqueness, persistent CRUD |
+| MERN expense tracker | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | Exact amounts, valid dates, account aggregates |
+| Accessible UI lab | [HTML CSS JS source](projects/interview-ready/ui-lab/README.md) | Accordion, modal, filters, undo, keyboard focus |
+| JavaScript toolkit | [Source and tests](projects/interview-ready/js-toolkit/README.md) | Debounce, LRU, emitter, promise pool, algorithms |
+
+The MERN apps share one runnable package and authentication foundation, with distinct domain behavior. [Eleven product workflows](projects/interview-ready/mern-workspace/PRODUCT_LAB.md) add blog, movie/video catalogs, commerce, admin, LMS, jobs, social feeds, team projects, recoverable chat and expense approvals. The [20-project ladder](knowledge-base/projects/README.md) now has runnable core learning source for every entry, with requirements, architecture, schema, contracts, tests and extension boundaries. Production scope requires evidence against the [production gate](knowledge-base/projects/PRODUCTION_GATE.md). The original [150 mini-project briefs](PROJECT_INDEX.md) remain available.
+
+## Study in the browser
 
 ```bash
-# Open index.html directly or serve locally via Python
+git clone https://github.com/venkatesh7975/NEC_MERN_Notes_3rd_year.git
+cd NEC_MERN_Notes_3rd_year
 python -m http.server 8000
-# Access: http://localhost:8000
-```
-- **Features**: Global live search across 755+ files, dark/light glassmorphic theme toggle, overall task completion stats, module breakdowns, and pop-up modal notes readers.
-
----
-
-## 📁 Technology-First Folder Architecture
-
-The repository is strictly organized into **One Folder per Technology** with dedicated **Subfolders for each Subtopic/Project/Lab**:
-
-```
-NEC_MERN_Notes_3rd_year/
-├── index.html                        # Interactive Web Application Portal
-├── CURRICULUM.md                     # Official Syllabus & Learning Objectives
-├── ROADMAP.md                        # Recommended Student Learning Pathway
-├── PROJECT_INDEX.md                  # Master Index of 150 Subtopic Mini-Projects
-├── TASK_INDEX.md                     # Master Index of Task Assignments
-│
-├── 01-foundations/                   # Tech 01: Web Foundations & HTTP (6 Hours)
-├── 02-html/                          # Tech 02: HTML5 Essentials & Semantics (10 Hours)
-├── 03-css/                           # Tech 03: CSS3, Flexbox, Grid & Responsive (14 Hours)
-├── 04-javascript/                    # Tech 04: JavaScript ES6+, DOM & Async (26 Hours)
-├── 05-react/                         # Tech 05: React 19 Frontend Framework (21 Hours)
-├── 06-nodejs/                        # Tech 06: Node.js Backend Runtime (12 Hours)
-├── 07-express-rest/                  # Tech 07: Express.js & REST API Architecture (10 Hours)
-├── 08-databases/                     # Tech 08: Databases — SQL + MongoDB (8 Hours)
-├── 09-devops/                        # Tech 09: DevOps, Docker & Cloud Deploy (8 Hours)
-├── 10-security/                      # Tech 10: Web Security & OWASP Standards (5 Hours)
-├── 11-supplementary/                 # Tech 11: Mongoose, Auth & Fullstack Integration
-│
-├── notes/                            # Technology Notes Guides
-│   ├── html.md                       # HTML5 Notes
-│   ├── css.md                        # CSS3 Notes
-│   ├── javascript.md                 # JavaScript ES6+ Notes
-│   ├── react.md                      # React 19 Notes
-│   ├── node.md                       # Node.js Notes
-│   ├── express.md                    # Express.js Notes
-│   ├── mongodb.md                    # MongoDB & Mongoose Notes
-│   ├── mysql.md                      # MySQL & Relational Notes
-│   ├── git.md                        # Git Version Control Notes
-│   ├── rest-api.md                   # REST API Principles Notes
-│   ├── authentication.md             # Security & JWT Notes
-│   ├── deployment.md                 # Cloud Deployment Notes
-│   └── docker.md                     # Docker Container Notes
-│
-├── mini-projects/                    # Technology -> Subtopic Projects (150 Briefs)
-│   ├── html/                         # 10 Subtopic Projects (Semantic tags, forms, tables...)
-│   ├── css/                          # 10 Subtopic Projects (Flexbox, Grid, Responsive...)
-│   ├── javascript/                   # 10 Subtopic Projects (DOM, Async, Calculators...)
-│   ├── react/                        # 10 Subtopic Projects (Hooks, Router, State...)
-│   ├── nodejs/                       # 10 Subtopic Projects (FS, HTTP, CLI...)
-│   ├── express/                      # 10 Subtopic Projects (Routing, Middleware...)
-│   ├── rest-api/                     # 10 Subtopic Projects (REST CRUD, Endpoints...)
-│   ├── sql/                          # 10 Subtopic Projects (Queries, Joins, Keys...)
-│   ├── mongodb/                      # 10 Subtopic Projects (Schemas, Aggregations...)
-│   ├── devops/                       # 10 Subtopic Projects (Docker, CI/CD...)
-│   ├── security/                     # 10 Subtopic Projects (XSS, SQLi, Auth...)
-│   ├── mongoose/                     # 10 Subtopic Projects (Validations, Models...)
-│   ├── authentication/               # 10 Subtopic Projects (JWT, Bcrypt...)
-│   └── fullstack/                    # 10 Subtopic Projects (MERN Integration...)
-│
-├── daily-practice/                   # Technology -> Daily Subtopic Labs (45 Days)
-│   ├── html/                         # day-01, day-02, day-03
-│   ├── css/                          # day-01, day-02, day-03
-│   ├── javascript/                   # day-01, day-02, day-03
-│   └── ...                           # Technology-wise day subfolders
-│
-├── tasks/                            # Course Assignment Suites & Submissions
-├── interview-preparation/            # Technology Technical Q&A Guides
-├── cheatsheets/                      # One-Page Command & Syntax Reference
-└── dailycodes/                       # Classroom Application Solutions
 ```
 
----
+Open `http://localhost:8000/knowledge-base/explorer.html` to search concepts, filter priority/difficulty/depth, read guides, track reviewed concepts, and export progress. Open `/projects/knowledge-base/learning-lab/` for six apps, `/interview-handbook/study.html` for answer practice, or `/` for the preserved portal. Serving over HTTP allows modules and JSON data to load consistently. Progress stays in your browser; export it for backup.
 
-## 📚 Official Course Modules (120 Contact Hours)
+For MERN apps, follow the [workspace setup](projects/interview-ready/mern-workspace/README.md). It requires Node 22.12 or newer and MongoDB. The explorer and UI lab need no npm installation.
 
-| Module | Module Title | Contact Hours | Primary Tech Stack | Documentation Link |
-| :---: | :--- | :---: | :---: | :---: |
-| **01** | [Foundations of Web Development](01-foundations/README.md) | 6 Hours | HTTP, Git, Web | [`notes/git.md`](notes/git.md) |
-| **02** | [HTML Essentials & Semantics](02-html/README.md) | 10 Hours | HTML5, A11y, Forms | [`notes/html.md`](notes/html.md) |
-| **03** | [CSS Styling & Responsive Layouts](03-css/README.md) | 14 Hours | Flexbox, Grid, CSS3 | [`notes/css.md`](notes/css.md) |
-| **04** | [JavaScript Core & Async Programming](04-javascript/README.md) | 26 Hours | ES6+, DOM, Async | [`notes/javascript.md`](notes/javascript.md) |
-| **05** | [React 19 Frontend Development](05-react/README.md) | 21 Hours | React 19, Hooks | [`notes/react.md`](notes/react.md) |
-| **06** | [Node.js Backend Runtime](06-nodejs/README.md) | 12 Hours | Node v24, Event Loop | [`notes/node.md`](notes/node.md) |
-| **07** | [Express.js & REST API Architecture](07-express-rest/README.md) | 10 Hours | Express 4.x, REST | [`notes/express.md`](notes/express.md) |
-| **08** | [Databases (SQL + MongoDB)](08-databases/README.md) | 8 Hours | MySQL, MongoDB | [`notes/mongodb.md`](notes/mongodb.md) |
-| **09** | [DevOps, Docker & Cloud Deployment](09-devops/README.md) | 8 Hours | Docker, Vercel, Render | [`notes/deployment.md`](notes/deployment.md) |
-| **10** | [Web Security & OWASP Best Practices](10-security/README.md) | 5 Hours | JWT, Bcrypt, OWASP | [`notes/authentication.md`](notes/authentication.md) |
+## Learning paths
 
----
+[80/20 MERN](knowledge-base/paths/80-20-mern-developer.md) · [Comprehensive MERN route](knowledge-base/paths/complete-mern-developer.md) · [Frontend](knowledge-base/paths/frontend-developer.md) · [React](knowledge-base/paths/react-developer.md) · [Backend](knowledge-base/paths/backend-developer.md) · [Node.js](knowledge-base/paths/nodejs-developer.md) · [Full-stack engineer](knowledge-base/paths/full-stack-engineer.md) · [Interview preparation](knowledge-base/paths/interview-preparation.md) · [Production engineer](knowledge-base/paths/production-engineer.md) · [Advanced MERN](knowledge-base/paths/advanced-mern-engineer.md)
 
-## 🗺️ Technology Tracks Navigation Matrix
+Each route has connected topics, practice, and exit evidence. The comprehensive route is a destination; the coverage map identifies present depth. For time-bound preparation, use the [12-week, 30-day, and seven-day roadmaps](interview-handbook/roadmaps/README.md). The [classroom guide](CLASSROOM_GUIDE.md) remains an optional institutional route.
 
-Each technology track connects its primary notes, daily practice days, assignment, subtopic mini-projects, and interview questions:
+Read, explain without notes, implement, test a boundary, and defend a tradeoff. Record evidence and extend source projects yourself before claiming portfolio ownership.
 
-| Technology | Notes Guide | Daily Practice | Course Assignment | Subtopic Projects | Interview Q&A |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Web Foundations** | [`notes/git.md`](notes/git.md) | [`daily-practice/foundations`](daily-practice/foundations) | [`tasks/course-foundations`](tasks/course-foundations) | [`mini-projects/foundations`](mini-projects/foundations) | [`interview-preparation/foundations.md`](interview-preparation/foundations.md) |
-| **HTML5** | [`notes/html.md`](notes/html.md) | [`daily-practice/html`](daily-practice/html) | [`tasks/course-html`](tasks/course-html) | [`mini-projects/html`](mini-projects/html) | [`interview-preparation/html.md`](interview-preparation/html.md) |
-| **CSS3** | [`notes/css.md`](notes/css.md) | [`daily-practice/css`](daily-practice/css) | [`tasks/course-css`](tasks/course-css) | [`mini-projects/css`](mini-projects/css) | [`interview-preparation/css.md`](interview-preparation/css.md) |
-| **JavaScript** | [`notes/javascript.md`](notes/javascript.md) | [`daily-practice/javascript`](daily-practice/javascript) | [`tasks/course-javascript`](tasks/course-javascript) | [`mini-projects/javascript`](mini-projects/javascript) | [`interview-preparation/javascript.md`](interview-preparation/javascript.md) |
-| **React 19** | [`notes/react.md`](notes/react.md) | [`daily-practice/react`](daily-practice/react) | [`tasks/course-react`](tasks/course-react) | [`mini-projects/react`](mini-projects/react) | [`interview-preparation/react.md`](interview-preparation/react.md) |
-| **Node.js** | [`notes/node.md`](notes/node.md) | [`daily-practice/nodejs`](daily-practice/nodejs) | [`tasks/course-nodejs`](tasks/course-nodejs) | [`mini-projects/nodejs`](mini-projects/nodejs) | [`interview-preparation/nodejs.md`](interview-preparation/nodejs.md) |
-| **Express.js** | [`notes/express.md`](notes/express.md) | [`daily-practice/express`](daily-practice/express) | [`tasks/course-express`](tasks/course-express) | [`mini-projects/express`](mini-projects/express) | [`interview-preparation/express.md`](interview-preparation/express.md) |
-| **REST API** | [`notes/rest-api.md`](notes/rest-api.md) | [`daily-practice/rest-api`](daily-practice/rest-api) | [`tasks/course-rest-api`](tasks/course-rest-api) | [`mini-projects/rest-api`](mini-projects/rest-api) | [`interview-preparation/rest-api.md`](interview-preparation/rest-api.md) |
-| **SQL** | [`notes/mysql.md`](notes/mysql.md) | [`daily-practice/sql`](daily-practice/sql) | [`tasks/course-sql`](tasks/course-sql) | [`mini-projects/sql`](mini-projects/sql) | [`interview-preparation/sql.md`](interview-preparation/sql.md) |
-| **MongoDB** | [`notes/mongodb.md`](notes/mongodb.md) | [`daily-practice/mongodb`](daily-practice/mongodb) | [`tasks/course-mongodb`](tasks/course-mongodb) | [`mini-projects/mongodb`](mini-projects/mongodb) | [`interview-preparation/mongodb.md`](interview-preparation/mongodb.md) |
-| **DevOps** | [`notes/deployment.md`](notes/deployment.md) | [`daily-practice/devops`](daily-practice/devops) | [`tasks/course-devops`](tasks/course-devops) | [`mini-projects/devops`](mini-projects/devops) | [`interview-preparation/devops.md`](interview-preparation/devops.md) |
-| **Web Security** | [`notes/authentication.md`](notes/authentication.md) | [`daily-practice/security`](daily-practice/security) | [`tasks/course-security`](tasks/course-security) | [`mini-projects/security`](mini-projects/security) | [`interview-preparation/security.md`](interview-preparation/security.md) |
-
----
-
-## 🛠️ Verification & Test Suite
-
-The repository includes an automated curriculum validator script ensuring all links, 150 project briefs, and 45 practice days remain intact:
+## Quality checks
 
 ```bash
-# Run curriculum integrity validation and unit tests
 npm test
+npm run build:knowledge
+npm run check:knowledge
+npm run check:handbook
+cd projects/interview-ready/mern-workspace
+npm ci
+npm test
+npm run build
 ```
 
----
+API checks use real disposable MongoDB. [Knowledge-base verification](knowledge-base/VERIFICATION.md) and [interview verification](interview-handbook/VERIFICATION.md) distinguish executed checks from documentation review. [Architecture](knowledge-base/ARCHITECTURE.md) explains generation, metadata, and future website features.
 
-## 📄 License
+## Original classroom materials
 
-This repository is licensed under the [MIT License](LICENSE).
+[Classroom guide](CLASSROOM_GUIDE.md) · [Curriculum](CURRICULUM.md) · [Notes](notes) · [Daily practice](daily-practice) · [Assignments](TASK_INDEX.md) · [Project briefs](PROJECT_INDEX.md) · [Example execution status](resources/example-status.md)
+
+Contributions should add correct explanations, clear acceptance criteria, runnable source when promised, and meaningful checks. See [contributing](CONTRIBUTING.md), [code of conduct](CODE_OF_CONDUCT.md), [security reporting](SECURITY.md), and [resource policy](knowledge-base/resources/POLICY.md). Repository content uses the [MIT license](LICENSE); linked resources keep their own licenses.
+
+[Repository audit](REPOSITORY_AUDIT.md) · [Migration map](knowledge-base/MIGRATION_MAP.md) · [Coverage](knowledge-base/COVERAGE.md) · [Remaining work](knowledge-base/REMAINING_WORK.md)
+
+[Knowledge-base downloads](knowledge-base/downloads/README.md) include the full-guide PDF and four-tab concept/project/resource tracker. The interview handbook also includes PDF, Word, Excel and CSV exports. Both Google Sheets belong to the owner's connected account and retain private sharing. [Media verification scope](knowledge-base/resources/VIDEOS.md) explains course selection and version limits.

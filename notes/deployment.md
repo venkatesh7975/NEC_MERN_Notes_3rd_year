@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "devops", "priority": "P1", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Containers, CI/CD, and operating a web service](../knowledge-base/topics/devops.md) — P1. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Comprehensive Cloud Deployment & CI/CD Guide
 
 ## Introduction

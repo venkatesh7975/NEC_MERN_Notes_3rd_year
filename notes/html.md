@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "html", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Semantic HTML, forms, and accessible documents](../knowledge-base/topics/html.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Comprehensive HTML5 Guide & Reference
 
 ## Introduction

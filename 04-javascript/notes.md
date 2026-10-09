@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "javascript", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [JavaScript values, scope, functions, and collections](../knowledge-base/topics/javascript.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # JavaScript teaching notes
 
 ## What and why

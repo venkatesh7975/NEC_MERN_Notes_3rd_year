@@ -1,10 +1,14 @@
+<!-- kb-legacy: {"canonicalGuideId": "mongodb", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [MongoDB modeling, querying, and persisted invariants](../knowledge-base/topics/mongodb.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Comprehensive MongoDB & Mongoose Database Guide
 
 ## Introduction
 MongoDB is a leading document-based NoSQL database designed for high availability, scalability, and performance. Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js that provides a schema-based solution to model application data.
 
 ## Why We Need It
-Relational databases enforce rigid tabular schemas with fixed columns. MongoDB stores data as flexible BSON (Binary JSON) documents. This schema flexibility aligns perfectly with JavaScript object structures in MERN stack applications, enabling rapid iteration, complex nested document structures, and horizontal scaling (sharding).
+MongoDB stores BSON documents, including types beyond JSON. Embedding can keep related reads and single-document updates together; references suit other access patterns. Flexible storage still needs deliberate validation and indexes. Relational databases can also evolve schemas and store JSON. Evaluate invariants, query patterns, transaction boundaries, and operational cost rather than treating either model as universally superior.
 
 ## Syntax
 ```javascript

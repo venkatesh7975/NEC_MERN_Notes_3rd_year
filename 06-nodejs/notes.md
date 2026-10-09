@@ -1,3 +1,7 @@
+<!-- kb-legacy: {"canonicalGuideId": "nodejs", "priority": "P0", "reviewed": "2026-10-08", "status": "legacy-adapter"} -->
+> Current knowledge-base route: [Node.js runtime, resources, and asynchronous services](../knowledge-base/topics/nodejs.md) — P0. Follow that guide for prerequisites, related concepts, reviewed resources, and practice. This preserved lesson has navigation metadata; its historical examples have not all been updated or executed.
+<!-- /kb-legacy -->
+
 # Node.js teaching notes
 
 ## What and why
