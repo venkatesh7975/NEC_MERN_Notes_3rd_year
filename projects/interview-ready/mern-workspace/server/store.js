@@ -1,5 +1,6 @@
 import {ObjectId} from 'mongodb';
 import {fail} from './validation.js';
+import {initializeProducts} from './product-domains.js';
 export function id(value) {
   if (typeof value !== 'string' || !/^[a-f0-9]{24}$/i.test(value)) fail(404,'NOT_FOUND','Item not found');
   return new ObjectId(value);
@@ -11,6 +12,7 @@ export function publicItem(item) {
 export class MongoStore {
   constructor(db) {this.db=db;}
   async initialize() {
+    await initializeProducts(this.db);
     await Promise.all([
       this.db.collection('users').createIndex({email:1},{unique:true}),
       this.db.collection('sessions').createIndex({tokenHash:1},{unique:true}),

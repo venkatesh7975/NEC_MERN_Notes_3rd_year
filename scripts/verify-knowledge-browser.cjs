@@ -1,6 +1,6 @@
 // Optional integration check: npm install --no-save playwright, then install a browser.
 // BROWSER_CHANNEL=msedge uses an installed Edge; otherwise Playwright Chromium is used.
-const {chromium}=require('playwright');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE??'playwright');
 const {createServer}=require('node:http');
 const fs=require('node:fs/promises'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..');

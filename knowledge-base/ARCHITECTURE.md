@@ -14,8 +14,11 @@ knowledge-base/
   diagrams/           Mermaid mental models and text descriptions
   resources/          evaluated publisher links and verification limitations
   templates/          contribution contracts
+  downloads/          full-guide PDF and concept/project/resource workbook
   explorer.html       search, priority/difficulty/depth filters, local progress
 projects/knowledge-base/learning-lab/  six small runnable beginner apps
+projects/knowledge-base/concept-lab/   fourteen executable Node boundaries
+projects/interview-ready/mern-workspace/  base apps and eleven product workflows
 ```
 
 The existing classroom and interview trees are linked views. They are not the canonical boundary of technology coverage. Do not copy source implementations into multiple learning paths.
@@ -24,7 +27,7 @@ The existing classroom and interview trees are linked views. They are not the ca
 
 Catalog schema version 1 has guides, concepts, resources, priority labels, and depth definitions. A concept has a stable id, title, area, priority, difficulty, importance, definition, depth, source path/anchor, prerequisites, related ids, resource ids, and lastVerified. A guide has prerequisite and related guide ids, estimatedMinutes, concept ids, status, and legacy paths. The validator checks graph references and prerequisite cycles, file and anchor evidence, priorities, template sections, and coverage consistency.
 
-Author source is in `scripts/kb_content.py`, `kb_backend.py`, and `kb_engineering.py`. The build formats that reviewed data; it does not infer correctness or completeness. Regeneration is deterministic and uses standard-library Python. Legacy inventory pins a revision and reads Git blobs so later edits do not rewrite history.
+Author source is in `scripts/kb_content.py`, `kb_backend.py`, `kb_engineering.py`, `kb_practice.py`, and `kb_graph.py`. The build formats reviewed data; it does not infer correctness or completeness. Regeneration is deterministic and uses standard-library Python. Selected exact `conceptPrerequisites` and `evidencePaths` supplement area prerequisites. Concept difficulty is editorially separate from importance/priority. Legacy inventory pins a revision and reads Git blobs so later edits do not rewrite history.
 
 ## Website evolution
 
@@ -38,4 +41,4 @@ Add a guide id and concepts, assign priorities individually, declare prerequisit
 
 ## Quality gates
 
-`npm test` checks the preserved curriculum and the current knowledge graph. `npm run build:knowledge` regenerates content. `npm run check:knowledge` validates metadata, edges, sections, coverage, source references, and old-file preservation. `npm run test:learning-lab` exercises the beginner app models. Existing MERN API and browser tests remain separate because they have real runtime requirements.
+`npm test` checks the preserved curriculum, graph, original utility/model behavior and fourteen Node fixtures. `npm run build:knowledge` regenerates content. `npm run check:knowledge` validates metadata, guide/concept edges, sections, coverage, evidence paths and preservation. MERN API/browser tests remain separate because they use real MongoDB processes and a browser. CI also exercises static-browser learning, full-stack workflows and a disposable container restart/restore drill. Download exporters are optional authoring tools; using the static website or downloads needs no artifact library.

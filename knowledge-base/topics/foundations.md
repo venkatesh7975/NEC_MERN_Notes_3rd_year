@@ -120,6 +120,32 @@ Expected behavior and runtime: In a served browser application, a successful JSO
 
 Intermediate: deliberately request a missing API path and explain the representation. Advanced: compare a cold navigation with a repeat navigation and separate DNS, connection, and response caching. Record the expected result before implementation; use the failure analysis below to distinguish the broken boundary.
 
+### Executable boundary: JSON boundaries and lost information
+
+JSON is a data representation with a restricted value model. It does not preserve prototypes, undefined properties, circular references or arbitrary precision integers without an agreed encoding.
+
+Concepts: JSON.
+
+```javascript
+const encoded=JSON.stringify({date:new Date('2026-01-01T00:00:00Z'),missing:undefined,amount:12});
+const decoded=JSON.parse(encoded);assert.equal(typeof decoded.date,'string');
+assert.equal(Object.hasOwn(decoded,'missing'),false);
+assert.throws(()=>JSON.stringify({amount:12n}),TypeError);
+const circular={};circular.self=circular;assert.throws(()=>JSON.stringify(circular),TypeError);
+assert.throws(()=>JSON.parse('{bad json}'),SyntaxError);
+assert.equal(JSON.parse('{"role":"owner"}').role,'owner'); // Parsing does not authorize it.
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. Dates become strings; undefined object properties disappear; BigInt/cycles throw. Well-formed JSON can still contain an unauthorized field.
+
+**Interview:** Does successful JSON parsing establish trusted application data?
+
+**Answer:** No. Check shape, field allowlists, types, size and domain authorization after parsing.
+
+**Change and verify:** Validate a parsed expense with integer cents, an allowed category and a real calendar date. Reject an injected owner field.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/structured-data.mjs).
+
 ## 🔍 Under the Hood
 
 HTML parsing builds a document tree; CSS contributes style rules; layout computes geometry and painting produces pixels. Script and layout work can delay interaction. TLS authenticates the endpoint certificate, while application authorization still decides who may read a task.

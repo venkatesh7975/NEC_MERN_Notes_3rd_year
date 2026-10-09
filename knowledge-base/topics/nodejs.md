@@ -82,21 +82,21 @@ Filesystem APIs operate on paths and data; prefer asynchronous work in request h
 <a id="events"></a>
 ### Events
 
-**P1 · ⭐ Highly Important · reference**
+**P1 · ⭐ Highly Important · worked-example**
 
 Runtime events announce lifecycle changes; handle required error events and remove unnecessary listeners.
 
 <a id="eventemitter"></a>
 ### EventEmitter
 
-**P1 · ⭐ Highly Important · reference**
+**P1 · ⭐ Highly Important · worked-example**
 
 EventEmitter invokes registered listeners according to its contract; asynchronous listener failures require deliberate handling.
 
 <a id="buffers"></a>
 ### Buffers
 
-**P2 · 📚 Useful · reference**
+**P2 · 📚 Useful · worked-example**
 
 Buffers represent binary bytes rather than Unicode text and require explicit encoding decisions.
 
@@ -166,14 +166,14 @@ Node coordinates asynchronous work through runtime phases and queues; expensive 
 <a id="async-programming"></a>
 ### Async programming
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 Handle ordering, failures, bounded concurrency, and cleanup explicitly.
 
 <a id="error-handling"></a>
 ### Error handling
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 Separate expected domain errors from unexpected runtime failures and preserve useful diagnostic context.
 
@@ -222,6 +222,59 @@ Expected behavior and runtime: With an existing input.txt and writable destinati
 ### 2. Extend and stress the contract
 
 Intermediate: stream a large file and reproduce an input error. Advanced: profile CPU blocking under concurrent requests. Record the expected result before implementation; use the failure analysis below to distinguish the broken boundary.
+
+### Executable boundary: EventEmitter is synchronous
+
+EventEmitter invokes registered listeners synchronously during emit. once removes its listener after the first event. An unhandled error event throws; it is not an ordinary ignored event.
+
+Concepts: Events, EventEmitter, Error handling.
+
+```javascript
+const {EventEmitter}=await import('node:events');
+const bus=new EventEmitter(),order=[];
+bus.once('saved',()=>order.push('listener'));order.push('before');
+bus.emit('saved');order.push('after');bus.emit('saved');
+assert.deepEqual(order,['before','listener','after']);
+assert.throws(()=>new EventEmitter().emit('error',new Error('offline')),/offline/);
+bus.on('error',error=>order.push(error.message));bus.emit('error',new Error('handled'));
+assert.equal(order.at(-1),'handled');
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. Listener runs before emit returns and only once. Unhandled error throws; a registered error listener receives it.
+
+**Interview:** Does emit await an async listener?
+
+**Answer:** No. It invokes the function; returned Promises need an explicit error and completion policy. Consider a queue or awaited operation when durable acknowledgement is required.
+
+**Change and verify:** Make a listener reject. Add a documented rejection policy and verify the failure is observed instead of becoming an unhandled rejection.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/emitter-boundary.mjs).
+
+### Executable boundary: Stream teardown and bytes
+
+pipeline coordinates stream completion and destroys the chain when a stage fails. Buffers contain bytes; character count is not necessarily byte count for UTF-8.
+
+Concepts: Streams, Buffers, Async programming.
+
+```javascript
+const {Readable,Writable}=await import('node:stream');
+const {pipeline}=await import('node:stream/promises');
+const bytes=Buffer.from('₹');assert.equal(bytes.length,3);assert.equal(bytes.toString(),'₹');
+let chunks=0;const source=Readable.from(['one','two']);
+const sink=new Writable({write(chunk,encoding,callback){chunks++;callback(new Error('disk full'));}});
+await assert.rejects(pipeline(source,sink),/disk full/);
+assert.equal(source.destroyed,true);assert.equal(sink.destroyed,true);assert.equal(chunks,1);
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. The currency symbol occupies three UTF-8 bytes. The first failed write rejects pipeline and destroys both ends.
+
+**Interview:** Why use pipeline instead of only source.pipe(destination)?
+
+**Answer:** pipeline coordinates completion, error propagation and teardown across stages. Choose buffering/objectMode/highWaterMark for the actual workload; this small fixture is not a memory benchmark.
+
+**Change and verify:** Use a slow sink and record write/drain behavior. Bound bytes buffered and abort a large transfer; verify all resources close.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/stream-cancellation.mjs).
 
 ## 🔍 Under the Hood
 

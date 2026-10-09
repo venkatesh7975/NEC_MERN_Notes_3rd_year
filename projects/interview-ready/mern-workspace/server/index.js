@@ -11,7 +11,8 @@ const client=new MongoClient(uri,{serverSelectionTimeoutMS:5000});
 await client.connect();
 const store=new MongoStore(client.db(process.env.MONGODB_DATABASE??'mern_interview_workspace'));
 await store.initialize();
-const app=createApp({store,origin,secureCookies:origin.startsWith('https:'),staticDir:fileURLToPath(new URL('../dist/',import.meta.url))});
+if(process.env.ENABLE_PAYMENT_SIMULATOR==='true'&&process.env.NODE_ENV==='production')throw new Error('The payment simulator must be disabled in production');
+const app=createApp({store,origin,secureCookies:origin.startsWith('https:'),staticDir:fileURLToPath(new URL('../dist/',import.meta.url)),paymentSecret:process.env.PAYMENT_TEST_SECRET,allowPaymentSimulator:process.env.ENABLE_PAYMENT_SIMULATOR==='true',logRequests:true});
 const server=app.listen(port,()=>console.log(`Workspace API at http://localhost:${port}`));
 let closing=false;
 function shutdown() {

@@ -28,7 +28,12 @@ for(const c of concepts.values()){
   assert.ok(read(c.path).includes(`<a id="${c.anchor}"></a>`),`${c.id}: absent anchor`);
   for(const id of [...c.prerequisites,...c.related])assert.ok(guides.has(id),`${c.id}: unresolved edge`);
   for(const id of c.resourceIds)assert.ok(resources.has(id),`${c.id}: absent resource`);
+  for(const id of c.conceptPrerequisites??[])assert.ok(concepts.has(id),`${c.id}: unresolved concept prerequisite ${id}`);
+  for(const evidence of c.evidencePaths??[])exists(evidence);
 }
+const conceptVisited=new Set(),conceptActive=new Set();
+function visitConcept(id){assert.ok(!conceptActive.has(id),`Concept prerequisite cycle at ${id}`);if(conceptVisited.has(id))return;conceptActive.add(id);for(const next of concepts.get(id).conceptPrerequisites??[])visitConcept(next);conceptActive.delete(id);conceptVisited.add(id);}
+for(const id of concepts.keys())visitConcept(id);
 for(const r of resources.values()){assert.ok(['https:','http:'].includes(new URL(r.url).protocol));assert.ok(guides.has(r.area));date(r.lastVerified);assert.ok(r.bestFor&&r.verification&&r.versionPolicy);}
 for(const route of paths){exists(route.path);assert.ok(route.exitEvidence);for(const id of route.guideIds)assert.ok(guides.has(id),`${route.id}: absent guide`);}
 for(const p of projects){exists(p.path);assert.ok(['implemented-learning','foundation-implemented','specification'].includes(p.status));if(p.status!=='specification'){exists(p.sourcePath+'/README.md');assert.ok(fs.readdirSync(path.join(root,p.sourcePath)).some(f=>/\.(js|json)$/.test(f)),'Source status without implementation');}else assert.equal(p.sourcePath,null);for(const heading of ['Requirements','Features','Architecture','Database schema','API specification','Folder structure','Implementation','Testing','Deployment','Future improvements'])assert.ok(read(p.path).includes('## '+heading+'\n'),`${p.id}: absent ${heading}`);}

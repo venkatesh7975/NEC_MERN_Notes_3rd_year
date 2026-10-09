@@ -2,6 +2,7 @@ import express from 'express';
 import {randomBytes,createHash,scrypt as scryptCallback,timingSafeEqual} from 'node:crypto';
 import {promisify} from 'node:util';
 import {ApiError,fail,credentials,task,bookmark,expense} from './validation.js';
+import {mountProducts} from './product-domains.js';
 const scrypt=promisify(scryptCallback);
 const options={N:32768,r:8,p:1,maxmem:64*1024*1024};
 const digest=value=>createHash('sha256').update(value).digest('hex');
@@ -34,8 +35,12 @@ function authLimiter() {
     next();
   };
 }
-export function createApp({store,origin,secureCookies=false,staticDir}) {
+export function createApp({store,origin,secureCookies=false,staticDir,paymentSecret,allowPaymentSimulator=false,logRequests=false}) {
   const app=express(); app.disable('x-powered-by');
+  if(logRequests) app.use((req,res,next)=>{
+    const started=performance.now(),id=randomBytes(8).toString('hex');res.set('X-Request-Id',id);
+    res.on('finish',()=>console.log(JSON.stringify({requestId:id,method:req.method,status:res.statusCode,durationMs:Math.round(performance.now()-started)})));next();
+  });
   app.use((req,res,next)=>{
     res.set({'X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','X-Frame-Options':'DENY'});
     if (staticDir) res.set('Content-Security-Policy',"default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
@@ -51,6 +56,10 @@ export function createApp({store,origin,secureCookies=false,staticDir}) {
   });
   app.use(express.json({limit:'16kb'}));
   app.get('/api/health',(req,res)=>res.json({ok:true}));
+  app.get('/api/ready',async(req,res)=>{
+    try {await store.db.command({ping:1},{timeoutMS:2000});res.json({ok:true});}
+    catch {res.status(503).json({ok:false,error:'DEPENDENCY'});}
+  });
   const cookieOptions={httpOnly:true,sameSite:'strict',secure:secureCookies,path:'/'};
   async function signIn(res,user) {
     const token=randomBytes(32).toString('hex');
@@ -80,7 +89,7 @@ export function createApp({store,origin,secureCookies=false,staticDir}) {
   app.use('/api',async(req,res,next)=>{
     const token=tokenFrom(req), session=token && await store.session(digest(token));
     if (!session) return res.status(401).json({error:'AUTH',message:'Sign in to continue'});
-    req.user=session.user; next();
+    req.user=session.user;req.sessionHash=digest(token); next();
   });
   app.get('/api/auth/me',(req,res)=>res.json(req.user));
   for (const [kind,validate] of [['tasks',task],['bookmarks',bookmark],['expenses',expense]]) {
@@ -90,6 +99,7 @@ export function createApp({store,origin,secureCookies=false,staticDir}) {
   }
   app.patch('/api/tasks/:id',async(req,res)=>res.json(await store.updateTask(req.user.id,req.params.id,task(req.body,true))));
   app.get('/api/expenses-summary',async(req,res)=>res.json(await store.expenseSummary(req.user.id)));
+  mountProducts(app,{store,paymentSecret,allowPaymentSimulator});
   app.use('/api',(req,res)=>res.status(404).json({error:'NOT_FOUND',message:'Unknown API route'}));
   if (staticDir) app.use(express.static(staticDir));
   app.use((error,req,res,next)=>{

@@ -34,6 +34,26 @@ PROJECTS={
 'realtime-chat':('Recoverable real-time chat','Advanced','MERN Socket.IO optional Redis','Durable messages, replay, attachment constraints, delivery/read states, and multi-instance routing.','Reconnect and duplicate delivery do not lose or repeat a durable message in the view.','Rooms, memberships, messages, acknowledgements, and replay positions.','Authorized history cursor plus event protocol with stable ids.','specification',''),
 'expense-platform':('Expense management platform','Advanced','MERN','Exact amounts, categories, date validation, account reporting, organizational approvals, and audit.','Money and owner scope remain correct across list truncation, concurrent approval, and replay.','Owned expenses, organization membership, approval versions, and audit records.','Existing expense CRUD/summary foundation; approvals and organization scope remain extensions.','foundation-implemented','projects/interview-ready/mern-workspace')}
 
+# Verified core implementations share a package; larger requirements remain explicit extensions.
+CORE={
+ 'blog':'Draft/publish/edit/delete articles, literal search and cursor lists with author ownership and stored versions.',
+ 'movie-app':'Original fixture search, pagination, detail and persistent account favorites.',
+ 'youtube-clone':'Original captioned WebM playback, missing-media feedback and persistent playlists; catalog search API.',
+ 'ecommerce-frontend':'Catalog, local cart quantities and estimates, server-authoritative single-product orders and cancellation.',
+ 'admin-dashboard':'Owner-only workspace aggregates, expense totals and paged audit history.',
+ 'chat':'Authorized rooms, durable HTTP message writes, stable operation IDs and SSE replay.',
+ 'mern-ecommerce':'Atomic one-SKU stock/order reservation, idempotency, cancellation and signed payment test contracts; no real payment service.',
+ 'lms':'Workspace course authoring, enrollment-gated text lessons and persisted lesson completion.',
+ 'job-portal':'Job search, unique applications, staff review and restricted tiny PDF attachment API.',
+ 'social-network':'Follow relationships, plain-text posts, privacy changes and permission-filtered cursor feeds.',
+ 'project-platform':'Workspace roles, projects, versioned tasks, comments, transactional audit and recoverable notifications.',
+ 'realtime-chat':'Persisted message IDs, operation replay/collision checks, SSE Last-Event-ID replay and session/membership rechecks.',
+ 'expense-platform':'Exact cents, dates/categories, organization scope, independent approval, stored versions and transactional audit.'}
+for project_id in CORE:
+    row=list(PROJECTS[project_id]);row[7]='implemented-learning';row[8]='projects/interview-ready/mern-workspace'
+    if project_id in ['chat','realtime-chat']:row[2]='React Node Express MongoDB Server-Sent Events'
+    PROJECTS[project_id]=tuple(row)
+
 def build(root,write,areas):
     import json
     overview='# Learning paths\n\nChoose a goal, follow prerequisite edges, and use the exit evidence rather than the number of pages read. Study estimates describe first practice, not guaranteed mastery.\n\n'
@@ -47,7 +67,7 @@ def build(root,write,areas):
         write(f'knowledge-base/paths/{id}.md',text);routeData.append(dict(id=id,title=title,guideIds=steps,path=f'knowledge-base/paths/{id}.md',exitEvidence=exit))
     write('knowledge-base/paths/README.md',overview)
     write('knowledge-base/data/paths.json',json.dumps(routeData,indent=2))
-    text='# Project ladder\n\nThe ladder separates runnable learning implementations, implemented foundations with unbuilt extensions, and specifications. None is certified production-ready. [Production gate](PRODUCTION_GATE.md) defines the evidence needed before deployment. [Original 150 briefs](../../PROJECT_INDEX.md) remain additional choices.\n\n| Project | Tier | Status | Source or packet |\n| --- | --- | --- | --- |\n'
+    text='# Project ladder\n\nAll 20 entries have runnable core learning source. Six beginner apps use the web learning lab; the remaining entries use distinct workflows in a shared MERN package. Larger requirements remain explicit extensions in the [product scope matrix](../../projects/interview-ready/mern-workspace/PRODUCT_LAB.md). None is certified production-ready. [Production gate](PRODUCTION_GATE.md) defines the evidence needed before deployment. [Original 150 briefs](../../PROJECT_INDEX.md) remain additional choices.\n\n| Project | Tier | Status | Source or packet |\n| --- | --- | --- | --- |\n'
     registry=[]
     for id,(title,tier,tech,features,invariant,model,api,status,source) in PROJECTS.items():
         text+=f'| [{title}]({id}.md) | {tier} | {status} | '+(f'[Source](../../{source}/README.md)' if source else 'Packet; source not yet implemented')+' |\n'
@@ -55,6 +75,7 @@ def build(root,write,areas):
         packet+=f'Canonical implementation: `{source}/`.\n\n' if source else 'Proposed source: `client/`, `server/`, `test/`, and a root README/manifest. This is a design packet; those folders are not claimed to exist.\n\n'
         packet+='## Implementation\n\n'+(f'[Read and run the existing source](../../{source}/README.md). ' if source else 'This project is a specification with no implemented source in this packet. ')
         if status=='foundation-implemented':packet+='The linked source supplies a domain foundation only; organization, approval, audit, or multi-project capabilities above remain unimplemented. '
-        packet+='Check the actual source README before claiming a feature works.\n\n## Testing\n\nDemonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable.\n\n## Deployment\n\nLearning use follows the source README. A production release must pass the [production gate](PRODUCTION_GATE.md), including runtime-specific configuration and recovery. No hosted deployment is implied by this packet.\n\n## Future improvements\n\nChoose one failure or scale requirement, implement it, and update source and tests before changing status. Avoid expanding scope without evidence.\n\n[All projects](README.md) · [Debugging library](../debugging/README.md)\n'
+        if id in CORE:packet=packet.rstrip()+'\n\n**Implemented core:** '+CORE[id]+'\n\nThe requirements above describe the wider target. Compare them with the [implemented scope and extension matrix](../../projects/interview-ready/mern-workspace/PRODUCT_LAB.md), which also contains actual routes, source layout, data model and guarantees. `npm run demo` starts a disposable replica set without Docker. '
+        packet+='Check the actual source README before claiming a feature works.\n\n## Testing\n\nDemonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable. The shared MERN package includes real MongoDB tests and browser checks for the product workflows.\n\n## Deployment\n\nLearning use follows the source README. A production release must pass the [production gate](PRODUCTION_GATE.md), including runtime-specific configuration and recovery. No hosted deployment is implied by this packet.\n\n## Future improvements\n\nChoose one failure or scale requirement, implement it, and update source and tests before changing status. Avoid expanding scope without evidence.\n\n[All projects](README.md) · [Debugging library](../debugging/README.md)\n'
         write(f'knowledge-base/projects/{id}.md',packet);registry.append(dict(id=id,title=title,tier=tier,status=status,sourcePath=source or None,path=f'knowledge-base/projects/{id}.md',invariant=invariant))
     write('knowledge-base/projects/README.md',text);write('knowledge-base/data/projects.json',json.dumps(registry,indent=2))

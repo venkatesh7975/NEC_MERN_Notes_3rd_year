@@ -4,7 +4,7 @@ Difficulty: Advanced
 
 Technology: MERN optional real-time
 
-Implementation status: **foundation-implemented**
+Implementation status: **implemented-learning**
 
 ## Requirements
 
@@ -32,11 +32,15 @@ Canonical implementation: `projects/interview-ready/mern-workspace/`.
 
 ## Implementation
 
-[Read and run the existing source](../../projects/interview-ready/mern-workspace/README.md). The linked source supplies a domain foundation only; organization, approval, audit, or multi-project capabilities above remain unimplemented. Check the actual source README before claiming a feature works.
+[Read and run the existing source](../../projects/interview-ready/mern-workspace/README.md).
+
+**Implemented core:** Workspace roles, projects, versioned tasks, comments, transactional audit and recoverable notifications.
+
+The requirements above describe the wider target. Compare them with the [implemented scope and extension matrix](../../projects/interview-ready/mern-workspace/PRODUCT_LAB.md), which also contains actual routes, source layout, data model and guarantees. `npm run demo` starts a disposable replica set without Docker. Check the actual source README before claiming a feature works.
 
 ## Testing
 
-Demonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable.
+Demonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable. The shared MERN package includes real MongoDB tests and browser checks for the product workflows.
 
 ## Deployment
 

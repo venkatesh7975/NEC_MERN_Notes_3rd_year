@@ -992,7 +992,7 @@
       "title": "Fundamentals",
       "area": "typescript",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "TypeScript checks relationships between values before execution; the emitted JavaScript still needs runtime validation.",
       "depth": "reference",
@@ -1011,14 +1011,16 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--types",
       "title": "Types",
       "area": "typescript",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Types describe permitted values and operations. Prefer precise domain types to pervasive any.",
       "depth": "worked-example",
@@ -1037,14 +1039,16 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--interfaces",
       "title": "Interfaces",
       "area": "typescript",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Interfaces describe structural shapes and can support declaration merging.",
       "depth": "reference",
@@ -1063,14 +1067,16 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--type-aliases",
       "title": "Type aliases",
       "area": "typescript",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Aliases name type expressions such as unions, tuples, and mapped types.",
       "depth": "reference",
@@ -1089,7 +1095,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--unions",
@@ -1115,7 +1123,11 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "typescript--types"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "typescript--intersections",
@@ -1141,7 +1153,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--generics",
@@ -1167,7 +1181,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--utility-types",
@@ -1193,7 +1209,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--narrowing",
@@ -1219,7 +1237,11 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "typescript--unions"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "typescript--type-guards",
@@ -1245,7 +1267,11 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "typescript--narrowing"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "typescript--enums",
@@ -1271,7 +1297,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--modules",
@@ -1297,7 +1325,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--classes",
@@ -1323,14 +1353,16 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--advanced-types",
       "title": "Advanced types",
       "area": "typescript",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Conditional, mapped, indexed-access, and template-literal types express complex relationships at a readability cost.",
       "depth": "reference",
@@ -1349,7 +1381,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--typescript-with-react",
@@ -1375,7 +1409,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--typescript-with-node",
@@ -1401,7 +1437,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--typescript-with-express",
@@ -1427,7 +1465,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "typescript--full-stack-typescript",
@@ -1453,7 +1493,9 @@
       "resourceIds": [
         "typescript-official",
         "typescript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--git-fundamentals",
@@ -1476,14 +1518,16 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--branching",
       "title": "Branching",
       "area": "git",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A branch is a movable name pointing to a commit, not a separate copy of every file.",
       "depth": "worked-example",
@@ -1499,14 +1543,16 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--merging",
       "title": "Merging",
       "area": "git",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A merge combines histories, potentially creating a commit with multiple parents.",
       "depth": "reference",
@@ -1522,7 +1568,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--rebasing",
@@ -1545,7 +1593,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--stashing",
@@ -1568,7 +1618,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--cherry-pick",
@@ -1591,7 +1643,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--reset",
@@ -1614,7 +1668,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--revert",
@@ -1637,7 +1693,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--git-workflows",
@@ -1660,14 +1718,16 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--pull-requests",
       "title": "Pull requests",
       "area": "git",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A pull request proposes a branch difference for review and collaboration.",
       "depth": "reference",
@@ -1683,14 +1743,16 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--code-review",
       "title": "Code review",
       "area": "git",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Review checks behavior, maintainability, evidence, security boundaries, and scope rather than only formatting.",
       "depth": "worked-example",
@@ -1706,7 +1768,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--github-actions",
@@ -1729,7 +1793,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "git--open-source-contribution",
@@ -1752,7 +1818,9 @@
       "resourceIds": [
         "git-official",
         "git-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--fundamentals",
@@ -1782,7 +1850,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--jsx",
@@ -1812,7 +1882,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--components",
@@ -1842,7 +1914,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--props",
@@ -1872,7 +1946,11 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--components"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--state",
@@ -1902,7 +1980,11 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--components"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--events",
@@ -1932,7 +2014,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--forms",
@@ -1962,14 +2046,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--conditional-rendering",
       "title": "Conditional rendering",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Render a clear representation for each valid state, including loading, empty, error, and success.",
       "depth": "reference",
@@ -1992,14 +2078,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--lists",
       "title": "Lists",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Transform data into elements without changing item identity as order changes.",
       "depth": "reference",
@@ -2022,14 +2110,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--keys",
       "title": "Keys",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Stable keys let React identify siblings across updates; random or index-based keys can lose the correct local state.",
       "depth": "reference",
@@ -2052,14 +2142,18 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--lists"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--hooks",
       "title": "Hooks",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Hooks connect React capabilities to function components under ordering rules.",
       "depth": "worked-example",
@@ -2082,7 +2176,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--usestate",
@@ -2112,14 +2208,18 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--state"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--useeffect",
       "title": "useEffect",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Effects synchronize with external systems and need correct dependencies and cleanup.",
       "depth": "reference",
@@ -2142,7 +2242,12 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--state",
+        "async--promises"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--useref",
@@ -2172,7 +2277,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--usememo",
@@ -2202,7 +2309,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--usecallback",
@@ -2232,7 +2341,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--usecontext",
@@ -2262,7 +2373,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--custom-hooks",
@@ -2292,7 +2405,11 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "react--hooks"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--component-architecture",
@@ -2322,7 +2439,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--routing",
@@ -2352,7 +2471,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--react-router",
@@ -2382,14 +2503,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--data-fetching",
       "title": "Data fetching",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Associate responses with request identity and model caching, invalidation, cancellation, and errors.",
       "depth": "reference",
@@ -2412,14 +2535,19 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "async--fetch",
+        "react--useeffect"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "react--error-handling",
       "title": "Error handling",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Distinguish render errors, rejected asynchronous work, validation failures, and conflict recovery.",
       "depth": "reference",
@@ -2442,14 +2570,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--performance",
       "title": "Performance",
       "area": "react",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Profile actual interaction; list size, expensive work, and network waterfalls often matter more than blanket memoization.",
       "depth": "reference",
@@ -2472,7 +2602,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--lazy-loading",
@@ -2502,7 +2634,9 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--suspense",
@@ -2532,14 +2666,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--server-client-concepts",
       "title": "Server/client concepts",
       "area": "react",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "Server and client components have different capabilities and bundle boundaries supplied by a compatible framework.",
       "depth": "reference",
@@ -2562,14 +2698,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--testing",
       "title": "Testing",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Test visible behavior and accessible interaction, then run important workflows in a real browser.",
       "depth": "reference",
@@ -2592,14 +2730,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--accessibility",
       "title": "Accessibility",
       "area": "react",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Use native roles, labels, focus management, and keyboard behavior through state transitions.",
       "depth": "reference",
@@ -2622,14 +2762,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "react--production-architecture",
       "title": "Production architecture",
       "area": "react",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Define data ownership, request contracts, error recovery, bundle boundaries, and operating evidence before multiplying abstractions.",
       "depth": "reference",
@@ -2652,14 +2794,16 @@
       "resourceIds": [
         "react-official",
         "react-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--local-state",
       "title": "Local state",
       "area": "state-management",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Keep a fact near its users until a real sharing requirement appears.",
       "depth": "worked-example",
@@ -2677,7 +2821,9 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--context",
@@ -2702,7 +2848,9 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--redux",
@@ -2727,7 +2875,9 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--redux-toolkit",
@@ -2752,7 +2902,9 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--zustand",
@@ -2777,14 +2929,16 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--server-state",
       "title": "Server state",
       "area": "state-management",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Server state has remote authority, freshness, invalidation, and concurrent-writer concerns beyond local component state.",
       "depth": "worked-example",
@@ -2802,7 +2956,9 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--tanstack-query",
@@ -2827,14 +2983,16 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "state-management--when-to-use-which-approach",
       "title": "When to use which approach",
       "area": "state-management",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Choose local state, context, an external store, or a query cache according to ownership and coordination needs.",
       "depth": "worked-example",
@@ -2852,14 +3010,16 @@
       "resourceIds": [
         "state-management-official",
         "state-management-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--fundamentals",
       "title": "Fundamentals",
       "area": "nextjs",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Next.js supplies routing, rendering, and server integration around React; match documentation to the installed version and router.",
       "depth": "reference",
@@ -2880,7 +3040,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--routing",
@@ -2908,7 +3070,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--layouts",
@@ -2936,7 +3100,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--server-components",
@@ -2964,7 +3130,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--client-components",
@@ -2992,7 +3160,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--data-fetching",
@@ -3020,7 +3190,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--server-actions",
@@ -3048,7 +3220,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--api-routes",
@@ -3076,14 +3250,16 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--middleware",
       "title": "Middleware",
       "area": "nextjs",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "In Next.js 16, the middleware file convention is deprecated in favor of proxy; it is distinct from Express middleware.",
       "depth": "reference",
@@ -3104,7 +3280,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--authentication",
@@ -3132,7 +3310,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--caching",
@@ -3160,7 +3340,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--rendering-strategies",
@@ -3188,7 +3370,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--static-rendering",
@@ -3216,7 +3400,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--dynamic-rendering",
@@ -3244,14 +3430,16 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--streaming",
       "title": "Streaming",
       "area": "nextjs",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Streaming sends ready portions before the whole response finishes; boundaries affect loading and error behavior.",
       "depth": "reference",
@@ -3272,7 +3460,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--deployment",
@@ -3300,14 +3490,16 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nextjs--performance",
       "title": "Performance",
       "area": "nextjs",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "Measure bundle size, waterfalls, caching, and useful rendered content before changing rendering strategy.",
       "depth": "reference",
@@ -3328,7 +3520,9 @@
       "resourceIds": [
         "nextjs-official",
         "nextjs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--internet-fundamentals",
@@ -3352,7 +3546,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--how-the-web-works",
@@ -3376,14 +3572,16 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--browser-architecture",
       "title": "Browser architecture",
       "area": "foundations",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Browser processes separate responsibilities such as rendering, networking, and isolation; their implementation varies by browser.",
       "depth": "reference",
@@ -3400,7 +3598,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--http-https",
@@ -3424,14 +3624,16 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--dns",
       "title": "DNS",
       "area": "foundations",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "DNS resolves names into records used to locate services. DNS resolution and HTTP caching have different lifetimes.",
       "depth": "reference",
@@ -3448,14 +3650,16 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--tcp-ip-basics",
       "title": "TCP/IP basics",
       "area": "foundations",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "IP routes packets; TCP provides a reliable ordered byte stream. HTTP/3 uses QUIC over UDP instead of TCP.",
       "depth": "reference",
@@ -3472,7 +3676,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--apis",
@@ -3496,7 +3702,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--json",
@@ -3520,6 +3728,10 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/structured-data.mjs"
       ]
     },
     {
@@ -3544,7 +3756,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "foundations--developer-tools",
@@ -3568,7 +3782,9 @@
       "resourceIds": [
         "foundations-official",
         "foundations-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--fundamentals",
@@ -3594,7 +3810,9 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--semantic-html",
@@ -3620,7 +3838,9 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--forms",
@@ -3646,14 +3866,16 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--tables",
       "title": "Tables",
       "area": "html",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Tables express relationships in rows and columns. Captions and header associations help users interpret the data.",
       "depth": "reference",
@@ -3672,14 +3894,16 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--multimedia",
       "title": "Multimedia",
       "area": "html",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Images, audio, and video need alternatives appropriate to their purpose, including captions or transcripts when needed.",
       "depth": "reference",
@@ -3698,7 +3922,9 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--accessibility",
@@ -3724,14 +3950,16 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--seo",
       "title": "SEO",
       "area": "html",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Descriptive titles, useful content, crawlable links, and meaningful structure help discovery; metadata is not a ranking guarantee.",
       "depth": "reference",
@@ -3750,14 +3978,16 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--html-apis",
       "title": "HTML APIs",
       "area": "html",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Browser APIs such as dialog, history, and storage have specific lifecycle and permission contracts beyond markup.",
       "depth": "reference",
@@ -3776,14 +4006,16 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "html--modern-html",
       "title": "Modern HTML",
       "area": "html",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Native dialog, disclosure, responsive images, and newer platform features can reduce custom code; check support for your audience.",
       "depth": "reference",
@@ -3802,7 +4034,9 @@
       "resourceIds": [
         "html-official",
         "html-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--fundamentals",
@@ -3827,7 +4061,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--box-model",
@@ -3852,7 +4088,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--selectors",
@@ -3877,7 +4115,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--cascade",
@@ -3902,7 +4142,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--specificity",
@@ -3927,7 +4169,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--flexbox",
@@ -3952,7 +4196,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--grid",
@@ -3977,7 +4223,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--responsive-design",
@@ -4002,14 +4250,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--media-queries",
       "title": "Media queries",
       "area": "css",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Media queries condition rules on viewport or device characteristics; choose breakpoints from content needs.",
       "depth": "reference",
@@ -4027,14 +4277,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--animations",
       "title": "Animations",
       "area": "css",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Keyframe animations interpolate properties over time; honor reduced-motion preferences and avoid unnecessary layout work.",
       "depth": "reference",
@@ -4052,14 +4304,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--transitions",
       "title": "Transitions",
       "area": "css",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Transitions interpolate a changed property over a duration; they need distinct before and after values.",
       "depth": "reference",
@@ -4077,14 +4331,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--positioning",
       "title": "Positioning",
       "area": "css",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Static, relative, absolute, fixed, and sticky positioning use different containing-block and scroll relationships.",
       "depth": "reference",
@@ -4102,14 +4358,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--variables",
       "title": "Variables",
       "area": "css",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Custom properties cascade and can be resolved at use time; they are useful for design tokens and themes.",
       "depth": "worked-example",
@@ -4127,7 +4385,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--accessibility",
@@ -4152,14 +4412,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--modern-css",
       "title": "Modern CSS",
       "area": "css",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Container queries, cascade layers, subgrid, logical properties, and modern selectors solve specific layout problems; inspect compatibility.",
       "depth": "reference",
@@ -4177,14 +4439,16 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "css--css-architecture",
       "title": "CSS architecture",
       "area": "css",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Small reusable patterns, consistent naming, and documented tokens reduce unintended cross-component effects.",
       "depth": "reference",
@@ -4202,7 +4466,9 @@
       "resourceIds": [
         "css-official",
         "css-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--fundamentals",
@@ -4212,7 +4478,7 @@
       "difficulty": "Beginner",
       "importance": 5,
       "definition": "JavaScript evaluates expressions and statements using a language-defined value model and host-provided APIs.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "fundamentals",
       "prerequisites": [
@@ -4229,6 +4495,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/coercion-numbers.mjs"
       ]
     },
     {
@@ -4256,6 +4526,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/hoisting-tdz.mjs"
       ]
     },
     {
@@ -4266,7 +4540,7 @@
       "difficulty": "Beginner",
       "importance": 5,
       "definition": "Primitives and objects have different identity behavior. undefined, null, numbers, strings, booleans, bigint, and symbols need explicit handling.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "data-types",
       "prerequisites": [
@@ -4283,6 +4557,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/coercion-numbers.mjs"
       ]
     },
     {
@@ -4293,7 +4571,7 @@
       "difficulty": "Beginner",
       "importance": 5,
       "definition": "Operators combine or compare values; coercion, short-circuiting, and nullish behavior affect results.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "operators",
       "prerequisites": [
@@ -4310,6 +4588,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/coercion-numbers.mjs"
       ]
     },
     {
@@ -4320,7 +4602,7 @@
       "difficulty": "Beginner",
       "importance": 5,
       "definition": "Conditions, loops, return, break, and continue select which work runs and when iteration ends.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "control-flow",
       "prerequisites": [
@@ -4337,6 +4619,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/scope-capture.mjs"
       ]
     },
     {
@@ -4364,6 +4650,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/receiver-binding.mjs"
       ]
     },
     {
@@ -4371,10 +4661,10 @@
       "title": "Scope",
       "area": "javascript",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Lexical scope resolves names from where code is written, not from whichever function called it.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "scope",
       "prerequisites": [
@@ -4391,6 +4681,13 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--variables",
+        "javascript--functions"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/scope-capture.mjs"
       ]
     },
     {
@@ -4398,7 +4695,7 @@
       "title": "Closures",
       "area": "javascript",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A function retains access to its lexical environment, including bindings whose values can change.",
       "depth": "worked-example",
@@ -4418,6 +4715,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--scope"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/scope-capture.mjs"
       ]
     },
     {
@@ -4428,7 +4731,7 @@
       "difficulty": "Intermediate",
       "importance": 4,
       "definition": "Declarations are instantiated before evaluation, but initialization timing differs; let and const have a temporal dead zone.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "hoisting",
       "prerequisites": [
@@ -4445,6 +4748,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--scope"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/hoisting-tdz.mjs"
       ]
     },
     {
@@ -4455,7 +4764,7 @@
       "difficulty": "Intermediate",
       "importance": 4,
       "definition": "Ordinary function this depends on invocation; arrows capture the surrounding this and cannot be rebound with call.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "this",
       "prerequisites": [
@@ -4472,6 +4781,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--functions"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/receiver-binding.mjs"
       ]
     },
     {
@@ -4499,6 +4814,11 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/receiver-binding.mjs",
+        "projects/knowledge-base/concept-lab/prototype-properties.mjs"
       ]
     },
     {
@@ -4509,7 +4829,7 @@
       "difficulty": "Beginner",
       "importance": 5,
       "definition": "Arrays hold indexed collections; map transforms, filter selects, and reduce accumulates values.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "arrays",
       "prerequisites": [
@@ -4526,6 +4846,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/copy-and-arrays.mjs"
       ]
     },
     {
@@ -4536,7 +4860,7 @@
       "difficulty": "Intermediate",
       "importance": 4,
       "definition": "Destructuring binds values from structured data; defaults apply to undefined rather than every falsy value.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "destructuring",
       "prerequisites": [
@@ -4553,6 +4877,13 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--objects",
+        "javascript--arrays"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/copy-and-arrays.mjs"
       ]
     },
     {
@@ -4580,6 +4911,13 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--objects",
+        "javascript--arrays"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/copy-and-arrays.mjs"
       ]
     },
     {
@@ -4590,7 +4928,7 @@
       "difficulty": "Intermediate",
       "importance": 3,
       "definition": "Property lookup can follow a prototype chain after own properties are checked.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "prototypes",
       "prerequisites": [
@@ -4607,6 +4945,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--objects"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/prototype-properties.mjs"
       ]
     },
     {
@@ -4634,7 +4978,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "javascript--prototypes",
+        "javascript--functions"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "javascript--inheritance",
@@ -4644,7 +4993,7 @@
       "difficulty": "Intermediate",
       "importance": 3,
       "definition": "Inheritance reuses behavior through type or prototype relationships; composition can avoid rigid hierarchies.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "inheritance",
       "prerequisites": [
@@ -4661,6 +5010,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--prototypes"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/prototype-properties.mjs"
       ]
     },
     {
@@ -4668,7 +5023,7 @@
       "title": "Modules",
       "area": "javascript",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Modules make dependencies and exports explicit; ESM and CommonJS have different loading and interoperability rules.",
       "depth": "reference",
@@ -4688,17 +5043,19 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--error-handling",
       "title": "Error handling",
       "area": "javascript",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Throw, try/catch, and Promise rejection represent failures; handle errors at a boundary that can act.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "error-handling",
       "prerequisites": [
@@ -4715,6 +5072,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--control-flow"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/errors-finally.mjs"
       ]
     },
     {
@@ -4725,7 +5088,7 @@
       "difficulty": "Intermediate",
       "importance": 4,
       "definition": "Retained references determine whether objects remain reachable; caches, listeners, and closures can retain large graphs.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "memory",
       "prerequisites": [
@@ -4742,6 +5105,10 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/copy-and-arrays.mjs"
       ]
     },
     {
@@ -4749,7 +5116,7 @@
       "title": "Garbage collection",
       "area": "javascript",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "The engine reclaims unreachable objects; collection timing is not a portable application guarantee.",
       "depth": "reference",
@@ -4769,7 +5136,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--iterators",
@@ -4779,7 +5148,7 @@
       "difficulty": "Intermediate",
       "importance": 3,
       "definition": "An iterator returns successive value/done results; iterable protocols allow for-of and spread to consume sequences.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "iterators",
       "prerequisites": [
@@ -4796,6 +5165,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--functions"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/iteration-cleanup.mjs"
       ]
     },
     {
@@ -4803,10 +5178,10 @@
       "title": "Generators",
       "area": "javascript",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Generators suspend and resume function execution while yielding values, providing convenient iterator state.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/javascript.md",
       "anchor": "generators",
       "prerequisites": [
@@ -4823,6 +5198,12 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--iterators"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/iteration-cleanup.mjs"
       ]
     },
     {
@@ -4830,7 +5211,7 @@
       "title": "Symbols",
       "area": "javascript",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Symbols create distinct property keys and participate in protocols such as iteration.",
       "depth": "reference",
@@ -4850,7 +5231,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--proxy",
@@ -4877,7 +5260,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--reflect",
@@ -4904,7 +5289,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--typed-arrays",
@@ -4931,7 +5318,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--internationalization",
@@ -4958,7 +5347,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--modern-ecmascript",
@@ -4985,7 +5376,9 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--tc39-proposals",
@@ -5012,14 +5405,16 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--performance",
       "title": "Performance",
       "area": "javascript",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Measure workload, allocation, and blocking time before replacing readable code with an optimization.",
       "depth": "reference",
@@ -5039,14 +5434,16 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "javascript--security",
       "title": "Security",
       "area": "javascript",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Treat untrusted values as data; validate at boundaries and avoid executing input or inserting it as HTML.",
       "depth": "reference",
@@ -5066,17 +5463,19 @@
       "resourceIds": [
         "javascript-official",
         "javascript-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "async--callbacks",
       "title": "Callbacks",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A callback is a function another operation invokes; it can run synchronously or asynchronously according to that contract.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/async.md",
       "anchor": "callbacks",
       "prerequisites": [
@@ -5092,6 +5491,12 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "javascript--functions"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/microtask-order.mjs"
       ]
     },
     {
@@ -5099,7 +5504,7 @@
       "title": "Promises",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A Promise represents an eventual outcome. Chaining transforms outcomes and propagates failures.",
       "depth": "worked-example",
@@ -5118,6 +5523,12 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "async--callbacks"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/promise-outcomes.mjs"
       ]
     },
     {
@@ -5125,10 +5536,10 @@
       "title": "async/await",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "An async function returns a Promise; await suspends that function until the awaited outcome is available.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/async.md",
       "anchor": "async-await",
       "prerequisites": [
@@ -5144,6 +5555,12 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "async--promises"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/promise-outcomes.mjs"
       ]
     },
     {
@@ -5151,7 +5568,7 @@
       "title": "Event loop",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A host coordinates execution and queued work. Browser rendering and Node phases have distinct scheduling models.",
       "depth": "worked-example",
@@ -5170,6 +5587,10 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/microtask-order.mjs"
       ]
     },
     {
@@ -5196,6 +5617,13 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "async--event-loop",
+        "async--callbacks"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/microtask-order.mjs"
       ]
     },
     {
@@ -5222,6 +5650,12 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "async--event-loop"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/microtask-order.mjs"
       ]
     },
     {
@@ -5229,10 +5663,10 @@
       "title": "Fetch",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Fetch produces an HTTP response or transport failure; the application still checks status and parses the expected representation.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/async.md",
       "anchor": "fetch",
       "prerequisites": [
@@ -5248,6 +5682,13 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [
+        "async--promises",
+        "foundations--http-https"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/abort-contract.mjs"
       ]
     },
     {
@@ -5255,10 +5696,10 @@
       "title": "Async programming",
       "area": "async",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Design ordering, cancellation, concurrency limits, timeouts, and partial-failure behavior explicitly.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/async.md",
       "anchor": "async-programming",
       "prerequisites": [
@@ -5274,6 +5715,11 @@
       "resourceIds": [
         "async-official",
         "async-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/promise-outcomes.mjs",
+        "projects/knowledge-base/concept-lab/abort-contract.mjs"
       ]
     },
     {
@@ -5301,7 +5747,9 @@
       "resourceIds": [
         "browser-official",
         "browser-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "browser--events",
@@ -5328,7 +5776,9 @@
       "resourceIds": [
         "browser-official",
         "browser-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "browser--browser-apis",
@@ -5355,14 +5805,16 @@
       "resourceIds": [
         "browser-official",
         "browser-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "browser--forms-and-events",
       "title": "Forms and events",
       "area": "browser",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A submit event captures keyboard and button submission; form controls should retain accessible names and feedback.",
       "depth": "reference",
@@ -5382,14 +5834,16 @@
       "resourceIds": [
         "browser-official",
         "browser-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--runtime-fundamentals",
       "title": "Runtime fundamentals",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Node executes JavaScript with host capabilities such as files, networking, and processes rather than a browser DOM.",
       "depth": "reference",
@@ -5409,7 +5863,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--v8",
@@ -5436,14 +5892,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--modules",
       "title": "Modules",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Modules define explicit dependency boundaries; loading behavior depends on ESM or CommonJS configuration.",
       "depth": "reference",
@@ -5463,7 +5921,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--commonjs",
@@ -5490,14 +5950,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--esm",
       "title": "ESM",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "ESM uses import and export; package type and extensions affect how Node interprets files.",
       "depth": "worked-example",
@@ -5517,14 +5979,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--npm",
       "title": "npm",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "npm manages package metadata and dependency installation; a lockfile makes the chosen graph reproducible.",
       "depth": "reference",
@@ -5544,14 +6008,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--package-json",
       "title": "package.json",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "The manifest defines scripts, module type, dependency ranges, and supported runtime expectations.",
       "depth": "reference",
@@ -5571,7 +6037,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--file-system",
@@ -5598,17 +6066,19 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--events",
       "title": "Events",
       "area": "nodejs",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Runtime events announce lifecycle changes; handle required error events and remove unnecessary listeners.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/nodejs.md",
       "anchor": "events",
       "prerequisites": [
@@ -5625,6 +6095,10 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/emitter-boundary.mjs"
       ]
     },
     {
@@ -5635,7 +6109,7 @@
       "difficulty": "Intermediate",
       "importance": 4,
       "definition": "EventEmitter invokes registered listeners according to its contract; asynchronous listener failures require deliberate handling.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/nodejs.md",
       "anchor": "eventemitter",
       "prerequisites": [
@@ -5652,6 +6126,12 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [
+        "async--callbacks"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/emitter-boundary.mjs"
       ]
     },
     {
@@ -5662,7 +6142,7 @@
       "difficulty": "Intermediate",
       "importance": 3,
       "definition": "Buffers represent binary bytes rather than Unicode text and require explicit encoding decisions.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/nodejs.md",
       "anchor": "buffers",
       "prerequisites": [
@@ -5679,6 +6159,10 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/stream-cancellation.mjs"
       ]
     },
     {
@@ -5706,6 +6190,13 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [
+        "nodejs--buffers",
+        "async--async-await"
+      ],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/stream-cancellation.mjs"
       ]
     },
     {
@@ -5713,7 +6204,7 @@
       "title": "HTTP",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Node exposes request and response primitives, while a framework can organize validation and routing above them.",
       "depth": "reference",
@@ -5733,7 +6224,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--networking",
@@ -5760,7 +6253,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--process",
@@ -5787,14 +6282,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--environment-variables",
       "title": "Environment variables",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Environment variables configure deployment; parse required values at startup and keep secrets out of logs.",
       "depth": "reference",
@@ -5814,14 +6311,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--child-processes",
       "title": "Child processes",
       "area": "nodejs",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Child processes run separate programs; avoid interpolating untrusted data into shell command strings.",
       "depth": "reference",
@@ -5841,14 +6340,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--worker-threads",
       "title": "Worker threads",
       "area": "nodejs",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "Workers can run CPU-heavy JavaScript outside the request thread, with messaging and resource costs.",
       "depth": "reference",
@@ -5868,7 +6369,9 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--cluster",
@@ -5895,14 +6398,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--event-loop",
       "title": "Event loop",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Node coordinates asynchronous work through runtime phases and queues; expensive synchronous work blocks progress.",
       "depth": "reference",
@@ -5922,17 +6427,19 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--async-programming",
       "title": "Async programming",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Handle ordering, failures, bounded concurrency, and cleanup explicitly.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/nodejs.md",
       "anchor": "async-programming",
       "prerequisites": [
@@ -5949,6 +6456,10 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/stream-cancellation.mjs"
       ]
     },
     {
@@ -5956,10 +6467,10 @@
       "title": "Error handling",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Separate expected domain errors from unexpected runtime failures and preserve useful diagnostic context.",
-      "depth": "reference",
+      "depth": "worked-example",
       "path": "knowledge-base/topics/nodejs.md",
       "anchor": "error-handling",
       "prerequisites": [
@@ -5976,6 +6487,10 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": [
+        "projects/knowledge-base/concept-lab/emitter-boundary.mjs"
       ]
     },
     {
@@ -5983,7 +6498,7 @@
       "title": "Performance",
       "area": "nodejs",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Profile latency, CPU, allocation, and resource contention with a representative workload.",
       "depth": "reference",
@@ -6003,14 +6518,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--security",
       "title": "Security",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Constrain inputs, file paths, commands, secrets, dependency access, and network capabilities.",
       "depth": "reference",
@@ -6030,14 +6547,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "nodejs--testing",
       "title": "Testing",
       "area": "nodejs",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Exercise contracts with unit, integration, and real-network checks appropriate to the boundary.",
       "depth": "reference",
@@ -6057,14 +6576,16 @@
       "resourceIds": [
         "nodejs-official",
         "nodejs-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--server-creation",
       "title": "Server creation",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Create an application, mount middleware and routes, then listen through an HTTP server with a controlled lifecycle.",
       "depth": "reference",
@@ -6084,14 +6605,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--routing",
       "title": "Routing",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Routing selects handlers by method and path; unknown API paths must not silently become frontend HTML.",
       "depth": "worked-example",
@@ -6111,14 +6634,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--middleware",
       "title": "Middleware",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Middleware can inspect, transform, terminate, or delegate a request; order defines behavior.",
       "depth": "reference",
@@ -6138,14 +6663,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--request-response",
       "title": "Request/response",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Requests contain untrusted inputs; responses implement the API status, headers, and representation contract.",
       "depth": "reference",
@@ -6165,7 +6692,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--controllers",
@@ -6192,7 +6721,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--services",
@@ -6219,14 +6750,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--rest-apis",
       "title": "REST APIs",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "REST uses resources and representations with coherent HTTP semantics and operational contracts.",
       "depth": "reference",
@@ -6246,14 +6779,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--validation",
       "title": "Validation",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Validate types, lengths, allowed fields, ranges, and relationships before trusted use.",
       "depth": "worked-example",
@@ -6273,14 +6808,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--error-handling",
       "title": "Error handling",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Centralize safe client errors while retaining server diagnostic evidence; Express 5 forwards rejected returned Promises.",
       "depth": "reference",
@@ -6300,14 +6837,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--authentication",
       "title": "Authentication",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Resolve identity from trusted credentials rather than client-supplied role or owner fields.",
       "depth": "reference",
@@ -6327,14 +6866,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--authorization",
       "title": "Authorization",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Every read and write must enforce the authenticated caller's permission for the resource.",
       "depth": "worked-example",
@@ -6354,7 +6895,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--cookies",
@@ -6381,14 +6924,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--sessions",
       "title": "Sessions",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Sessions connect credentials to server-side authority with expiration and revocation.",
       "depth": "reference",
@@ -6408,7 +6953,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--file-uploads",
@@ -6435,7 +6982,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--pagination",
@@ -6462,7 +7011,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--filtering",
@@ -6489,7 +7040,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--sorting",
@@ -6516,7 +7069,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--searching",
@@ -6543,7 +7098,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--rate-limiting",
@@ -6570,7 +7127,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--logging",
@@ -6597,14 +7156,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--security",
       "title": "Security",
       "area": "express",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Layer input constraints, identity, authorization, origin defenses, safe headers, and operational limits.",
       "depth": "reference",
@@ -6624,7 +7185,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--api-architecture",
@@ -6651,7 +7214,9 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "express--production-structure",
@@ -6678,14 +7243,16 @@
       "resourceIds": [
         "express-official",
         "express-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--documents",
       "title": "Documents",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Documents hold structured fields and nested values; model them around access and ownership patterns.",
       "depth": "reference",
@@ -6705,14 +7272,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--collections",
       "title": "Collections",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Collections group documents and can have validation rules and indexes.",
       "depth": "reference",
@@ -6732,7 +7301,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--bson",
@@ -6759,14 +7330,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--crud",
       "title": "CRUD",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Create, read, update, and delete must preserve domain constraints and caller scope.",
       "depth": "worked-example",
@@ -6786,14 +7359,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--operators",
       "title": "Operators",
       "area": "mongodb",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Operators express matching and updates; build permitted expressions rather than accepting arbitrary input operators.",
       "depth": "worked-example",
@@ -6813,14 +7388,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--querying",
       "title": "Querying",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A query selects documents according to predicates, available indexes, and execution behavior.",
       "depth": "reference",
@@ -6840,7 +7417,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--projection",
@@ -6867,7 +7446,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--sorting",
@@ -6894,7 +7475,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--pagination",
@@ -6921,14 +7504,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--indexes",
       "title": "Indexes",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Indexes support selected access patterns and enforce uniqueness when configured; they add write and storage cost.",
       "depth": "reference",
@@ -6948,7 +7533,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--aggregation",
@@ -6975,7 +7562,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--transactions",
@@ -7002,14 +7591,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--schema-design",
       "title": "Schema design",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Define required types and relationships despite flexible storage; schema evolution needs intentional migration.",
       "depth": "reference",
@@ -7029,14 +7620,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--data-modeling",
       "title": "Data modeling",
       "area": "mongodb",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Embedding and references trade read locality, growth, duplication, and independent lifecycle.",
       "depth": "worked-example",
@@ -7056,14 +7649,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--replication",
       "title": "Replication",
       "area": "mongodb",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "Replica sets provide multiple copies and failover behavior; read/write concern choices affect guarantees.",
       "depth": "reference",
@@ -7083,14 +7678,16 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongodb--performance",
       "title": "Performance",
       "area": "mongodb",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Inspect explain plans and representative data; document and query shapes matter more than a database label.",
       "depth": "reference",
@@ -7110,7 +7707,9 @@
       "resourceIds": [
         "mongodb-official",
         "mongodb-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--connection",
@@ -7136,7 +7735,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--schema",
@@ -7162,7 +7763,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--models",
@@ -7188,7 +7791,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--validation",
@@ -7214,7 +7819,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--middleware",
@@ -7240,7 +7847,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--methods",
@@ -7266,7 +7875,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--statics",
@@ -7292,7 +7903,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--virtuals",
@@ -7318,7 +7931,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--populate",
@@ -7344,7 +7959,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--references",
@@ -7370,7 +7987,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--transactions",
@@ -7396,7 +8015,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--indexes",
@@ -7422,7 +8043,9 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "mongoose--aggregation",
@@ -7448,14 +8071,16 @@
       "resourceIds": [
         "mongoose-official",
         "mongoose-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--fundamentals",
       "title": "Fundamentals",
       "area": "sql",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 4,
       "definition": "Relational data is represented through relations with explicit columns and constraints; SQL expresses operations over these sets.",
       "depth": "reference",
@@ -7473,7 +8098,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--mysql",
@@ -7498,7 +8125,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--postgresql",
@@ -7523,7 +8152,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--crud",
@@ -7548,7 +8179,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--joins",
@@ -7573,7 +8206,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--subqueries",
@@ -7598,7 +8233,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--cte",
@@ -7623,7 +8260,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--window-functions",
@@ -7648,7 +8287,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--indexes",
@@ -7673,7 +8314,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--transactions",
@@ -7698,7 +8341,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--constraints",
@@ -7723,7 +8368,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--normalization",
@@ -7748,7 +8395,9 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "sql--query-optimization",
@@ -7773,14 +8422,16 @@
       "resourceIds": [
         "sql-official",
         "sql-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--fundamentals",
       "title": "Fundamentals",
       "area": "redis",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "importance": 3,
       "definition": "Redis provides data structures with operational persistence and replication choices; memory is not automatically durable authority.",
       "depth": "reference",
@@ -7799,7 +8450,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--caching",
@@ -7825,7 +8478,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--sessions",
@@ -7851,7 +8506,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--pub-sub",
@@ -7877,7 +8534,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--rate-limiting",
@@ -7903,7 +8562,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--queues",
@@ -7929,14 +8590,16 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "redis--distributed-locks",
       "title": "Distributed locks",
       "area": "redis",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Locks have expiry and ownership constraints; stale holders may need fencing enforced by the protected resource.",
       "depth": "reference",
@@ -7955,7 +8618,9 @@
       "resourceIds": [
         "redis-official",
         "redis-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--cloud-fundamentals",
@@ -7980,7 +8645,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--deployment-architecture",
@@ -8005,7 +8672,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--compute",
@@ -8030,7 +8699,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--storage",
@@ -8055,7 +8726,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--databases",
@@ -8080,7 +8753,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--cdn",
@@ -8105,7 +8780,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--dns",
@@ -8130,7 +8807,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--environment-management",
@@ -8155,14 +8834,16 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--secrets",
       "title": "Secrets",
       "area": "cloud",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Provide credentials through a controlled secret mechanism, with least privilege and rotation.",
       "depth": "reference",
@@ -8180,7 +8861,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "cloud--scaling",
@@ -8205,7 +8888,9 @@
       "resourceIds": [
         "cloud-official",
         "cloud-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--clean-code",
@@ -8232,7 +8917,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--solid",
@@ -8259,7 +8946,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--dry",
@@ -8286,14 +8975,16 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--kiss",
       "title": "KISS",
       "area": "engineering",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Prefer a simple sufficient model that makes the important behavior visible.",
       "depth": "reference",
@@ -8313,7 +9004,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--yagni",
@@ -8340,7 +9033,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--design-patterns",
@@ -8367,7 +9062,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--architecture-patterns",
@@ -8394,7 +9091,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--layered-architecture",
@@ -8421,7 +9120,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--mvc",
@@ -8448,7 +9149,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--clean-architecture",
@@ -8475,7 +9178,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--dependency-injection",
@@ -8502,14 +9207,16 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--error-handling",
       "title": "Error handling",
       "area": "engineering",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Translate errors at meaningful boundaries without losing diagnostic context or exposing secrets.",
       "depth": "reference",
@@ -8529,7 +9236,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--logging",
@@ -8556,7 +9265,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--observability",
@@ -8583,14 +9294,16 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "engineering--documentation",
       "title": "Documentation",
       "area": "engineering",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Document contracts, decisions, setup, limitations, and verification so another developer can act without guessing.",
       "depth": "reference",
@@ -8610,7 +9323,9 @@
       "resourceIds": [
         "engineering-official",
         "engineering-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--scalability",
@@ -8637,7 +9352,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--availability",
@@ -8664,7 +9381,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--reliability",
@@ -8691,7 +9410,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--load-balancing",
@@ -8718,7 +9439,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--caching",
@@ -8745,7 +9468,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--database-scaling",
@@ -8772,14 +9497,16 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--replication",
       "title": "Replication",
       "area": "system-design",
       "priority": "P2",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 3,
       "definition": "Replicas copy data with lag and failure behavior; reads need consistency requirements.",
       "depth": "reference",
@@ -8799,7 +9526,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--sharding",
@@ -8826,7 +9555,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--queues",
@@ -8853,7 +9584,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--pub-sub",
@@ -8880,7 +9613,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--cdn",
@@ -8907,7 +9642,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--rate-limiting",
@@ -8934,14 +9671,16 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--cap-theorem",
       "title": "CAP theorem",
       "area": "system-design",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "During a network partition, a distributed system cannot guarantee both linearizable consistency and availability in the theorem's sense.",
       "depth": "reference",
@@ -8961,14 +9700,16 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--consistency",
       "title": "Consistency",
       "area": "system-design",
       "priority": "P1",
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "importance": 4,
       "definition": "Consistency models describe which observations are permitted; choose requirements for each operation.",
       "depth": "worked-example",
@@ -8988,7 +9729,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--distributed-systems",
@@ -9015,7 +9758,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--high-level-design",
@@ -9042,7 +9787,9 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "system-design--low-level-design",
@@ -9069,14 +9816,16 @@
       "resourceIds": [
         "system-design-official",
         "system-design-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--rest",
       "title": "REST",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "REST organizes interaction around resources and representations; use coherent HTTP semantics rather than arbitrary action names.",
       "depth": "reference",
@@ -9096,7 +9845,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--graphql",
@@ -9123,14 +9874,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--http-methods",
       "title": "HTTP methods",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Methods have semantics such as retrieval, replacement, and partial update; choose them consistently.",
       "depth": "reference",
@@ -9150,14 +9903,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--status-codes",
       "title": "Status codes",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Status codes describe response outcomes; preserve distinctions clients need for recovery.",
       "depth": "worked-example",
@@ -9177,14 +9932,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--headers",
       "title": "Headers",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Headers carry representation, caching, authentication, and other protocol metadata.",
       "depth": "reference",
@@ -9204,14 +9961,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--authentication",
       "title": "Authentication",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Authentication establishes the caller's trusted identity from accepted credentials.",
       "depth": "reference",
@@ -9231,14 +9990,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--authorization",
       "title": "Authorization",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Authorization establishes whether that caller may perform this operation on this resource.",
       "depth": "reference",
@@ -9258,7 +10019,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--pagination",
@@ -9285,7 +10048,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--filtering",
@@ -9312,7 +10077,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--sorting",
@@ -9339,7 +10106,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--versioning",
@@ -9366,14 +10135,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--validation",
       "title": "Validation",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Validate runtime shape, types, ranges, allowed fields, and domain relationships.",
       "depth": "reference",
@@ -9393,14 +10164,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--error-handling",
       "title": "Error handling",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Return safe structured errors with a stable code and useful message; preserve server diagnostic context separately.",
       "depth": "worked-example",
@@ -9420,7 +10193,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--rate-limiting",
@@ -9447,14 +10222,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--api-documentation",
       "title": "API documentation",
       "area": "api",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Document authentication, inputs, outputs, errors, limits, and examples for actual implemented behavior.",
       "depth": "reference",
@@ -9474,7 +10251,9 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "api--openapi-swagger",
@@ -9501,14 +10280,16 @@
       "resourceIds": [
         "api-official",
         "api-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--password-hashing",
       "title": "Password hashing",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Store a password-specific salted verifier with suitable cost, not reversible plaintext encryption.",
       "depth": "reference",
@@ -9528,7 +10309,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--bcrypt",
@@ -9555,7 +10338,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--jwt",
@@ -9582,7 +10367,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--access-tokens",
@@ -9609,7 +10396,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--refresh-tokens",
@@ -9636,14 +10425,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--cookies",
       "title": "Cookies",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Cookie attributes control scope and handling; HttpOnly blocks ordinary script reads but does not stop all authenticated abuse.",
       "depth": "reference",
@@ -9663,14 +10454,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--sessions",
       "title": "Sessions",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Server-side sessions support expiry and revocation; store only necessary authority and enforce expiry during lookup.",
       "depth": "reference",
@@ -9690,7 +10483,11 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "security--cookies"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "security--oauth",
@@ -9717,7 +10514,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--rbac",
@@ -9744,14 +10543,18 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "security--sessions"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "security--cors",
       "title": "CORS",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "CORS controls browser cross-origin response access; it is not API authentication and does not stop non-browser callers.",
       "depth": "reference",
@@ -9771,14 +10574,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--csrf",
       "title": "CSRF",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Cookie-authenticated writes need cross-site request defenses such as suitable tokens, origin checks, and SameSite policy.",
       "depth": "reference",
@@ -9798,14 +10603,19 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [
+        "security--cookies",
+        "foundations--http-https"
+      ],
+      "evidencePaths": []
     },
     {
       "id": "security--xss",
       "title": "XSS",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Untrusted content executed in the page can act with the page's privileges; render data safely and constrain script execution.",
       "depth": "reference",
@@ -9825,14 +10635,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--sql-injection",
       "title": "SQL injection",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Parameterized queries separate values from SQL structure; dynamic identifiers require allowlists.",
       "depth": "reference",
@@ -9852,14 +10664,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--nosql-injection",
       "title": "NoSQL injection",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Construct permitted query predicates from validated scalars instead of accepting arbitrary operator objects.",
       "depth": "reference",
@@ -9879,7 +10693,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--rate-limiting",
@@ -9906,7 +10722,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--helmet",
@@ -9933,7 +10751,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--secure-headers",
@@ -9960,14 +10780,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--secrets",
       "title": "Secrets",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Keep secrets out of source, logs, browser bundles, and artifacts; rotate compromised credentials.",
       "depth": "worked-example",
@@ -9987,7 +10809,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--owasp",
@@ -10014,14 +10838,16 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "security--security-best-practices",
       "title": "Security best practices",
       "area": "security",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Define assets, threats, trusted identities, permitted operations, and recovery; verify them with adversarial cases.",
       "depth": "reference",
@@ -10041,7 +10867,9 @@
       "resourceIds": [
         "security-official",
         "security-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--websockets",
@@ -10068,7 +10896,9 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--socket-io",
@@ -10095,7 +10925,9 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--server-sent-events",
@@ -10122,7 +10954,9 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--notifications",
@@ -10149,14 +10983,16 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--chat-architecture",
       "title": "Chat architecture",
       "area": "realtime",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Chat combines durable messages, authorized rooms, delivery acknowledgements, ordering, and reconnect recovery.",
       "depth": "reference",
@@ -10176,14 +11012,16 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--presence",
       "title": "Presence",
       "area": "realtime",
       "priority": "P3",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "importance": 2,
       "definition": "Presence is typically an expiring observation of connectivity, not a durable statement that someone is actively reading.",
       "depth": "reference",
@@ -10203,7 +11041,9 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "realtime--real-time-dashboards",
@@ -10230,14 +11070,16 @@
       "resourceIds": [
         "realtime-official",
         "realtime-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--unit-testing",
       "title": "Unit testing",
       "area": "testing",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "A unit check exercises a small behavioral contract with controlled inputs and an independent expected outcome.",
       "depth": "worked-example",
@@ -10257,14 +11099,16 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--integration-testing",
       "title": "Integration testing",
       "area": "testing",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Integration checks exercise boundaries between real components such as HTTP parsing and persistence.",
       "depth": "reference",
@@ -10284,14 +11128,16 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--api-testing",
       "title": "API testing",
       "area": "testing",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "API checks verify identity, input, status, representation, ownership, and failure behavior.",
       "depth": "reference",
@@ -10311,7 +11157,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--component-testing",
@@ -10338,7 +11186,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--end-to-end-testing",
@@ -10365,7 +11215,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--jest",
@@ -10392,7 +11244,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--vitest",
@@ -10419,7 +11273,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--react-testing-library",
@@ -10446,7 +11302,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--supertest",
@@ -10473,7 +11331,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--playwright",
@@ -10500,7 +11360,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "testing--cypress",
@@ -10527,7 +11389,9 @@
       "resourceIds": [
         "testing-official",
         "testing-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--linux",
@@ -10554,7 +11418,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--shell",
@@ -10581,14 +11447,16 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--environment-variables",
       "title": "Environment variables",
       "area": "devops",
       "priority": "P0",
-      "difficulty": "Beginner",
+      "difficulty": "Intermediate",
       "importance": 5,
       "definition": "Validate configuration at startup and keep secrets separate from source and images.",
       "depth": "reference",
@@ -10608,7 +11476,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--docker",
@@ -10635,7 +11505,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--docker-compose",
@@ -10662,7 +11534,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--images",
@@ -10689,7 +11563,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--containers",
@@ -10716,7 +11592,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--volumes",
@@ -10743,7 +11621,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--networks",
@@ -10770,7 +11650,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--ci-cd",
@@ -10797,7 +11679,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--github-actions",
@@ -10824,7 +11708,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--nginx",
@@ -10851,7 +11737,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--reverse-proxy",
@@ -10878,7 +11766,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--ssl-tls",
@@ -10905,7 +11795,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--deployment",
@@ -10932,7 +11824,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--monitoring",
@@ -10959,7 +11853,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     },
     {
       "id": "devops--logging",
@@ -10986,7 +11882,9 @@
       "resourceIds": [
         "devops-official",
         "devops-article"
-      ]
+      ],
+      "conceptPrerequisites": [],
+      "evidencePaths": []
     }
   ],
   "resources": [

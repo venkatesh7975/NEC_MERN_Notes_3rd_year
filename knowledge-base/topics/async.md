@@ -26,7 +26,7 @@ A callback is a function another operation invokes; it can run synchronously or 
 <a id="callbacks"></a>
 ### Callbacks
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 A callback is a function another operation invokes; it can run synchronously or asynchronously according to that contract.
 
@@ -40,7 +40,7 @@ A Promise represents an eventual outcome. Chaining transforms outcomes and propa
 <a id="async-await"></a>
 ### async/await
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 An async function returns a Promise; await suspends that function until the awaited outcome is available.
 
@@ -68,14 +68,14 @@ Task is the browser-standard term; timers and other task sources schedule later 
 <a id="fetch"></a>
 ### Fetch
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 Fetch produces an HTTP response or transport failure; the application still checks status and parses the expected representation.
 
 <a id="async-programming"></a>
 ### Async programming
 
-**P0 · 🔥 Essential / Master · reference**
+**P0 · 🔥 Essential / Master · worked-example**
 
 Design ordering, cancellation, concurrency limits, timeouts, and partial-failure behavior explicitly.
 
@@ -104,6 +104,86 @@ Expected behavior and runtime: For this ordinary top-level browser script: A, E,
 ### 2. Extend and stress the contract
 
 Intermediate: compare fail-fast and all-settled batch contracts. Advanced: test the maximum active count with an injected deferred task. Record the expected result before implementation; use the failure analysis below to distinguish the broken boundary.
+
+### Executable boundary: Promise settlement and concurrent outcomes
+
+Promise.all is fail-fast at its observation boundary; it does not cancel work already started. allSettled collects independent successes and failures. Await catches rejection where it is awaited.
+
+Concepts: Promises, async/await, Async programming.
+
+```javascript
+let completed=0;
+const later=new Promise(resolve=>setTimeout(()=>{completed++;resolve('saved');},5));
+await assert.rejects(Promise.all([Promise.reject(new Error('failure')),later]),/failure/);
+assert.equal(await later,'saved');assert.equal(completed,1);
+const outcomes=await Promise.allSettled([Promise.resolve(3),Promise.reject('offline')]);
+assert.deepEqual(outcomes.map(row=>row.status),['fulfilled','rejected']);
+assert.equal(outcomes[0].value,3);assert.equal(outcomes[1].reason,'offline');
+assert.equal(await Promise.resolve(1).then(n=>n+1).finally(()=>99),2);
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. all rejects, yet the already-started later operation completes. allSettled returns both outcomes. A normally returning finally preserves the previous result.
+
+**Interview:** Is Promise.all a concurrency limiter?
+
+**Answer:** No. If requests are created before it is called, those requests have already started. Limit admission with a bounded worker pool.
+
+**Change and verify:** Use the tested promise pool in js-toolkit with a cap of two; instrument active work and prove its maximum does not exceed the cap.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/promise-outcomes.mjs).
+
+### Executable boundary: Tasks and microtasks in an ESM trace
+
+Synchronous work finishes before queued Promise callbacks and queueMicrotask callbacks run. A later timer task sees the microtask queue drained. This example deliberately avoids ambiguous sibling timer/immediate ordering.
+
+Concepts: Event loop, Microtasks, Macrotasks, Callbacks.
+
+```javascript
+const order=[];
+order.push('sync');
+queueMicrotask(()=>order.push('microtask'));
+Promise.resolve().then(()=>{order.push('promise');queueMicrotask(()=>order.push('nested'));});
+await new Promise(resolve=>setTimeout(()=>{order.push('timer');resolve();},0));
+assert.deepEqual(order,['sync','microtask','promise','nested','timer']);
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. sync, microtask, promise, nested, timer under Node 24 ESM. Promise jobs and explicit microtasks run in enqueue order in this trace.
+
+**Interview:** Why can recursively queued microtasks freeze a browser?
+
+**Answer:** They can prevent the queue from draining and delay rendering and later tasks. Break large work into bounded chunks or move suitable CPU work to a worker.
+
+**Change and verify:** Add a microtask inside the first microtask. Predict the full ordering before running; do not infer an ordering between all host scheduling APIs.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/microtask-order.mjs).
+
+### Executable boundary: AbortSignal and cooperative cancellation
+
+Cancellation is a signal observed by an operation. Promise.race by itself only chooses an outcome; it does not stop the losing operation. Fetch accepts a signal, while your own functions must implement cleanup.
+
+Concepts: Fetch, Async programming.
+
+```javascript
+function wait(signal){return new Promise((resolve,reject)=>{
+ if(signal.aborted){reject(signal.reason);return;}
+ const abort=()=>{clearTimeout(timer);reject(signal.reason);};
+ const timer=setTimeout(()=>{signal.removeEventListener('abort',abort);resolve('done');},100);
+ signal.addEventListener('abort',abort,{once:true});
+});}
+const controller=new AbortController(),work=wait(controller.signal);
+controller.abort(new Error('superseded'));await assert.rejects(work,/superseded/);
+await assert.rejects(wait(controller.signal),/superseded/);
+```
+
+**Runtime and expected behavior:** Node 24 ESM; import `assert` from `node:assert/strict`. Both in-flight and already-aborted requests reject with superseded. The timer is canceled and the registered listener is one-shot.
+
+**Interview:** Is aborting enough to protect a search UI from stale results?
+
+**Answer:** No. The operation might already have completed or might ignore the signal. Also compare a request generation before committing its result; the weather/browser fixtures demonstrate that boundary.
+
+**Change and verify:** Replace the timer with a controllable fake provider. Resolve the old request after the new one and prove the old result never replaces the current view.
+
+[Standalone executable](../../projects/knowledge-base/concept-lab/abort-contract.mjs).
 
 ## 🔍 Under the Hood
 

@@ -4,7 +4,7 @@ Difficulty: Intermediate
 
 Technology: React Express MongoDB
 
-Implementation status: **specification**
+Implementation status: **implemented-learning**
 
 ## Requirements
 
@@ -28,15 +28,19 @@ Bounded admin reads and allowlisted writes with trusted roles.
 
 ## Folder structure
 
-Proposed source: `client/`, `server/`, `test/`, and a root README/manifest. This is a design packet; those folders are not claimed to exist.
+Canonical implementation: `projects/interview-ready/mern-workspace/`.
 
 ## Implementation
 
-This project is a specification with no implemented source in this packet. Check the actual source README before claiming a feature works.
+[Read and run the existing source](../../projects/interview-ready/mern-workspace/README.md).
+
+**Implemented core:** Owner-only workspace aggregates, expense totals and paged audit history.
+
+The requirements above describe the wider target. Compare them with the [implemented scope and extension matrix](../../projects/interview-ready/mern-workspace/PRODUCT_LAB.md), which also contains actual routes, source layout, data model and guarantees. `npm run demo` starts a disposable replica set without Docker. Check the actual source README before claiming a feature works.
 
 ## Testing
 
-Demonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable.
+Demonstrate the invariant with expected outcomes. Include empty input, invalid input, failure recovery, and keyboard behavior. Persistent versions, uniqueness, or authorization require realistic integration checks when applicable. The shared MERN package includes real MongoDB tests and browser checks for the product workflows.
 
 ## Deployment
 

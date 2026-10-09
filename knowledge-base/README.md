@@ -26,6 +26,10 @@ Use this loop: read a small part, predict behavior, run or implement it, test a 
 
 The [classroom guide](../CLASSROOM_GUIDE.md), [original notes](../notes), [150 project briefs](../PROJECT_INDEX.md), [tested source packages](../projects/interview-ready/README.md), and [interview handbook downloads](../interview-handbook/downloads/README.md) remain available. Their scopes and runtime limitations are preserved. [Migration map](MIGRATION_MAP.md) explains the canonical route without breaking old URLs.
 
+## Offline and online study
+
+[Full-guide PDF, Excel workbook and Google Sheets tracker](downloads/README.md) complement the earlier interview PDF and Word plan. The [concept lab](../projects/knowledge-base/concept-lab/README.md) has fourteen executable boundary examples with explained outputs and changed-input exercises. Concept difficulty is independent from study priority; selected concept prerequisite edges and executable evidence paths are available in the catalog.
+
 ## Maintain and extend
 
 [Architecture](ARCHITECTURE.md) · [Audit](../REPOSITORY_AUDIT.md) · [Resource policy](resources/POLICY.md) · [Topic template](templates/topic.md) · [Remaining work](REMAINING_WORK.md) · [Contributing](../CONTRIBUTING.md)

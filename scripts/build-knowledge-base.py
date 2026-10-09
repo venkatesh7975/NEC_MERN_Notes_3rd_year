@@ -4,6 +4,8 @@ from collections import Counter
 import json,re,os
 from kb_content import AREAS,DATE
 import kb_backend,kb_engineering
+import kb_practice
+import kb_graph
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'knowledge-base'
 LABELS={'P0':'🔥 Essential / Master','P1':'⭐ Highly Important','P2':'📚 Useful','P3':'🧩 Advanced / Specialized','P4':'🔬 Reference / Experimental'}
 def write(path,text):
@@ -42,8 +44,11 @@ topics=[];guides=[];resources={}
 for id,a in AREAS.items():
     cs=[]
     for line in a['concepts'].strip().splitlines():
-        name,priority,definition=line.split('|',2);cid=f'{id}--{slug(name)}';depth='worked-example' if name in WORKED.get(id,[]) else 'reference'
+        name,priority,definition=line.split('|',2);cid=f'{id}--{slug(name)}';depth='worked-example' if name in set(WORKED.get(id,[]))|kb_practice.example_names(id) else 'reference'
         c=dict(id=cid,title=name,area=id,priority=f'P{priority}',difficulty='Beginner' if int(priority)==0 else 'Intermediate' if int(priority)<3 else 'Advanced',importance=5-int(priority),definition=definition,depth=depth,path=f'knowledge-base/topics/{id}.md',anchor=slug(name),prerequisites=a['prerequisites'],related=list(dict.fromkeys([id]+a['related'])),lastVerified=DATE,resourceIds=[f'{id}-official',f'{id}-article'])
+        c['difficulty']=kb_graph.difficulty(id,name)
+        c['conceptPrerequisites']=kb_graph.EDGES.get(cid,[])
+        c['evidencePaths']=[f'projects/knowledge-base/concept-lab/{lesson[0]}.mjs' for lesson in kb_practice.LESSONS if lesson[1]==id and name in lesson[3]]
         cs.append(c);topics.append(c)
     guide=dict(id=id,title=a['title'],priority=a['priority'],difficulty='Beginner' if a['priority']=='P0' else 'Intermediate',importance=5-int(a['priority'][1]),estimatedMinutes=180 if a['priority']=='P0' else 120,prerequisites=a['prerequisites'],related=a['related'],path=f'knowledge-base/topics/{id}.md',conceptIds=[c['id'] for c in cs],lastVerified=DATE,status='authored-guide',legacyPaths=LEGACY.get(id,[]))
     guides.append(guide)
@@ -54,6 +59,7 @@ for id,a in AREAS.items():
     for c in cs:text+=f'<a id="{c["anchor"]}"></a>\n### {c["title"]}\n\n**{c["priority"]} · {LABELS[c["priority"]]} · {c["depth"]}**\n\n{c["definition"]}\n\n'
     text+='## ❓ Why Does It Exist?\n\n'+a['why']+'\n\n## ⚙️ How Does It Work?\n\n'+a['model']+'\n\n'
     text+='## 💻 Examples\n\n### 1. Trace the contract\n\n```'+a['language']+'\n'+a['example']+'\n```\n\nExpected behavior and runtime: '+a['output']+'\n\n### 2. Extend and stress the contract\n\n'+a['practice'][1]+' '+a['practice'][2]+' Record the expected result before implementation; use the failure analysis below to distinguish the broken boundary.\n\n'
+    text+=kb_practice.append(id)
     text+='## 🔍 Under the Hood\n\n'+a['internals']+'\n\n## 🌍 Real-World Usage\n\n'+a['usage']+'\n\n'
     text+='## ⚠️ Common Mistakes\n\n'+''.join('- '+m+'\n' for m in a['mistakes'])+'\n'
     text+='## ✅ Best Practices\n\n'+a['usage']+' State the invariant, validate at the boundary, use the documented runtime, and keep a reproducible failure case. This guide is educational evidence; it does not certify a deployment.\n\n'
@@ -95,4 +101,5 @@ from kb_paths_projects import build
 build(ROOT,write,AREAS)
 from kb_cheatsheets import build as build_cheatsheets
 build_cheatsheets(write)
+kb_practice.build(write)
 print(f'Built {len(guides)} authored guides and {len(topics)} classified reference concepts; {sum(c["depth"]=="worked-example" for c in topics)} have direct worked examples.')

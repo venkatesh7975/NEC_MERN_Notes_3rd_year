@@ -16,7 +16,7 @@ Every mapped concept has a priority. Focus first on P0 and P1, implement and deb
 | 🧩 P3 | Advanced / Specialized | Investigate constraints and alternatives |
 | 🔬 P4 | Reference / Experimental | Evaluate status and compatibility before use |
 
-The current catalog has **25 authored guides and 375 mapped concepts**. **64 concepts have direct worked examples; 311 have reference definitions and connected resources awaiting deeper treatment.** These counts describe current evidence, not complete technology knowledge or mastery. See the [coverage map and priority distribution](knowledge-base/COVERAGE.md) and [remaining work](knowledge-base/REMAINING_WORK.md).
+The current catalog has **25 authored guides and 375 mapped concepts**. **88 concepts have direct worked examples; 287 have reference definitions and connected resources.** Fourteen standalone concept fixtures add executable outputs, failures and changed-input exercises. These counts describe evidence, not complete technology knowledge or mastery. See the [coverage map and priority distribution](knowledge-base/COVERAGE.md) and [maintenance roadmap](knowledge-base/REMAINING_WORK.md).
 
 | Area | Connected guides |
 | --- | --- |
@@ -56,12 +56,14 @@ Company playbooks link official guidance and label original practice recommendat
 | --- | --- | --- |
 | Six beginner apps | [Web learning lab](projects/knowledge-base/learning-lab/README.md) | Calculator, undoable todo, quiz, weather, local notes, exact-cent expenses |
 | MERN task board | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | Sessions, ownership, status workflow, atomic version conflicts |
+| Eleven product workflows | [Product lab source and setup](projects/interview-ready/mern-workspace/PRODUCT_LAB.md) | Roles, transactions, replay, privacy, enrollment and approvals |
+| Executable concept examples | [Fourteen Node fixtures](projects/knowledge-base/concept-lab/README.md) | Scope, receivers, prototypes, promises, scheduling, errors and cleanup |
 | MERN reading list | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | URL validation, per-user uniqueness, persistent CRUD |
 | MERN expense tracker | [MERN workspace](projects/interview-ready/mern-workspace/README.md) | Exact amounts, valid dates, account aggregates |
 | Accessible UI lab | [HTML CSS JS source](projects/interview-ready/ui-lab/README.md) | Accordion, modal, filters, undo, keyboard focus |
 | JavaScript toolkit | [Source and tests](projects/interview-ready/js-toolkit/README.md) | Debounce, LRU, emitter, promise pool, algorithms |
 
-The three MERN apps share one runnable package and authentication foundation, with distinct domain behavior. Setup, tests, and limitations are documented. The [20-project ladder](knowledge-base/projects/README.md) contains requirements, architecture, schema, API specification, testing, deployment, and explicit status: seven learning implementations, two shared MERN foundations, and eleven specifications awaiting implementation. Production scope requires evidence against the [production gate](knowledge-base/projects/PRODUCTION_GATE.md). The original [150 mini-project briefs](PROJECT_INDEX.md) remain available.
+The MERN apps share one runnable package and authentication foundation, with distinct domain behavior. [Eleven product workflows](projects/interview-ready/mern-workspace/PRODUCT_LAB.md) add blog, movie/video catalogs, commerce, admin, LMS, jobs, social feeds, team projects, recoverable chat and expense approvals. The [20-project ladder](knowledge-base/projects/README.md) now has runnable core learning source for every entry, with requirements, architecture, schema, contracts, tests and extension boundaries. Production scope requires evidence against the [production gate](knowledge-base/projects/PRODUCTION_GATE.md). The original [150 mini-project briefs](PROJECT_INDEX.md) remain available.
 
 ## Study in the browser
 
@@ -106,4 +108,4 @@ Contributions should add correct explanations, clear acceptance criteria, runnab
 
 [Repository audit](REPOSITORY_AUDIT.md) · [Migration map](knowledge-base/MIGRATION_MAP.md) · [Coverage](knowledge-base/COVERAGE.md) · [Remaining work](knowledge-base/REMAINING_WORK.md)
 
-The offline PDF, Word, Excel, and CSV exports currently cover the interview handbook. The Google Sheet belongs to the owner's connected account and has not been made publicly accessible. [Media verification scope](knowledge-base/resources/VIDEOS.md) identifies video-curation gaps without padding recommendations.
+[Knowledge-base downloads](knowledge-base/downloads/README.md) include the full-guide PDF and four-tab concept/project/resource tracker. The interview handbook also includes PDF, Word, Excel and CSV exports. Both Google Sheets belong to the owner's connected account and retain private sharing. [Media verification scope](knowledge-base/resources/VIDEOS.md) explains course selection and version limits.

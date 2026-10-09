@@ -2,6 +2,7 @@ import React,{useEffect,useState,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
 import {parseMoney,formatMoney} from './money.js';
 import './style.css';
+import ProductLab from './ProductLab.jsx';
 async function api(path,options={}) {
   const response=await fetch(`/api${path}`,{...options,headers:{'Content-Type':'application/json',...options.headers}});
   if (!response.ok) {
@@ -83,6 +84,6 @@ function App() {
   useEffect(()=>{let current=true;api('/auth/me').then(user=>{if(current)setUser(user);}).catch(error=>{if(current&&error.status!==401)setError(error.message);}).finally(()=>{if(current)setChecking(false);});return()=>{current=false;};},[]);
   async function logout(){try{await api('/auth/logout',{method:'POST',body:'{}'});setUser(null);}catch(error){setError(error.message);}}
   return <><a className="skip" href="#main">Skip to content</a><header><p className="eyebrow">MERN INTERVIEW LAB</p><h1>Build. Inspect. Explain.</h1><p>Three full-stack practice apps, one shared authenticated workspace.</p>{user&&<p>{user.email} <button type="button" className="secondary" onClick={logout}>Sign out</button></p>}</header>
-    <main id="main">{error&&<p role="alert">{error}</p>}{checking?<p>Checking session…</p>:user?<><nav aria-label="Practice apps">{[['tasks','Task board'],['bookmarks','Reading list'],['expenses','Expense tracker']].map(([value,label])=><button type="button" key={value} aria-pressed={kind===value} onClick={()=>setKind(value)}>{label}</button>)}</nav><Collection key={kind} kind={kind} onExpired={expired}/></>:<Auth onLogin={setUser}/>}</main><footer>Educational reference · React, Express, Node, MongoDB · Inspect the source and tests before extending.</footer></>;
+    <main id="main">{error&&<p role="alert">{error}</p>}{checking?<p>Checking session…</p>:user?<><nav aria-label="Practice apps">{[['tasks','Task board'],['bookmarks','Reading list'],['expenses','Expense tracker'],['products','Product engineering lab']].map(([value,label])=><button type="button" key={value} aria-pressed={kind===value} onClick={()=>setKind(value)}>{label}</button>)}</nav>{kind==='products'?<ProductLab user={user} onExpired={expired}/>:<Collection key={kind} kind={kind} onExpired={expired}/>}</>:<Auth onLogin={setUser}/>}</main><footer>Educational reference · React, Express, Node, MongoDB · Inspect the source and tests before extending.</footer></>;
 }
 createRoot(document.getElementById('root')).render(<App/>);

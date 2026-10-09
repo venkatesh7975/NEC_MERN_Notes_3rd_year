@@ -12,10 +12,10 @@ Generated from [catalog.json](data/catalog.json). All listed concepts have origi
 | [Internet, HTTP, and the browser](topics/foundations.md) | 10 | 4 | 6 | 40% |
 | [Semantic HTML, forms, and accessible documents](topics/html.md) | 9 | 3 | 6 | 33% |
 | [CSS layout, cascade, and responsive design](topics/css.md) | 16 | 5 | 11 | 31% |
-| [JavaScript values, scope, functions, and collections](topics/javascript.md) | 32 | 5 | 27 | 16% |
-| [Promises, event loops, and bounded concurrency](topics/async.md) | 8 | 4 | 4 | 50% |
+| [JavaScript values, scope, functions, and collections](topics/javascript.md) | 32 | 20 | 12 | 63% |
+| [Promises, event loops, and bounded concurrency](topics/async.md) | 8 | 8 | 0 | 100% |
 | [DOM, events, and browser APIs](topics/browser.md) | 4 | 2 | 2 | 50% |
-| [Node.js runtime, resources, and asynchronous services](topics/nodejs.md) | 25 | 3 | 22 | 12% |
+| [Node.js runtime, resources, and asynchronous services](topics/nodejs.md) | 25 | 8 | 17 | 32% |
 | [Express services, validation, and protected REST routes](topics/express.md) | 23 | 3 | 20 | 13% |
 | [MongoDB modeling, querying, and persisted invariants](topics/mongodb.md) | 16 | 3 | 13 | 19% |
 | [Mongoose schemas, models, and database behavior](topics/mongoose.md) | 13 | 3 | 10 | 23% |

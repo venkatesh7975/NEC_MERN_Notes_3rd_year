@@ -1,6 +1,6 @@
 # MERN practice workspace
 
-Three runnable full-stack applications share a small React client and an Express API:
+Fourteen full-stack interfaces share a React client and an Express API: the three base apps below and the [eleven product lab workflows](PRODUCT_LAB.md).
 
 | Application | Implemented behavior | Interview discussion |
 | --- | --- | --- |
@@ -8,15 +8,16 @@ Three runnable full-stack applications share a small React client and an Express
 | Reading list | Save title and URL, open, delete; per-user URL uniqueness | Input allowlists, URL schemes, duplicate writes, ownership |
 | Expense tracker | Add and delete dated expenses; exact integer-cent amounts; full-account aggregate | Numeric validation, calendar dates, aggregate versus bounded display |
 
-All three persist in MongoDB and enforce authenticated ownership. Login uses salted scrypt password verifiers and revocable server sessions. A shared implementation avoids repeating security boilerplate; each domain has distinct validation, persistence behavior, and UI.
+All three base apps and the product workflows persist in MongoDB and enforce authenticated ownership. Login uses salted scrypt password verifiers and revocable server sessions. A shared implementation avoids repeating security boilerplate; each domain has distinct validation, persistence behavior, and UI.
 
 ## Run the built app
 
-Requires Node 22.12 or newer and Docker with its engine running, or another local MongoDB instance. Commands below run from this directory.
+Requires Node 22.12 or newer (Node 24 used for verification) and a MongoDB replica set. The [disposable demo](PRODUCT_LAB.md#run-without-docker) runs without Docker; the commands below provide persistent local data with Compose. Commands below run from this directory.
 
 ```bash
 npm ci
 docker compose up -d
+docker compose wait mongo-init
 cp .env.example .env
 npm run build
 npm start
@@ -38,13 +39,13 @@ npm test
 npm run build
 ```
 
-The API suite starts a real disposable MongoDB process with mongodb-memory-server, creates a unique test database, and drops it afterward. Its first run downloads a MongoDB binary. Alternatively, set `TEST_MONGODB_URI` to a disposable local/test MongoDB deployment; never point this setting at production. The suite checks concurrent version updates and duplicate registration against real MongoDB indexes, plus route validation, session revocation, money parsing, and two-user isolation.
+The API suites start real disposable MongoDB processes (a replica set for product transactions) with mongodb-memory-server, creates a unique test database, and drops it afterward. Its first run downloads a MongoDB binary. Alternatively, set `TEST_MONGODB_URI` to a disposable local/test MongoDB deployment; never point this setting at production. The suite checks concurrent version updates and duplicate registration against real MongoDB indexes, plus route validation, session revocation, money parsing, and two-user isolation.
 
 The browser smoke script uses Playwright. Install it separately with `npm install --no-save playwright` or set `PLAYWRIGHT_MODULE` to the absolute path of an installed Playwright module, then run `npm run test:browser`. It serves the built client against a disposable MongoDB and tests registration, all three app flows, keyboard access, and mobile overflow. Keep the lockfile unchanged if installing a temporary browser-test dependency.
 
 ## API contract
 
-All write requests require the configured exact Origin. POST and PATCH require JSON. Responses use JSON; errors expose a safe code and message. Lists return at most the newest 50 records; this reference does not implement pagination. Expense summary includes all owned records and uses INR only.
+All write requests require the configured exact Origin. POST and PATCH require JSON. Responses use JSON; errors expose a safe code and message. The three base-domain lists return at most the newest 50 records. Product lists add bounded cursor continuation; see the [product contracts](PRODUCT_LAB.md#http-contracts). Expense summary includes all owned records and uses INR only.
 
 | Method and path | Input | Result |
 | --- | --- | --- |
@@ -68,9 +69,9 @@ Allowed task statuses: todo, doing, done. Categories: food, travel, learning, ot
 
 `src/main.jsx` owns the UI; `server/validation.js` defines boundary contracts; `server/app.js` defines HTTP, sessions, and authorization; `server/store.js` owns MongoDB operations and indexes. Data queries include the authenticated owner. The task update predicate includes id, owner, and expected version in one database write.
 
-This is an educational reference. It has no email verification, password reset, MFA, team sharing, distributed rate limiter, persistent audit log, or backup automation. Authentication limits are per-process. The server uses same-origin browser deployment and strict Origin checks for cookie-authenticated writes; cross-origin deployment requires a revised CSRF and cookie policy. Secure cookies activate for HTTPS origins, so terminate HTTPS correctly before public use. Server-side session expiration is checked directly; TTL deletion is only cleanup.
+This is an educational reference. It has no email verification, password reset, MFA, distributed rate limiter or scheduled backup automation. The product lab adds workspace roles, persistent audit and a documented recovery drill. Authentication limits are per-process. The server uses same-origin browser deployment and strict Origin checks for cookie-authenticated writes; cross-origin deployment requires a revised CSRF and cookie policy. Secure cookies activate for HTTPS origins, so terminate HTTPS correctly before public use. Server-side session expiration is checked directly; TTL deletion is only cleanup.
 
-There is no optimistic UI claim: mutations wait for the server, preserve form drafts on failure, and refresh after conflicts. Status movement uses accessible selects instead of mouse-only drag and drop. Lists are bounded, not a complete large-data browsing interface. These deliberate limits give clear extension tasks.
+There is no optimistic UI claim: mutations wait for the server, preserve form drafts on failure, and refresh after conflicts. Status movement uses accessible selects instead of mouse-only drag and drop. Base-domain lists are bounded; product lists have cursor continuation. Neither supplies advanced large-data browsing or performance guarantees. These deliberate limits give clear extension tasks.
 
 ## Portfolio extensions
 

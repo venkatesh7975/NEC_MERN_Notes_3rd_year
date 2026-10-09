@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Prioritized MERN knowledge graph, projects, interviews, and preserved teaching materials.",
   "scripts": {
-    "test": "node scripts/validate-curriculum.cjs && node scripts/validate-handbook.cjs && node scripts/validate-knowledge-base.cjs && node --test tests/reference-examples.test.cjs && npm run test:interview && npm run test:learning-lab",
+    "test": "node scripts/validate-curriculum.cjs && node scripts/validate-handbook.cjs && node scripts/validate-knowledge-base.cjs && node --test tests/reference-examples.test.cjs && npm run test:interview && npm run test:learning-lab && npm run test:concepts",
     "check:docs": "node scripts/validate-curriculum.cjs",
     "test:api": "node --test tests/express-examples.test.cjs",
     "test:interview": "node --test projects/interview-ready/js-toolkit/test/toolkit.test.js projects/interview-ready/ui-lab/state.test.js",
@@ -12,6 +12,7 @@
     "build:knowledge": "python scripts/build-knowledge-base.py && python scripts/build-debugging.py",
     "check:knowledge": "node scripts/validate-knowledge-base.cjs",
     "test:learning-lab": "node --test projects/knowledge-base/learning-lab/model.test.js",
-    "check:resources": "node scripts/check-resource-links.mjs"
+    "check:resources": "node scripts/check-resource-links.mjs",
+    "test:concepts": "node --test projects/knowledge-base/concept-lab/*.mjs"
   }
 }

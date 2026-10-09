@@ -1,0 +1,58 @@
+name: Browser and container recovery checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  browser-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+        working-directory: projects/interview-ready/mern-workspace
+      - run: npm run build
+        working-directory: projects/interview-ready/mern-workspace
+      - run: npm install --prefix tmp/browser-runtime --no-save --package-lock=false playwright@1.62.1
+      - run: tmp/browser-runtime/node_modules/.bin/playwright install --with-deps chromium
+      - name: Verify static learning and full-stack interfaces
+        run: |
+          export PLAYWRIGHT_MODULE="$GITHUB_WORKSPACE/tmp/browser-runtime/node_modules/playwright"
+          node scripts/verify-knowledge-browser.cjs
+          npm run test:browser --prefix projects/interview-ready/mern-workspace
+          npm run test:products:browser --prefix projects/interview-ready/mern-workspace
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: tmp/*browser/
+  container-recovery:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/interview-ready/mern-workspace
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build and start disposable stack
+        run: docker compose -p mern-ci -f compose.yaml -f compose.app.yaml up --build --wait --wait-timeout 180
+      - run: node test/container-check.mjs seed
+      - name: Restart app and verify persistence
+        run: |
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml restart app
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml up --wait --wait-timeout 90
+          node test/container-check.mjs verify
+      - name: Restore into a separate database and compare counts
+        run: |
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml exec -T mongo sh -c 'mongodump --db=mern_interview_workspace --archive | mongorestore --archive --nsFrom="mern_interview_workspace.*" --nsTo="restore_drill.*"'
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml exec -T mongo mongosh --quiet --eval 'const source=db.getSiblingDB("mern_interview_workspace"),target=db.getSiblingDB("restore_drill");for(const name of source.getCollectionNames()){if(source.getCollection(name).countDocuments()!==target.getCollection(name).countDocuments())throw Error("Restore mismatch: "+name)};if(target.lab_projects.countDocuments()!==1)throw Error("Missing project");print("PASS separate-namespace restore")'
+      - name: Capture logs and clean disposable stack
+        if: always()
+        run: |
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml logs --no-color
+          docker compose -p mern-ci -f compose.yaml -f compose.app.yaml down --volumes

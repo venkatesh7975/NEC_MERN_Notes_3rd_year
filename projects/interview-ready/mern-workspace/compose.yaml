@@ -1,6 +1,7 @@
 services:
   mongo:
     image: mongo:8.0
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
     ports:
       - "127.0.0.1:27017:27017"
     volumes:
@@ -10,5 +11,11 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  mongo-init:
+    image: mongo:8.0
+    depends_on:
+      mongo:
+        condition: service_healthy
+    entrypoint: ["mongosh", "--host", "mongo:27017", "--quiet", "--eval", "try { rs.status() } catch (e) { rs.initiate({_id:'rs0',members:[{_id:0,host:'mongo:27017'}]}) }; let ready=false; for(let i=0;i<60;i++){if(db.hello().isWritablePrimary){ready=true;break};sleep(1000)}; if(!ready)quit(1)"]
 volumes:
   mongo-data:
