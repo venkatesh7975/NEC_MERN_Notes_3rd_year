@@ -5,6 +5,6 @@
 3. [Async workflow](002-intermediate/app.js): a simulated database lookup using promises and async/await. Run with Node.
 4. [Event bus and debounce](003-advanced/app.js): in-memory events and a delayed callback. Run with Node.
 5. [Counter and color toggle](002-intermediate/counter-color-toggle.html): open in a browser.
-6. [Parity page](p3/odd_even_numbers/index.html) and [theme toggle](p3/theme/index.html): browser classroom exercises. ClassProjects contains preserved duplicate URLs.
+6. [Parity page](p3/odd_even_numbers/index.html) and [theme toggle](p3/theme/index.html): browser classroom exercises. ClassProjects contains preserved duplicate exercises.
 
 From the repository root: node dailycodes/javascript/000-control-flow/app.js. Browser scripts require their HTML host. [Curriculum track](../../04-javascript/README.md).
