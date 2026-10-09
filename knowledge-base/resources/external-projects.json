@@ -1,0 +1,1019 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09",
+  "scope": "50 external full-stack source references; separate from this repository's 20 implemented learning projects.",
+  "projects": [
+    {
+      "title": "SocialEcho",
+      "repository": "nz-m/SocialEcho",
+      "url": "https://github.com/nz-m/SocialEcho",
+      "stack": "MERN + optional Python classifier",
+      "studyFocus": "Moderation, feeds and authentication",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/nz-m/SocialEcho/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/nz-m/SocialEcho/blob/main/README.md",
+      "lastPushedAt": "2024-06-13T11:51:58Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "MERN Ecommerce",
+      "repository": "mohamedsamara/mern-ecommerce",
+      "url": "https://github.com/mohamedsamara/mern-ecommerce",
+      "stack": "MERN + Redux",
+      "studyFocus": "Buyer, merchant and admin flows",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mohamedsamara/mern-ecommerce/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/mohamedsamara/mern-ecommerce/blob/master/README.md",
+      "lastPushedAt": "2024-08-31T01:11:47Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Accountill",
+      "repository": "panshak/accountill",
+      "url": "https://github.com/panshak/accountill",
+      "stack": "MERN",
+      "studyFocus": "Invoices, email and business records",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/panshak/accountill/blob/master/LICENSE.md",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/panshak/accountill/blob/master/README.md",
+      "lastPushedAt": "2024-07-30T12:43:48Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Sports event bootcamp",
+      "repository": "jeanrauwers/mern-course-bootcamp",
+      "url": "https://github.com/jeanrauwers/mern-course-bootcamp",
+      "stack": "MERN + WebSockets",
+      "studyFocus": "Registration, event CRUD and approvals",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jeanrauwers/mern-course-bootcamp/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/jeanrauwers/mern-course-bootcamp/blob/master/README.md",
+      "lastPushedAt": "2023-04-10T21:14:25Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "episode-13-prep-for-release"
+      ]
+    },
+    {
+      "title": "MERN Social",
+      "repository": "shamahoque/mern-social",
+      "url": "https://github.com/shamahoque/mern-social",
+      "stack": "MERN",
+      "studyFocus": "Profiles, posts, comments and likes",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shamahoque/mern-social/blob/second-edition/LICENSE.md",
+      "defaultBranch": "second-edition",
+      "readmeUrl": "https://github.com/shamahoque/mern-social/blob/second-edition/README.md",
+      "lastPushedAt": "2026-03-02T10:47:47Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Instagram MERN",
+      "repository": "jigar-sable/instagram-mern",
+      "url": "https://github.com/jigar-sable/instagram-mern",
+      "stack": "MERN + Socket.IO",
+      "studyFocus": "Social feeds and real-time messages",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jigar-sable/instagram-mern/blob/main/LICENSE.md",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/jigar-sable/instagram-mern/blob/main/README.md",
+      "lastPushedAt": "2025-10-22T07:19:50Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "Mini social network",
+      "repository": "misa-j/social-network",
+      "url": "https://github.com/misa-j/social-network",
+      "stack": "React, Node, MongoDB, Socket.IO",
+      "studyFocus": "Followers, notifications and search",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/misa-j/social-network/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/misa-j/social-network/blob/master/README.md",
+      "lastPushedAt": "2025-10-15T11:13:00Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "app.js",
+        "controllers",
+        "routes",
+        "models"
+      ]
+    },
+    {
+      "title": "Digitomize",
+      "repository": "digitomize/digitomize",
+      "url": "https://github.com/digitomize/digitomize",
+      "stack": "MERN",
+      "studyFocus": "Coding-contest aggregation and profiles",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/digitomize/digitomize/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/digitomize/digitomize/blob/main/README.md",
+      "lastPushedAt": "2025-01-02T18:37:12Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "client"
+      ]
+    },
+    {
+      "title": "MERN Marketplace",
+      "repository": "shamahoque/mern-marketplace",
+      "url": "https://github.com/shamahoque/mern-marketplace",
+      "stack": "MERN + Stripe + Socket.IO",
+      "studyFocus": "Seller accounts, checkout and auctions",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shamahoque/mern-marketplace/blob/second-edition/LICENSE.md",
+      "defaultBranch": "second-edition",
+      "readmeUrl": "https://github.com/shamahoque/mern-marketplace/blob/second-edition/README.md",
+      "lastPushedAt": "2026-03-02T11:52:21Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Flipkart MERN",
+      "repository": "jigar-sable/flipkart-mern",
+      "url": "https://github.com/jigar-sable/flipkart-mern",
+      "stack": "MERN + Redux",
+      "studyFocus": "Catalog, checkout and admin operations",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jigar-sable/flipkart-mern/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/jigar-sable/flipkart-mern/blob/master/README.md",
+      "lastPushedAt": "2024-05-15T07:52:50Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "iCinema",
+      "repository": "orifmilod/iCinema",
+      "url": "https://github.com/orifmilod/iCinema",
+      "stack": "MERN",
+      "studyFocus": "Movie CRUD, filters and admin permissions",
+      "difficulty": "Beginner",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/orifmilod/iCinema/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/orifmilod/iCinema/blob/master/README.md",
+      "lastPushedAt": "2026-08-07T19:33:17Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "frontend",
+        "server.js",
+        "controller",
+        "models"
+      ]
+    },
+    {
+      "title": "MERN Mediastream",
+      "repository": "shamahoque/mern-mediastream",
+      "url": "https://github.com/shamahoque/mern-mediastream",
+      "stack": "MERN",
+      "studyFocus": "Uploads and media streaming",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shamahoque/mern-mediastream/blob/second-edition/LICENSE.md",
+      "defaultBranch": "second-edition",
+      "readmeUrl": "https://github.com/shamahoque/mern-mediastream/blob/second-edition/README.md",
+      "lastPushedAt": "2026-03-02T13:23:34Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Wanderlust",
+      "repository": "krishnaacharyaa/wanderlust",
+      "url": "https://github.com/krishnaacharyaa/wanderlust",
+      "stack": "MERN",
+      "studyFocus": "Travel articles and contribution workflows",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/krishnaacharyaa/wanderlust/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/krishnaacharyaa/wanderlust/blob/main/README.md",
+      "lastPushedAt": "2025-06-21T15:46:04Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "Blog.it",
+      "repository": "Rajatm544/MERN-Blog-App",
+      "url": "https://github.com/Rajatm544/MERN-Blog-App",
+      "stack": "MERN + OAuth",
+      "studyFocus": "Blog publishing and social login",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Rajatm544/MERN-Blog-App/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/Rajatm544/MERN-Blog-App/blob/master/README.md",
+      "lastPushedAt": "2023-03-15T08:56:02Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "MERN Social Network",
+      "repository": "jm-shi/MERN-Social-Network",
+      "url": "https://github.com/jm-shi/MERN-Social-Network",
+      "stack": "MERN",
+      "studyFocus": "Feed, profiles, comments and following",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jm-shi/MERN-Social-Network/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/jm-shi/MERN-Social-Network/blob/master/README.md",
+      "lastPushedAt": "2023-03-02T06:40:08Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "client"
+      ]
+    },
+    {
+      "title": "Stack Underflow",
+      "repository": "amand33p/stack-underflow",
+      "url": "https://github.com/amand33p/stack-underflow",
+      "stack": "React, Node, MongoDB, Apollo GraphQL",
+      "studyFocus": "Q&A, voting, tags and pagination",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/amand33p/stack-underflow/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/amand33p/stack-underflow/blob/master/README.md",
+      "lastPushedAt": "2024-06-06T08:48:44Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Realtime Chat",
+      "repository": "ShakirFarhan/Realtime-Chat",
+      "url": "https://github.com/ShakirFarhan/Realtime-Chat",
+      "stack": "MERN + Socket.IO",
+      "studyFocus": "Rooms, messages and notifications",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/ShakirFarhan/Realtime-Chat/blob/main/License.md",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/ShakirFarhan/Realtime-Chat/blob/main/README.md",
+      "lastPushedAt": "2024-08-05T06:55:56Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "clients",
+        "server"
+      ]
+    },
+    {
+      "title": "Reddish",
+      "repository": "amand33p/reddish",
+      "url": "https://github.com/amand33p/reddish",
+      "stack": "MERN + Redux",
+      "studyFocus": "Communities, voting, sorting and search",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/amand33p/reddish/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/amand33p/reddish/blob/master/README.md",
+      "lastPushedAt": "2021-03-07T11:33:48Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "MERN CRUD App",
+      "repository": "harounchebbi/Mern-Stack-Crud-App",
+      "url": "https://github.com/harounchebbi/Mern-Stack-Crud-App",
+      "stack": "MERN",
+      "studyFocus": "Small client/API/database CRUD flow",
+      "difficulty": "Beginner",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/harounchebbi/Mern-Stack-Crud-App/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/harounchebbi/Mern-Stack-Crud-App/blob/master/README.md",
+      "lastPushedAt": "2024-03-23T11:32:28Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server.js",
+        "routes",
+        "models"
+      ]
+    },
+    {
+      "title": "MoonFlix",
+      "repository": "trananhtuat/fullstack-mern-movie-2022",
+      "url": "https://github.com/trananhtuat/fullstack-mern-movie-2022",
+      "stack": "MERN + TMDB API",
+      "studyFocus": "Movie API integration and user features",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/trananhtuat/fullstack-mern-movie-2022/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/trananhtuat/fullstack-mern-movie-2022/blob/main/README.md",
+      "lastPushedAt": "2024-07-25T11:39:32Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Kosells",
+      "repository": "Rajatm544/MERN-Ecommerce",
+      "url": "https://github.com/Rajatm544/MERN-Ecommerce",
+      "stack": "MERN + OAuth + payment adapters",
+      "studyFocus": "Orders, social login and PWA behavior",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Rajatm544/MERN-Ecommerce/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/Rajatm544/MERN-Ecommerce/blob/main/README.md",
+      "lastPushedAt": "2023-10-21T19:28:45Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "HealthBooker",
+      "repository": "Avinash905/HealthBooker",
+      "url": "https://github.com/Avinash905/HealthBooker",
+      "stack": "MERN",
+      "studyFocus": "Appointment booking and doctor/admin roles",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Avinash905/HealthBooker/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/Avinash905/HealthBooker/blob/main/README.md",
+      "lastPushedAt": "2024-04-15T10:51:36Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server.js",
+        "controllers",
+        "models"
+      ]
+    },
+    {
+      "title": "TutorTrek",
+      "repository": "abinth11/TutorTrek",
+      "url": "https://github.com/abinth11/TutorTrek",
+      "stack": "MERN + TypeScript + Redis",
+      "studyFocus": "Teacher/student roles and clean architecture",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/abinth11/TutorTrek/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/abinth11/TutorTrek/blob/master/readme.md",
+      "lastPushedAt": "2023-12-01T05:40:13Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "ChatPlus",
+      "repository": "aladinyo/ChatPlus",
+      "url": "https://github.com/aladinyo/ChatPlus",
+      "stack": "React, Node, Firebase, WebRTC services",
+      "studyFocus": "Messaging, calls and service integration",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/aladinyo/ChatPlus/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/aladinyo/ChatPlus/blob/main/README.md",
+      "lastPushedAt": "2024-07-09T18:32:19Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "src"
+      ]
+    },
+    {
+      "title": "OrganEase",
+      "repository": "Kartik-Katkar/OrganEase",
+      "url": "https://github.com/Kartik-Katkar/OrganEase",
+      "stack": "MERN",
+      "studyFocus": "Inventory requests and confirmation workflow; fictional study data",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Kartik-Katkar/OrganEase/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/Kartik-Katkar/OrganEase/blob/main/README.md",
+      "lastPushedAt": "2026-10-01T12:25:53Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Foodie",
+      "repository": "jgudo/foodie",
+      "url": "https://github.com/jgudo/foodie",
+      "stack": "MERN + TypeScript + Socket.IO",
+      "studyFocus": "Food posts, followers and messages",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jgudo/foodie/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/jgudo/foodie/blob/master/README.md",
+      "lastPushedAt": "2023-05-14T13:45:04Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "frontend",
+        "server"
+      ]
+    },
+    {
+      "title": "Voting App",
+      "repository": "Createdd/votingApp",
+      "url": "https://github.com/Createdd/votingApp",
+      "stack": "MERN",
+      "studyFocus": "Poll creation and voting; historical 2017 example",
+      "difficulty": "Beginner",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Createdd/votingApp/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/Createdd/votingApp/blob/master/readme.md",
+      "lastPushedAt": "2017-09-09T19:53:17Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "src/components",
+        "src/serverSide",
+        "src/serverSideES6"
+      ]
+    },
+    {
+      "title": "Quizdom",
+      "repository": "justEhmadSaeed/quizdom",
+      "url": "https://github.com/justEhmadSaeed/quizdom",
+      "stack": "React, Node, MongoDB + Firebase services",
+      "studyFocus": "Teacher/student quizzes and results",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/justEhmadSaeed/quizdom/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/justEhmadSaeed/quizdom/blob/master/README.md",
+      "lastPushedAt": "2022-10-07T11:33:58Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "src"
+      ]
+    },
+    {
+      "title": "College Management System",
+      "repository": "krish-7104/College-Management-System",
+      "url": "https://github.com/krish-7104/College-Management-System",
+      "stack": "MERN",
+      "studyFocus": "Student, faculty and admin workflows",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/krish-7104/College-Management-System/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/krish-7104/College-Management-System/blob/master/README.md",
+      "lastPushedAt": "2025-12-14T15:01:41Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "SplitApp",
+      "repository": "tuzup/SplitApp",
+      "url": "https://github.com/tuzup/SplitApp",
+      "stack": "MERN",
+      "studyFocus": "Shared expenses, balances and charts",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/tuzup/SplitApp/blob/main/LICENCE.md",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/tuzup/SplitApp/blob/main/README.md",
+      "lastPushedAt": "2025-07-07T18:29:45Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "app.js",
+        "routes",
+        "model"
+      ]
+    },
+    {
+      "title": "E-learning Platform",
+      "repository": "Sai-Chakradhar-Mahendrakar/Elearning-Platform-Using-MERN",
+      "url": "https://github.com/Sai-Chakradhar-Mahendrakar/Elearning-Platform-Using-MERN",
+      "stack": "MERN",
+      "studyFocus": "Courses, enrollment and user dashboards",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Sai-Chakradhar-Mahendrakar/Elearning-Platform-Using-MERN/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/Sai-Chakradhar-Mahendrakar/Elearning-Platform-Using-MERN/blob/main/README.md",
+      "lastPushedAt": "2026-05-23T14:04:22Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "ProShop learning app",
+      "repository": "mian-ali/Ecommerce-App",
+      "url": "https://github.com/mian-ali/Ecommerce-App",
+      "stack": "MERN + Redux",
+      "studyFocus": "Product reviews, orders and checkout",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mian-ali/Ecommerce-App/blob/master/LICENSE.md",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/mian-ali/Ecommerce-App/blob/master/README.md",
+      "lastPushedAt": "2026-10-05T10:47:22Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "backend",
+        "frontend"
+      ]
+    },
+    {
+      "title": "WhatsApp learning clone",
+      "repository": "kimlimjustin/whatsapp-clone",
+      "url": "https://github.com/kimlimjustin/whatsapp-clone",
+      "stack": "MERN",
+      "studyFocus": "Private/group messaging; author flags production-security limitations",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/kimlimjustin/whatsapp-clone/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/kimlimjustin/whatsapp-clone/blob/master/README.md",
+      "lastPushedAt": "2023-04-18T16:31:48Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Memories",
+      "repository": "warmachine028/memories",
+      "url": "https://github.com/warmachine028/memories",
+      "stack": "React, Bun/Elysia, PostgreSQL, Clerk",
+      "studyFocus": "Diary CRUD; current version is no longer MERN",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/warmachine028/memories/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/warmachine028/memories/blob/main/README.md",
+      "lastPushedAt": "2026-09-14T21:04:27Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Med-Space",
+      "repository": "Luson045/medi-connect",
+      "url": "https://github.com/Luson045/medi-connect",
+      "stack": "MERN",
+      "studyFocus": "Hospital appointments and role workflows",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Luson045/medi-connect/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/Luson045/medi-connect/blob/main/README.md",
+      "lastPushedAt": "2025-02-13T20:04:17Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "MERN Classroom",
+      "repository": "shamahoque/mern-classroom",
+      "url": "https://github.com/shamahoque/mern-classroom",
+      "stack": "MERN",
+      "studyFocus": "Courses, lessons, enrollment and progress",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shamahoque/mern-classroom/blob/second-edition/LICENSE.md",
+      "defaultBranch": "second-edition",
+      "readmeUrl": "https://github.com/shamahoque/mern-classroom/blob/second-edition/README.md",
+      "lastPushedAt": "2026-03-02T17:30:56Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "MERN Expense Tracker",
+      "repository": "shamahoque/mern-expense-tracker",
+      "url": "https://github.com/shamahoque/mern-expense-tracker",
+      "stack": "MERN + Victory charts",
+      "studyFocus": "Expense records and visual summaries",
+      "difficulty": "Intermediate",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shamahoque/mern-expense-tracker/blob/second-edition/LICENSE.md",
+      "defaultBranch": "second-edition",
+      "readmeUrl": "https://github.com/shamahoque/mern-expense-tracker/blob/second-edition/README.md",
+      "lastPushedAt": "2026-03-03T00:36:07Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "title": "Documenso",
+      "repository": "documenso/documenso",
+      "url": "https://github.com/documenso/documenso",
+      "stack": "React Router 7, Hono, PostgreSQL",
+      "studyFocus": "Document signing and workflow architecture",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/documenso/documenso/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/documenso/documenso/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T16:09:25Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Formbricks",
+      "repository": "formbricks/formbricks",
+      "url": "https://github.com/formbricks/formbricks",
+      "stack": "Next.js, PostgreSQL",
+      "studyFocus": "Surveys, targeting and analytics",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0 core; MIT SDKs; separate enterprise terms",
+      "licenseUrl": "https://github.com/formbricks/formbricks/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/formbricks/formbricks/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T15:58:04Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Twenty",
+      "repository": "twentyhq/twenty",
+      "url": "https://github.com/twentyhq/twenty",
+      "stack": "React, NestJS, PostgreSQL, Redis",
+      "studyFocus": "CRM data models and permissions",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0 core with application exception; MIT packages; enterprise terms",
+      "licenseUrl": "https://github.com/twentyhq/twenty/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/twentyhq/twenty/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T16:13:48Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "packages"
+      ]
+    },
+    {
+      "title": "Plane",
+      "repository": "makeplane/plane",
+      "url": "https://github.com/makeplane/plane",
+      "stack": "React, Django, PostgreSQL",
+      "studyFocus": "Issues, cycles and project management",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/makeplane/plane/blob/preview/LICENSE.txt",
+      "defaultBranch": "preview",
+      "readmeUrl": "https://github.com/makeplane/plane/blob/preview/README.md",
+      "lastPushedAt": "2026-10-09T12:23:53Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Novu",
+      "repository": "novuhq/novu",
+      "url": "https://github.com/novuhq/novu",
+      "stack": "React, NestJS, MongoDB, Redis",
+      "studyFocus": "Notification API, workers and channels",
+      "difficulty": "Advanced",
+      "license": "MIT core; separate enterprise terms",
+      "licenseUrl": "https://github.com/novuhq/novu/blob/next/LICENSE-MIT",
+      "defaultBranch": "next",
+      "readmeUrl": "https://github.com/novuhq/novu/blob/next/README.md",
+      "lastPushedAt": "2026-10-09T15:28:06Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Umami",
+      "repository": "umami-software/umami",
+      "url": "https://github.com/umami-software/umami",
+      "stack": "Next.js, PostgreSQL",
+      "studyFocus": "Analytics events, dashboards and reporting",
+      "difficulty": "Advanced",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/umami-software/umami/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "readmeUrl": "https://github.com/umami-software/umami/blob/master/README.md",
+      "lastPushedAt": "2026-10-09T04:02:10Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "packages",
+        "src"
+      ]
+    },
+    {
+      "title": "Linkwarden",
+      "repository": "linkwarden/linkwarden",
+      "url": "https://github.com/linkwarden/linkwarden",
+      "stack": "Next.js, PostgreSQL + workers",
+      "studyFocus": "Bookmark preservation and shared collections",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/linkwarden/linkwarden/blob/main/LICENSE.md",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/linkwarden/linkwarden/blob/main/README.md",
+      "lastPushedAt": "2026-10-02T19:06:40Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Immich",
+      "repository": "immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "stack": "SvelteKit, NestJS, PostgreSQL",
+      "studyFocus": "Media uploads, background jobs and search",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/immich-app/immich/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/immich-app/immich/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T15:05:16Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "packages",
+        "server",
+        "web"
+      ]
+    },
+    {
+      "title": "Rocket.Chat",
+      "repository": "RocketChat/Rocket.Chat",
+      "url": "https://github.com/RocketChat/Rocket.Chat",
+      "stack": "React, Meteor/Node, MongoDB",
+      "studyFocus": "Team messaging and large monorepo boundaries",
+      "difficulty": "Advanced",
+      "license": "MIT core; separate enterprise terms",
+      "licenseUrl": "https://github.com/RocketChat/Rocket.Chat/blob/develop/LICENSE",
+      "defaultBranch": "develop",
+      "readmeUrl": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+      "lastPushedAt": "2026-10-09T16:16:10Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Chatwoot",
+      "repository": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "stack": "Vue, Ruby on Rails, PostgreSQL",
+      "studyFocus": "Support inboxes, channels and background jobs",
+      "difficulty": "Advanced",
+      "license": "MIT core; separate enterprise terms",
+      "licenseUrl": "https://github.com/chatwoot/chatwoot/blob/develop/LICENSE",
+      "defaultBranch": "develop",
+      "readmeUrl": "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
+      "lastPushedAt": "2026-10-09T16:16:01Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "app",
+        "Gemfile",
+        "config",
+        "db"
+      ]
+    },
+    {
+      "title": "Papra",
+      "repository": "papra-hq/papra",
+      "url": "https://github.com/papra-hq/papra",
+      "stack": "SolidJS, Hono, SQLite",
+      "studyFocus": "Document archiving and full-stack TypeScript",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/papra-hq/papra/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/papra-hq/papra/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T04:22:07Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Webstudio",
+      "repository": "webstudio-is/webstudio",
+      "url": "https://github.com/webstudio-is/webstudio",
+      "stack": "React/Remix, Node, PostgreSQL services",
+      "studyFocus": "Visual builder and client/server rendering",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0 core; optional animation package has separate terms",
+      "licenseUrl": "https://github.com/webstudio-is/webstudio/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/webstudio-is/webstudio/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T16:13:09Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps",
+        "packages"
+      ]
+    },
+    {
+      "title": "Postiz",
+      "repository": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "stack": "Next.js, NestJS, PostgreSQL, Redis",
+      "studyFocus": "Social scheduling, integrations and workers",
+      "difficulty": "Advanced",
+      "license": "AGPL-3.0",
+      "licenseUrl": "https://github.com/gitroomhq/postiz-app/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "readmeUrl": "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+      "lastPushedAt": "2026-10-09T08:37:29Z",
+      "archived": false,
+      "reviewedAt": "2026-10-09",
+      "verification": "Repository metadata, README and source layout reviewed; not installed or runtime-tested.",
+      "sourceEntries": [
+        "apps"
+      ]
+    }
+  ]
+}
