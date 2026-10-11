@@ -26,7 +26,7 @@ dailycodes/
 │   └── 003-advanced/     # Performance Optimization, Memoization
 ├── node/                 # Node.js Core
 │   ├── 001-basic/        # Global Objects, Module Exports, Path, FS Module
-│   ├── 002-intermediate/ # Event Emitter, Streams, Buffer
+│   ├── 002-intermediate/ # Async file operations, Path
 │   └── 003-advanced/     # EventEmitter, Readable Streams
 ├── express/              # Express.js Server Practice
 │   ├── 001-basic/        # Basic Server, Routing, Middleware
