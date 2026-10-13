@@ -8,6 +8,9 @@ This folder contains all **Daily Practice Codes**, exercises, snippets, and topi
 
 ```
 dailycodes/
+├── ClassProjects/        # Preserved classroom exercises
+│   ├── odd_even_numbers/ # Odd/even number practice
+│   └── theme/            # Theme toggle practice
 ├── html/                 # HTML5 Basic, Intermediate & Advanced Code
 │   ├── 001-basic/        # Fundamentals, Headings, Lists, Form Basics
 │   ├── 002-intermediate/ # Tables, Audio/Video, Semantic Form Validation
