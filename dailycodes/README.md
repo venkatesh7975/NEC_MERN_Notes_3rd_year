@@ -21,8 +21,8 @@ dailycodes/
 │   └── 003-advanced/     # Animations, Keyframes, Responsive Media Queries
 ├── javascript/           # JavaScript ES6+ Practice
 │   ├── 001-basic/        # Variables, Data Types, Control Flow, Functions
-│   ├── 002-intermediate/ # DOM Manipulation, Event Listeners, ES6 Modules
-│   └── 003-advanced/     # Async/Await, Fetch API, Promises, Event Loop
+│   ├── 002-intermediate/ # Async/Await, Promises, Simulated Lookup
+│   └── 003-advanced/     # Event Bus, Debounce, Delayed Callbacks
 ├── react/                # React 19 Practice
 │   ├── 001-basic/        # JSX, Components, Props, State Basics
 │   ├── 002-intermediate/ # Custom Hooks, Context API, React Router v6
