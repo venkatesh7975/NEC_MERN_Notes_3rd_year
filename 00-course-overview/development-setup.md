@@ -41,11 +41,11 @@ This initialization uses the current scaffold and requires network access. Recor
 
 ```bash
 cd dailycodes/express
-npm install
+npm ci
 node 001-basic/app.js
 ```
 
-Basic, intermediate and advanced use ports 5051, 5052 and 5053. Stop with Ctrl+C. The advanced role-header example is explicitly an insecure simulation for middleware ordering, never a real access control implementation.
+Basic, intermediate and advanced use ports 5051, 5052 and 5053. The committed lockfile makes `npm ci` reproducible; use `npm install` only when intentionally changing the example's dependencies. Stop with Ctrl+C. The advanced role-header example is explicitly an insecure simulation for middleware ordering, never a real access control implementation.
 
 ## SQL
 
