@@ -25,8 +25,8 @@ dailycodes/
 │   └── 003-advanced/     # Event Bus, Debounce, Delayed Callbacks
 ├── react/                # React 19 Practice
 │   ├── 001-basic/        # JSX, Components, Props, State Basics
-│   ├── 002-intermediate/ # Custom Hooks, Context API, React Router v6
-│   └── 003-advanced/     # Performance Optimization, Memoization
+│   ├── 002-intermediate/ # Custom Hook, simulated search
+│   └── 003-advanced/     # useTransition, optimistic submission
 ├── node/                 # Node.js Core
 │   ├── 001-basic/        # Global Objects, Module Exports, Path, FS Module
 │   ├── 002-intermediate/ # Async file operations, Path
