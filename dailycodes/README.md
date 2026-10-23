@@ -42,7 +42,7 @@ dailycodes/
 └── mysql/                # Relational MySQL Practice
     ├── 001-basic/        # SQL DDL/DML Queries, Primary Keys
     ├── 002-intermediate/ # Inner/Left/Right Joins, Group By
-    └── 003-advanced/     # Database Transactions, Stored Procedures
+    └── 003-advanced/     # Database Transactions, Activity Logging
 ```
 
 ---
