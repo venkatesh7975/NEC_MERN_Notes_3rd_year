@@ -1,4 +1,4 @@
--- 003 Advanced MySQL Transaction & Enrollment Procedure
+-- 003 Advanced MySQL Transaction & Enrollment Script
 
 START TRANSACTION;
 
