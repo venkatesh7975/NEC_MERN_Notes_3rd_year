@@ -28,9 +28,9 @@ dailycodes/
 │   ├── 002-intermediate/ # Custom Hook, simulated search
 │   └── 003-advanced/     # useTransition, optimistic submission
 ├── node/                 # Node.js Core
-│   ├── 001-basic/        # Global Objects, Module Exports, Path, FS Module
-│   ├── 002-intermediate/ # Async file operations, Path
-│   └── 003-advanced/     # EventEmitter, Readable Streams
+│   ├── 001-basic/        # HTTP JSON server
+│   ├── 002-intermediate/ # Async file operations and Path
+│   └── 003-advanced/     # EventEmitter and Readable Streams
 ├── express/              # Express.js Server Practice
 │   ├── 001-basic/        # Basic Server, Routing, Middleware
 │   ├── 002-intermediate/ # REST API CRUD Routes, Input Validation
