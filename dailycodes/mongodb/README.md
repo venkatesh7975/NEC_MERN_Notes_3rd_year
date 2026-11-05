@@ -6,6 +6,6 @@ The remaining files are Mongoose fragments:
 
 - [schema](001-basic/schema.js): exports a lesson schema.
 - [query](002-intermediate/query.js): helper needing a Course model and database connection.
-- [aggregation](003-advanced/aggregation.js): helper needing seeded models; no standalone CLI.
+- [aggregation](003-advanced/aggregation.js): course-metrics helper needing a seeded Course model; its current implementation does not read the provided SubmissionModel and has no standalone CLI.
 
 Mongoose is an ODM, not MongoDB itself. [Core MongoDB](../../08-databases/mongodb/README.md); [supplementary Mongoose](../../11-supplementary/mongoose/README.md).
