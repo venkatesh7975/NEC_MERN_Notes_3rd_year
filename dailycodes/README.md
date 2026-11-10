@@ -34,7 +34,7 @@ dailycodes/
 ├── express/              # Express.js Server Practice
 │   ├── 001-basic/        # Basic Server, Routing, Middleware
 │   ├── 002-intermediate/ # REST API CRUD Routes, Input Validation
-│   └── 003-advanced/     # Error Handling Middleware, File Uploads
+│   └── 003-advanced/     # Error Handling Middleware, role-header simulation
 ├── mongodb/              # NoSQL MongoDB & Mongoose
 │   ├── 001-basic/        # Mongo Shell Commands, CRUD Operations
 │   ├── 002-intermediate/ # Mongoose Schemas, Models, Queries
