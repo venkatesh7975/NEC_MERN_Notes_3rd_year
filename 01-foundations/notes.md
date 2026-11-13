@@ -52,7 +52,7 @@ Make assumptions explicit. Keep fixtures small and fictional. Separate input val
 
 1. Reproduce the worked example and its expected output.
 2. Implement record five local page requests with method, path, status and content type.
-3. Add create a linked two-page brochure.
+3. Create a linked two-page brochure.
 4. Describe and test the acceptance example: Fixed file stays identical; generated timestamp changes.
 
 ## Interview preparation
