@@ -20,9 +20,11 @@ dailycodes/
 │   ├── 002-intermediate/ # Flexbox Cards, Grid Layouts, Pseudo-elements
 │   └── 003-advanced/     # Animations, Keyframes, Responsive Media Queries
 ├── javascript/           # JavaScript ES6+ Practice
+│   ├── 000-control-flow/ # Input validation, operators, conditions and loops
 │   ├── 001-basic/        # Variables, Data Types, Control Flow, Functions
 │   ├── 002-intermediate/ # Async/Await, Promises, Simulated Lookup
-│   └── 003-advanced/     # Event Bus, Debounce, Delayed Callbacks
+│   ├── 003-advanced/     # Event Bus, Debounce, Delayed Callbacks
+│   └── p3/                # Preserved browser classroom exercises
 ├── react/                # React 19 Practice
 │   ├── 001-basic/        # JSX, Components, Props, State Basics
 │   ├── 002-intermediate/ # Custom Hook, simulated search
