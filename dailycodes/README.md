@@ -40,7 +40,7 @@ dailycodes/
 ├── mongodb/              # NoSQL MongoDB & Mongoose
 │   ├── 001-basic/        # Mongo Shell Commands, CRUD Operations
 │   ├── 002-intermediate/ # Mongoose Schemas, Models, Queries
-│   └── 003-advanced/     # Aggregation Pipelines, Population, Indexes
+│   └── 003-advanced/     # Aggregation Pipelines, Platform Metrics
 └── mysql/                # Relational MySQL Practice
     ├── 001-basic/        # SQL DDL/DML Queries, Primary Keys
     ├── 002-intermediate/ # Inner/Left/Right Joins, Group By
