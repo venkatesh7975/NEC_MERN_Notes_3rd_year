@@ -14,7 +14,7 @@ dailycodes/
 ├── html/                 # HTML5 Basic, Intermediate & Advanced Code
 │   ├── 001-basic/        # Fundamentals, Headings, Lists, Form Basics
 │   ├── 002-intermediate/ # Tables, Audio/Video, Semantic Form Validation
-│   └── 003-advanced/     # SEO Meta Tags, Canvas, Accessibility
+│   └── 003-advanced/     # Canvas, accessibility, audio markup
 ├── css/                  # CSS3 Styling Systems
 │   ├── 001-basic/        # Selectors, Colors, Box Model
 │   ├── 002-intermediate/ # Flexbox Cards, Grid Layouts, Pseudo-elements
