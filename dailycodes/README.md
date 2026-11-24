@@ -12,7 +12,7 @@ dailycodes/
 │   ├── odd_even_numbers/ # Odd/even number practice
 │   └── theme/            # Theme toggle practice
 ├── html/                 # HTML5 Basic, Intermediate & Advanced Code
-│   ├── 001-basic/        # Fundamentals, Headings, Lists, Form Basics
+│   ├── 001-basic/        # Fundamentals, Headings, Lists, External Link
 │   ├── 002-intermediate/ # Tables, Audio/Video, Semantic Form Validation
 │   └── 003-advanced/     # Canvas, accessibility, audio markup
 ├── css/                  # CSS3 Styling Systems
