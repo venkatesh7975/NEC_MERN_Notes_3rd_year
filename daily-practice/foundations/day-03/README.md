@@ -14,8 +14,8 @@ Create a local request trace with success, missing path and malformed input; exp
 
 ## Coding exercises
 
-1. Implement create a local request trace with success, missing path and malformed input using a minimal fixture.
-2. Add explain each response.
+1. Create a local request trace with success, missing path and malformed input using a minimal fixture.
+2. Explain each response.
 3. Implement an explicit guard or fallback for missing input/content.
 
 ## Expected output
