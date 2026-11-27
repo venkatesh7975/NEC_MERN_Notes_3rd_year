@@ -14,8 +14,8 @@ Style one notice with consistent padding and border-box; compare its measured wi
 
 ## Coding exercises
 
-1. Implement style one notice with consistent padding and border-box using a minimal fixture.
-2. Add compare its measured width to content-box.
+1. Style one notice with consistent padding and border-box using a minimal fixture.
+2. Compare its measured width to content-box.
 3. Implement an explicit guard or fallback for missing input/content.
 
 ## Expected output
